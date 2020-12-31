@@ -10,44 +10,50 @@
       <link rel="stylesheet" href="style.css">
       <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+      <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
+
+<!-- 
+  about
+  projects
+  contact
+  resume
+ -->
+
 <body>
       <div class="temp"></div>
       <div class="first-block"></div>
       <div class="second-block"></div>
       <div class="loader">
             <ul>
-                  <li>L</li>
-                  <li>E</li>
-                  <li>M</li>
-                  <li>U</li>
-                  <li>E</li>
-                  <li>L</li>
-                  <li> </li>
-                  <li>M</li>
-                  <li>A</li>
-                  <li>T</li>
-                  <li>T</li>
-                  <li>H</li>
-                  <li>E</li>
-                  <li>W</li>
-                  <li> </li>
-                  <li>P</li>
-                  <li>R</li>
-                  <li>A</li>
-                  <li>N</li>
-                  <li>O</li>
-                  <li>T</li>
-                  <li>O</li>
+                <li>L</li><li>E</li><li>M</li><li>U</li><li>E</li><li>L</li>
+                <li> </li>
+                <li>M</li><li>A</li><li>T</li><li>T</li><li>H</li><li>E</li><li>W</li>
+                <li> </li>
+                <li>P</li><li>R</li><li>A</li><li>N</li><li>O</li><li>T</li><li>O</li>
             </ul>
       </div>
       <div class="third-block"></div>
-      <div class="menu">
-            <ion-icon name="menu"></ion-icon>
+
+      <div class="wrapper">
+        <ul>
+          <li><ion-icon name="menu" size="large"></ion-icon>
+            <ul>
+              <li>About Me</li>
+              <li>My Projects</li>
+              <li>Contact</li>
+              <li>My Resume</li>
+            </ul>
+          </li>
+        </ul>
       </div>
+
       <div class="logo">
-            <span>Explore</span>
+          <span>
+              <a href="index.html">Lemuel Matthew Pranoto</a>
+          </span>    
       </div>
+
       <div class="content">
             <div class="heading">
                   <span>About Me</span>
@@ -59,20 +65,29 @@
                   <button type="button">VISIT NOW</button>
             </div>
       </div>
+
       <div class="img">
             <img src="assets/hero.jpg" alt="">
       </div>
-      <div class="media">
-            <ul>
-                  <li><ion-icon name="logo-instagram"></ion-icon></li>
-                  <li><ion-icon name="logo-linkedin"></ion-icon></li>
-                  <li><ion-icon name="logo-facebook"></ion-icon></li>
-                  <li><ion-icon name="logo-github"></ion-icon></li>
-            </ul>
+
+      <div class="media1">
+            <a href="https://www.instagram.com/lemuelpranoto/?hl=en" target="_blank"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
       </div>
-      <div class="watch">
+      <div class="media2">
+            <a href="https://www.linkedin.com/in/lemuel-pranoto-81282b193/" target="_blank"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
+      </div>
+
+      <div class="media3">
+            <a href="https://www.facebook.com/lemuelmpranoto" target="_blank"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+      </div>
+
+      <div class="media4">
+            <a href="https://github.com/lemuelmpranoto" target="_blank"><ion-icon name="logo-github" size="large"></ion-icon></a>
+      </div>
+
+      <!-- <div class="watch">
             <ion-icon name="play"></ion-icon>
-      </div>
+      </div> -->
 
       <script type="text/javascript">
 
@@ -83,7 +98,7 @@
             ease: Expo.easeInOut
       });
 
-      TweenMax.from(".menu", 1.6, {
+      TweenMax.from(".wrapper", 1.6, {
             delay: 6.5,
             opacity: 0,
             y: 30,
@@ -111,21 +126,45 @@
             ease: Expo.easeInOut
       });
 
-      TweenMax.from(".watch", 1.6, {
-            delay: 6.9,
-            opacity: 0,
-            y: 30,
-            rotation: 90,
-            ease: Expo.easeInOut
-      });
+      // TweenMax.from(".watch", 1.6, {
+      //       delay: 6.9,
+      //       opacity: 0,
+      //       y: 30,
+      //       rotation: 90,
+      //       ease: Expo.easeInOut
+      // });
 
-      TweenMax.staggerFrom(".media ul li", 2, {
+      TweenMax.staggerFrom(".media1", 2, {
             delay: 7,
             opacity: 0,
             y: 40,
             ease: Expo.easeInOut
       }, 0.2);
 
+      TweenMax.staggerFrom(".media2", 2, {
+            delay: 7,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      }, 0.2);
+
+      TweenMax.staggerFrom(".media3", 2, {
+            delay: 7,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      }, 0.2);
+
+      TweenMax.staggerFrom(".media4", 2, {
+            delay: 7,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      }, 0.2);
+
+      document.querySelector(".right ul li").addEventListener("click", function(){
+		      this.classList.toggle("active");
+      });
       </script>
 </body>
 </html>

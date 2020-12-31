@@ -93,7 +93,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     margin: 0 7px;
-    font-size: 30px;
+    font-size: 26px;
     text-transform: uppercase;
     animation: loadNow 3.8s ease-in-out forwards;
     opacity: 0;
@@ -226,22 +226,77 @@ body {
     }
 }
 
-.menu {
-    position: absolute;
-    right: 0;
-    margin: 2em;
-    font-size: 18px;
+a:link, a:visited {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+a:hover, a:active {
+    transform: scale(1.1); 
+}
+
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+    position: fixed;
+    right: -260px;
+    margin-top: 1%;
+}
+
+.wrapper ul {
+    list-style: none;
+}
+
+.wrapper ul li {
+    background: none;
+    width: 50px;
+    right: -125px;
+    padding: 5px;
+    border: 0px solid #fff;
+    height: 40px;
+    top: -3px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.wrapper ul li li {
+    right: 80px;
+    width: 85px;
+    text-align: right;
+}
+
+.wrapper ul li:hover {
+    background: lightgrey;
+}
+
+.wrapper ul ul {
+    display: none;
+}
+
+.wrapper ul li:hover > ul {
+    display: block;
 }
 
 .logo {
     position: absolute;
-    left: 0;
-    margin: 2em;
+    top: 4.2%;
+    left: 1.8%;
+    /* left: 0; */
+    /* margin: 2em; */
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .content {
@@ -296,7 +351,7 @@ button {
 img {
     opacity: 0;
     animation: appearimg 0.1s linear forwards;
-    animation-delay: 6.4s;
+    animation-delay: 6.5s;
 }
 
 .img:after {
@@ -335,22 +390,75 @@ img {
     }
 }
 
+.media1 {
+    position: fixed;
+    bottom: 4%;
+    right: 1.45%;
+}
+
+.media2 {
+    position: fixed;
+    bottom: 11%;
+    right: 1.45%;
+}
+
+.media3 {
+    position: fixed;
+    bottom: 18%;
+    right: 1.45%;
+}
+
+.media4 {
+    position: fixed;
+    bottom: 25%;
+    right: 1.45%;
+}
+
 .media ul {
     list-style: none;
-    position: fixed;
-    right: 24px;
+    /* position: fixed; */
+    right: 18px;
     bottom: 0;
-    padding: 10px;
+    padding: 1.45px;
 }
 
 .media ul li {
+    position: relative;
     font-size: 18px;
     margin: 24px 0;
 }
 
-.watch {
+.media1:hover {
+    background: lightgrey;
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+.media2:hover {
+    background: lightgrey;
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+.media3:hover {
+    background: lightgrey;
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+.media4:hover {
+    background: lightgrey;
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* .watch {
     position: fixed;
     bottom: 0;
     left: 0;
     margin: 2em;
-}
+} */
