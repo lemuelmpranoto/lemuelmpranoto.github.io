@@ -207,14 +207,14 @@ body {
     animation-delay: 3.2s;
 }
 
-.third-block {
+/* .third-block {
     position: absolute;
     width: 0%;
     height: 100vh;
     background: #F0F0F0;
     animation: expandNow 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     animation-delay: 6.2s;
-}
+} */
 
 @keyframes expandNow {
     0% {
@@ -344,8 +344,8 @@ button {
     position: fixed;
     z-index: 0;
     top: 50%;
-    right: 14%;
-    transform: translateY(-50%);
+    right: 50%;
+    /* transform: translateY(-50%); */
 }
 
 img {
