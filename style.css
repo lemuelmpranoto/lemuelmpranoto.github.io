@@ -294,8 +294,6 @@ a:hover, a:active {
     position: absolute;
     top: 4.2%;
     left: 1.8%;
-    /* left: 0; */
-    /* margin: 2em; */
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -425,19 +423,6 @@ img {
     right: 1.45%;
 }
 
-/* .media ul {
-    list-style: none;
-    right: 18px;
-    bottom: 0;
-    padding: 1.45px;
-}
-
-.media ul li {
-    position: relative;
-    font-size: 18px;
-    margin: 24px 0;
-} */
-
 .media1:hover {
     background: lightgrey;
     width: 40px;
@@ -473,7 +458,6 @@ img {
     margin: 2em;
 } */
 
-/* width is 100% when viewport < 768px*/
 @media only screen and (max-width: 768px) {
     body {
      width: 100%;
@@ -492,52 +476,94 @@ img {
         display: inline;
     }
 
-    /* .loader ul li.row1 {
-        display: inline-block;
-        position: relative;
-        text-align: center;
-        transform: translate(-50%, -50%);
-    }
-
-    .loader ul li.row2 {
-        display: inline-block;
-        position: relative;
-        text-align: center;
-        transform: translate(-50%, -50%);
-    }
-
-    .loader ul li.row3 {
-        display: inline-block;
-        position: relative;
-        text-align: center;
-        transform: translate(-50%, -50%);
-    } */
-
     .media1 {
         position: fixed;
         bottom: 4%;
-        right: 1.45%;
+        right: 5%;
     }
     
     .media2 {
         position: fixed;
         bottom: 11%;
-        right: 1.45%;
+        right: 5%;
     }
     
     .media3 {
         position: fixed;
         bottom: 18%;
-        right: 1.45%;
+        right: 5%;
     }
     
     .media4 {
         position: fixed;
         bottom: 25%;
-        right: 1.45%;
+        right: 5%;
+    }
+
+    .logo {
+        position: absolute;
+        top: 3.2%;
+        left: 5%;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 20px;
     }
   }
   
+@media only screen and (max-width: 1024px) {
+  body {
+   width: 90%;
+  }
+
+  .loader {
+      text-align: center;
+  }  
+  .loader ul {
+      display: inline-table;
+  }
+  
+  .loader li {
+      display: inline;
+  }
+
+  .media1 {
+    position: fixed;
+    bottom: 4%;
+    right: 5%;
+  }
+
+  .media2 {
+      position: fixed;
+      bottom: 11%;
+      right: 5%;
+  }
+  
+  .media3 {
+      position: fixed;
+      bottom: 18%;
+      right: 5%;
+  }
+  
+  .media4 {
+      position: fixed;
+      bottom: 25%;
+      right: 5%;
+  }
+
+  .logo {
+    position: absolute;
+    top: 3.2%;
+    left: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+}
+
 @media only screen and (min-width: 1024px) {
   body {
    width: 80%;
@@ -555,19 +581,3 @@ img {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  body {
-   width: 90%;
-  }
-
-  .loader {
-      text-align: center;
-  }  
-  .loader ul {
-      display: inline-table;
-  }
-  
-  .loader li {
-      display: inline;
-  }
-}
