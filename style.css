@@ -425,7 +425,7 @@ img {
     right: 1.45%;
 }
 
-.media ul {
+/* .media ul {
     list-style: none;
     right: 18px;
     bottom: 0;
@@ -436,7 +436,7 @@ img {
     position: relative;
     font-size: 18px;
     margin: 24px 0;
-}
+} */
 
 .media1:hover {
     background: lightgrey;
@@ -480,6 +480,7 @@ img {
     }
 
     .loader {
+        width: 500px;
         text-align: center;
     }
 
@@ -511,6 +512,30 @@ img {
         text-align: center;
         transform: translate(-50%, -50%);
     } */
+
+    .media1 {
+        position: fixed;
+        bottom: 4%;
+        right: 1.45%;
+    }
+    
+    .media2 {
+        position: fixed;
+        bottom: 11%;
+        right: 1.45%;
+    }
+    
+    .media3 {
+        position: fixed;
+        bottom: 18%;
+        right: 1.45%;
+    }
+    
+    .media4 {
+        position: fixed;
+        bottom: 25%;
+        right: 1.45%;
+    }
   }
   
 @media only screen and (min-width: 1024px) {
