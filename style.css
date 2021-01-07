@@ -9,6 +9,10 @@ body {
     background: #fff;
 }
 
+div {
+    text-align: center;
+}
+
 .temp {
     position: absolute;
     width: 100%;
@@ -338,29 +342,24 @@ button {
     color: #fff;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.img img {
+/* .img img {
     width: 440px;
-}
+} */
 
 .img {
-    position: fixed;
+    margin: auto;
+    display: block;
+    position: absolute;
     z-index: 0;
-    top: 50%;
-    right: 50%;
-    transform: translateY(-50%);
-}
-
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
 img {
     opacity: 0;
-    animation: appearimg 0.1s linear forwards;
-    animation-delay: 6.5s;
+    animation: appearimg 0.5s linear forwards;
+    animation-delay: 6.9s;
 }
 
 .img:after {
@@ -371,9 +370,60 @@ img {
     height: 100%;
     background: #272727;
     position: absolute;
+    animation: rev-img 1.3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 6.5s;
+}
+
+/* img.center {
+    display: block;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+} */
+
+/* .img img {
+    width: 700px;
+} */
+
+/* img {
+    width: 60%;
+    display: block;
+    margin: auto;
+    transform: translateY(-50%);
+    opacity: 0;
+    animation: appearimg 0.1s linear forwards;
+    animation-delay: 6.5s;
+  } */
+
+/* .img {
+    width: 500px;
+    position: fixed;
+    z-index: 0;
+    top: 30%;
+    right: 40%; 
+    transform: translateY(-50%);
+}
+
+img {
+    display: block;
+    margin: auto;
+    opacity: 0;
+    animation: appearimg 0.1s linear forwards;
+    animation-delay: 6.5s;
+}
+
+.img:after {
+    content: '';
+    top: 0;
+    left: 50%;
+    width: 0%;
+    height: 100%;
+    background: #272727;
+    position: absolute;
     animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     animation-delay: 6s;
-}
+} */
 
 @keyframes rev-img {
     0% {
