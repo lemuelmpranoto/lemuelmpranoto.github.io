@@ -1,5 +1,12 @@
-TweenMax.from(".logo", 1.6, {
-    delay: 6.4,
+// TweenMax.from(".logo", 1.6, {
+//     delay: 6.4,
+//     opacity: 0,
+//     y: 30,
+//     ease: Expo.easeInOut
+// });
+
+TweenMax.from(".content", 1.6, {
+    delay: 6.5,
     opacity: 0,
     y: 30,
     ease: Expo.easeInOut
@@ -26,8 +33,22 @@ TweenMax.from(".desc", 1.6, {
     ease: Expo.easeInOut
 });
 
+// TweenMax.from(".aboutme", 1.6, {
+//     delay: 6.7,
+//     opacity: 0,
+//     y: 30,
+//     ease: Expo.easeInOut
+// });
+
 TweenMax.from("button", 1.6, {
     delay: 6.8,
+    opacity: 0,
+    y: 30,
+    ease: Expo.easeInOut
+});
+
+TweenMax.from("loaderafter", 1.6, {
+    delay: 7.1,
     opacity: 0,
     y: 30,
     ease: Expo.easeInOut
