@@ -26,10 +26,10 @@
       <ul>
          <li><ion-icon name="menu" size="large"></ion-icon>
             <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            <li>Resume</li>
+               <li id="aboutmenu"><a href="#about">ABOUT</a></li>
+               <li><a href="#projects">PROJECTS</a></li>
+               <li id="contactmenu"><a href="#contact">CONTACT</a></li>
+               <li id="resumemenu"><a href="#resume">RESUME</a></li>
             </ul>
          </li>
       </ul>
@@ -106,7 +106,7 @@
 
    <!----------------------------------------3.Content of the Page---------------------------------------->
    <div class="content">
-      <div class="about">
+      <div class="about" id="about">
          <div class="slidershow main">
            <div class="slides">
              <input type="radio" name="r" id="r1-1" checked>
@@ -140,8 +140,7 @@
            </div>
          </div>
       </div>
-
-      <div class="projects">
+      <div class="projects" id="projects">
          <div class="slidershow main">
             <div class="slides">
               <input type="radio" name="r" id="r2-1" checked>
@@ -176,7 +175,7 @@
           </div>
       </div>
 
-      <div class="contact">
+      <div class="contact" id="contact">
          <div class="slidershow main">
             <div class="slides">
               <input type="radio" name="r" id="r3-1" checked>
@@ -211,7 +210,7 @@
           </div>
       </div>
 
-      <div class="resume">
+      <div class="resume" id="resume">
          <h2>RESUME</h2>
       </div>
    </div>
@@ -222,6 +221,16 @@
    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
 
 
 

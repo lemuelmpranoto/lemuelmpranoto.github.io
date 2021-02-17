@@ -1,7 +1,5 @@
 /* Go back to the top of the page on refresh*/
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  }
+// window.onscroll = function () { window.scrollTo(0, 0); };
 
 TweenMax.from(".wrapper", 1.8, {
     delay: 6.9,
@@ -69,10 +67,6 @@ TweenMax.staggerFrom(".media4", 2.3, {
 document.querySelector(".right ul li").addEventListener("click", function(){
       this.classList.toggle("active");
 });
-
-
-
-
 
 
 // TweenMax.from(".heading", 1.6, {
