@@ -461,6 +461,15 @@ a:hover, a:active {
     padding: 15px;
     text-align: right;
 }
+.wrapper ul li li#homemenu{
+    top: -11px;
+    right: 80px;
+    width: 65px;
+    height: 40px;
+    line-height: 50px;
+    padding: 15px;
+    text-align: right;
+}
 .wrapper ul li li#aboutmenu{
     top: -11px;
     right: 90px;
@@ -628,12 +637,45 @@ img {
     top: 1874px;
     height: 937px;
 }
+.contactblock {
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(204, 131, 131);
+    transform: translateY(-42%);
+    z-index: 3;
+}
+.contactblock h1 {
+    font-size: 30px;
+    margin: 0;
+    position: relative;
+    z-index: 5;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .contact h2 {
     margin: 0;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.contact h3 {
+    font-size: 20px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact i{
+    position: relative;
+    font-size: 112px;
+    padding: 100px;
+    transform: translateY(-5%);
+    z-index: 5;
 }
 .resume {
     position: absolute;
@@ -645,7 +687,7 @@ img {
     top: 2811px;
     height: 937px;
 }
-.resume h2 {
+.resume h2{
     margin: 0;
     position: relative;
     top: 50%;
