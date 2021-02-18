@@ -22,12 +22,12 @@ TweenMax.from(".third-block", 1.6, {
     // ease: Expo.easeInOut
 });
 
-TweenMax.from(".border", 3.2, {
-    delay: 7.7,
-    opacity: 0,
-    x: -50,
-    ease: Expo.easeInOut
-});
+// TweenMax.from(".border", 3.2, {
+//     delay: 7.7,
+//     opacity: 0,
+//     x: -50,
+//     ease: Expo.easeInOut
+// });
 
 // TweenMax.from(".content", 1.6, {
 //     delay: 6.5,
