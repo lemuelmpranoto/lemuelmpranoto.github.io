@@ -377,25 +377,25 @@ a:hover, a:active {
     position: fixed;
     bottom: 4%;
     right: 1.45%;
-    z-index: 3;
+    z-index: 10;
 }
 .media2 {
     position: fixed;
     bottom: 11%;
     right: 1.45%;
-    z-index: 3;
+    z-index: 10;
 }
 .media3 {
     position: fixed;
     bottom: 18%;
     right: 1.45%;
-    z-index: 3;
+    z-index: 10;
 }
 .media4 {
     position: fixed;
     bottom: 25%;
     right: 1.45%;
-    z-index: 3;
+    z-index: 10;
 }
 .media1:hover {
     background: lightgrey;
@@ -504,84 +504,12 @@ a:hover, a:active {
 .wrapper ul ul {
     display: none;
 }
+/* .wrapper ul li:active > ul {
+    display: block;
+} */
 .wrapper ul li:hover > ul {
     display: block;
 }
-.wrapper ul li:active > ul {
-    display: block;
-}
-/* .logo {
-    list-style: none;
-    background: none;
-    color: black;
-    position: absolute;
-    top: 4.2%;
-    left: 1.8%;
-} */
-/* .heading {
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 42px;
-} */
-/* .desc {
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-} */
-/* button {
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    border-radius: none;
-    padding: 16px 40px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    background: #B08D74;
-    color: #fff;
-} */
-/* .img img {
-    width: 440px;
-} */
-/* .aboutme {
-    margin-top: 0px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-45%) translateY(-50%);
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    text-transform: uppercase;
-} */
-/* .img {
-    margin: auto;
-    display: block;
-    position: absolute;
-    z-index: 0;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-  } 
-img {
-    opacity: 0;
-    animation: appearimg 0.5s linear forwards;
-    animation-delay: 6.9s;
-}
-.img:after {
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background: #272727;
-    position: absolute;
-    animation: rev-img 1.3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-    animation-delay: 6.5s;
-} */
 
 /**************************************** Content ****************************************/
 .content {
@@ -697,87 +625,6 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* @keyframes rev-img {
-    0% {
-          left: 0;
-          width: 0%;
-    }
-    50% {
-          width: 440px;
-          left: 0;
-    }
-    100% {
-          left: 440px;
-          width: 0;
-    }
-}
-@keyframes appearimg {
-    0% {
-          opacity: 0;
-    }
-    100% {
-          opacity: 1;
-    }
-} */
-/* .about {
-    position: relative;
-    background: peachpuff;
-    top: 2px;
-    width: 100%;
-    height: 800px;
-    z-index: 1;
-} */
-/* img.center {
-    display: block;
-    margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-} */
-/* .img img {
-    width: 700px;
-} */
-/* img {
-    width: 60%;
-    display: block;
-    margin: auto;
-    transform: translateY(-50%);
-    opacity: 0;
-    animation: appearimg 0.1s linear forwards;
-    animation-delay: 6.5s;
-  } */
-/* .img {
-    width: 500px;
-    position: fixed;
-    z-index: 0;
-    top: 30%;
-    right: 40%; 
-    transform: translateY(-50%);
-}
-img {
-    display: block;
-    margin: auto;
-    opacity: 0;
-    animation: appearimg 0.1s linear forwards;
-    animation-delay: 6.5s;
-}
-.img:after {
-    content: '';
-    top: 0;
-    left: 50%;
-    width: 0%;
-    height: 100%;
-    background: #272727;
-    position: absolute;
-    animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-    animation-delay: 6s;
-} */
-/* .watch {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    margin: 2em;
-} */
 
 /**************************************** Content Slideshow Feature ****************************************/
 .slidershow{
@@ -876,14 +723,23 @@ input[name="r"]{
 @media only screen and (max-width: 480px) { 
     html, body {
         overflow-x: hidden;
-        width: 100%;
+        /* width: 100%; */
     }
     body{
-        position: relative;
+        position: absolute;
         width: 100%;
     }
+    /* .first-block{
+        width: 90%;
+    }
+    .second-block{
+        width: 90%;
+    }
+    .temp-block{
+        width: 90%;
+    } */
     .loader {
-        width: 320px;
+        width: 360px;
         text-align: center;
     }
     .loader ul {
@@ -893,7 +749,7 @@ input[name="r"]{
         display: inline;
     }
     .loaderafter{
-        width: 320px;
+        width: 360px;
         text-align: center;
     }
     .border{
@@ -948,16 +804,6 @@ input[name="r"]{
     .content{
         width: 100%;
     }
-    /* .logo {
-        position: absolute;
-        top: 3.2%;
-        left: 5%;
-        font-family: 'Poppins', sans-serif;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 20px;
-    } */
 }
 @media only screen and (max-width: 1024px) {
   body {
@@ -1017,3 +863,176 @@ input[name="r"]{
       display: inline;
   }
 }
+
+
+
+
+
+
+
+
+/* .logo {
+    list-style: none;
+    background: none;
+    color: black;
+    position: absolute;
+    top: 4.2%;
+    left: 1.8%;
+} */
+/* .heading {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+} */
+/* .desc {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+} */
+/* button {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    border-radius: none;
+    padding: 16px 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #B08D74;
+    color: #fff;
+} */
+/* .img img {
+    width: 440px;
+} */
+/* .aboutme {
+    margin-top: 0px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-45%) translateY(-50%);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+} */
+/* .img {
+    margin: auto;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  } 
+img {
+    opacity: 0;
+    animation: appearimg 0.5s linear forwards;
+    animation-delay: 6.9s;
+}
+.img:after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #272727;
+    position: absolute;
+    animation: rev-img 1.3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 6.5s;
+} */
+
+/* @keyframes rev-img {
+    0% {
+          left: 0;
+          width: 0%;
+    }
+    50% {
+          width: 440px;
+          left: 0;
+    }
+    100% {
+          left: 440px;
+          width: 0;
+    }
+}
+@keyframes appearimg {
+    0% {
+          opacity: 0;
+    }
+    100% {
+          opacity: 1;
+    }
+} */
+/* .about {
+    position: relative;
+    background: peachpuff;
+    top: 2px;
+    width: 100%;
+    height: 800px;
+    z-index: 1;
+} */
+/* img.center {
+    display: block;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+} */
+/* .img img {
+    width: 700px;
+} */
+/* img {
+    width: 60%;
+    display: block;
+    margin: auto;
+    transform: translateY(-50%);
+    opacity: 0;
+    animation: appearimg 0.1s linear forwards;
+    animation-delay: 6.5s;
+  } */
+/* .img {
+    width: 500px;
+    position: fixed;
+    z-index: 0;
+    top: 30%;
+    right: 40%; 
+    transform: translateY(-50%);
+}
+img {
+    display: block;
+    margin: auto;
+    opacity: 0;
+    animation: appearimg 0.1s linear forwards;
+    animation-delay: 6.5s;
+}
+.img:after {
+    content: '';
+    top: 0;
+    left: 50%;
+    width: 0%;
+    height: 100%;
+    background: #272727;
+    position: absolute;
+    animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 6s;
+} */
+/* .watch {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 2em;
+} */
+
+/* .logo {
+    position: absolute;
+    top: 3.2%;
+    left: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+} */
