@@ -429,7 +429,7 @@ a:hover, a:active {
     position: fixed;
     right: -260px;
     margin-top: 1%;
-    z-index: 4;
+    z-index: 10;
 }
 .wrapper ul {
     list-style: none;
@@ -505,6 +505,9 @@ a:hover, a:active {
     display: none;
 }
 .wrapper ul li:hover > ul {
+    display: block;
+}
+.wrapper ul li:active > ul {
     display: block;
 }
 /* .logo {
@@ -870,16 +873,17 @@ input[name="r"]{
 }
 
 /**************************************** Responsive Support ****************************************/
-@media only screen and (max-width: 400px) { 
+@media only screen and (max-width: 480px) { 
     html, body {
         overflow-x: hidden;
         width: 100%;
     }
     body{
         position: relative;
+        width: 100%;
     }
     .loader {
-        width: 350px;
+        width: 320px;
         text-align: center;
     }
     .loader ul {
@@ -889,20 +893,40 @@ input[name="r"]{
         display: inline;
     }
     .loaderafter{
-        width: 350px;
+        width: 320px;
         text-align: center;
     }
     .border{
-        padding: 75px 150px;
+        padding: 75px 170px;
         position: absolute;
         text-align: center;
-        transform: translate(-65px,-22px);
+        /* transform: translate(-41px,-18px); */
     }
-    .content{
-        width:500px;
+    .wrapper{
+        right: -270px;
+    }
+    .wrapper ul li li {
+        line-height: 15px;
+        height: 15px;
+    }
+    .wrapper ul li li#homemenu {
+        line-height: 15px;
+        height: 15px;
+    }
+    .wrapper ul li li#aboutmenu {
+        line-height: 15px;
+        height: 15px;
+    }
+    .wrapper ul li li#contactmenu {
+        line-height: 15px;
+        height: 15px;
+    }
+    .wrapper ul li li#resumemenu {
+        line-height: 15px;
+        height: 15px;
     }
     .media1 {
-        position: relative;
+        position: fixed;
         bottom: 4%;
         right: 5%;
     }
@@ -920,6 +944,9 @@ input[name="r"]{
         position: fixed;
         bottom: 25%;
         right: 5%;
+    }
+    .content{
+        width: 100%;
     }
     /* .logo {
         position: absolute;
