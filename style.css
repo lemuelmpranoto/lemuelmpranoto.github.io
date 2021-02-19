@@ -233,8 +233,9 @@ div {
 }
 .border{
     position: absolute;
-    top: 43.05%;
-    left: 23.4%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 60px 500px;
     border: 6px solid #111;
     z-index: 3;
@@ -721,34 +722,29 @@ input[name="r"]{
 
 /**************************************** Responsive Support ****************************************/
 @media only screen and (max-width: 480px) { 
-    html, body {
+    html, body{
         overflow-x: hidden;
-        /* width: 100%; */
+        width: 100%;
     }
     body{
         position: absolute;
-        width: 100vh;
     }
-    
+    .temp{
+        position: absolute;
+    }
+    .first-block{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
     .loader {
         width: 360px;
-        text-align: center;
-    }
-    .loader ul {
-        display: inline-table;
-    }
-    .loader li {
-        display: inline;
     }
     .loaderafter{
         width: 360px;
-        text-align: center;
     }
     .border{
-        padding: 75px 170px;
-        position: absolute;
-        text-align: center;
-        /* transform: translate(-41px,-18px); */
+        padding: 95px 160px;
     }
     .wrapper{
         right: -270px;
@@ -796,10 +792,13 @@ input[name="r"]{
     .content{
         width: 100%;
     }
+    h2{
+        font-size: 60px;
+    }
 }
 @media only screen and (max-width: 1024px) {
   body {
-   width: 90%;
+   width: 100vw;
   }
   .loader {
       text-align: center;
