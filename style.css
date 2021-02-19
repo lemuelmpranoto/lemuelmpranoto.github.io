@@ -727,17 +727,9 @@ input[name="r"]{
     }
     body{
         position: absolute;
-        width: 100%;
+        width: 100vh;
     }
-    /* .first-block{
-        width: 90%;
-    }
-    .second-block{
-        width: 90%;
-    }
-    .temp-block{
-        width: 90%;
-    } */
+    
     .loader {
         width: 360px;
         text-align: center;
