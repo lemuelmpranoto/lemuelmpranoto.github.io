@@ -632,13 +632,13 @@ a:hover, a:active {
 }
 .contact-form {
     position: absolute;
-    background: #c5cbe3;
+    background: #bec98d;
     margin: auto;
     padding: 0;
     width: 100%;
     left: 0;
     top: 3748px;
-    height: 800px;
+    height: 400px;
 }
 .media-for-mobile {
     position: absolute;
@@ -873,7 +873,7 @@ input[name="r"]{
       top: 3748px;
   }
   .back-to-top {
-    top: 4848px;
+    top: 4148px;
     }   
 }
 
