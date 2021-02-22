@@ -158,7 +158,7 @@ div {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin: 0 7px;
-    font-size: 55px;
+    font-size: 40px;
     text-transform: uppercase;
     animation: loadNowNew 3.8s linear forwards;
     opacity: 0;
@@ -630,6 +630,16 @@ a:hover, a:active {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.contact-form {
+    position: absolute;
+    background: #c5cbe3;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    top: 3748px;
+    height: 800px;
+}
 .media-for-mobile {
     position: absolute;
     background: #ebb85b;
@@ -637,7 +647,7 @@ a:hover, a:active {
     padding: 0;
     width: 100%;
     left: 0;
-    top: 3748px;
+    top: 4148px;
     height: 200px;
 }
 .find-me-on {
@@ -675,7 +685,7 @@ a:hover, a:active {
     padding: 0;
     width: 100%;
     left: 0;
-    top: 3948px;
+    top: 4348px;
     height: 50px;
 }
 
@@ -859,9 +869,12 @@ input[name="r"]{
   .media-for-mobile {
       display: none;
   }
+  .contact-form {
+      top: 3748px;
+  }
   .back-to-top {
-    top: 3748px;
-}
+    top: 4848px;
+    }   
 }
 
 
