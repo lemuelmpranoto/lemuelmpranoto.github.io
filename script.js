@@ -25,7 +25,7 @@ TweenMax.from(".third-block", 1.6, {
 TweenMax.from(".border", 3.2, {
     delay: 7.7,
     opacity: 0,
-    x: -50,
+    y: 5,
     ease: Expo.easeInOut
 });
 
