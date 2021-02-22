@@ -506,13 +506,14 @@ a:hover, a:active {
     font-size:19px;
 }
 .wrapper ul ul {
-    display: none;
+    visibility: hidden;
 }
 /* .wrapper ul li:active > ul {
     display: block;
 } */
 .wrapper ul li:hover > ul {
     display: block;
+    visibility: visible;
 }
 
 /**************************************** Content ****************************************/
@@ -839,6 +840,8 @@ input[name="r"]{
         display: block;
     }
 }
+/* @media only screen and (max) */
+
 @media only screen and (min-width: 1024px) {
   body {
    width: 100vw;
