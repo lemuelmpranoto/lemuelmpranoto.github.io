@@ -865,7 +865,7 @@ input[name="r"]{
   margin-left: -10%;
 }
 #r1-3:checked ~ .s1{
-  margin-left: -40%;
+  margin-left: -20%;
 }
 #r1-4:checked ~ .s1{
   margin-left: -60%;

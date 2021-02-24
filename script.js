@@ -1,6 +1,15 @@
 /* Go back to the top of the page on refresh*/
 // window.onscroll = function () { window.scrollTo(0, 0); };
 
+function openTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+}
+
 $(document).ready(function (){
     $('.submit').click(function (event){
         
