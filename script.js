@@ -20,27 +20,27 @@ $(document).ready(function (){
         if(email.length > 2 && email.includes('@') && email.includes('.')){
         } else {
             event.preventDefault();
-            status.append('<div>Email is invalid</div>')
+            status.append('<div style="font-size:20px;">Email is invalid</div>')
         }
         if(name.length > 2){ 
         } else {
             event.preventDefault();
-            status.append('<div>Name is invalid</div>')
+            status.append('<div style="font-size:20px;">Name is invalid</div>')
         }
         if(message.length > 2){
         } else {
             event.preventDefault();
-            status.append('<div>Email is invalid</div>')
+            status.append('<div style="font-size:20px;">Message is invalid</div>')
         }
     })
 })
 
-// TweenMax.from(".wrapper", 1.8, {
-//     delay: 6.9,
-//     opacity: 0,
-//     y: -50,
-//     ease: Expo.easeInOut
-// });
+TweenMax.from(".wrapper", 1.8, {
+    delay: 6.9,
+    opacity: 0,
+    y: -50,
+    ease: Expo.easeInOut
+});
 
 TweenMax.from("loaderafter", 1.6, {
     delay: 7.1,

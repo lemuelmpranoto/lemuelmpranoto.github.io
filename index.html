@@ -10,7 +10,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="style.css">
-   <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
@@ -309,10 +309,30 @@
                <a href="https://github.com/lemuelmpranoto" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
             </div>
             <div class="gmail">
-               <a href="mailto: lemuelmpranoto@gmail.com" target="_blank"><ion-icon name="outline-mail"></ion-icon></a>
+               <a href="mailto: lemuelmpranoto@gmail.com" target="_blank"><ion-icon name="mail"></ion-icon></a>
             </div>
          </div>
-         <div class="contact-form">
+         <div id="form-main">
+            <div id="form-div">
+              <form action="https://formspree.io/f/xqkgoory" method="post" class="montform" id="reused_form">
+                <p class="name">
+                  <input name="name" type="text" class="feedback-input" required placeholder="Name" id="name" />
+                </p>
+                <p class="email">
+                  <input name="email" type="email" required  class="feedback-input" id="email" placeholder="Email" />
+                </p>
+                <p class="text">
+                  <textarea name="message" class="feedback-input" id="comment" placeholder="Message"></textarea>
+                </p>
+                      <div class="submit">
+                         <div class="status"></div>
+                  <button type="submit" class="button-blue">SUBMIT</button>
+                  <div class="ease"></div>
+                </div>
+              </form>
+            </div>
+         </div>
+         <!-- <div class="contact-form">
             <h2 style="font-size: 30px;">or message me here!</h2>
             <form action="https://formspree.io/f/xqkgoory" method="post">
                <label>Name<input type="text" name="name" class="name"/></label>
@@ -321,7 +341,7 @@
                <div class="status"></div>
                <input type="submit" class="submit">
             </form>
-         </div>
+         </div> -->
          <div class="border-connect" style="z-index: 1;"><span></span></div>
       </div>
       
