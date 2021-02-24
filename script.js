@@ -46,12 +46,12 @@ $(document).ready(function (){
     })
 })
 
-TweenMax.from(".wrapper", 1.8, {
-    delay: 6.9,
-    opacity: 0,
-    y: -50,
-    ease: Expo.easeInOut
-});
+// TweenMax.from(".wrapper", 1.8, {
+//     delay: 6.9,
+//     opacity: 0,
+//     y: -50,
+//     ease: Expo.easeInOut
+// });
 
 TweenMax.from("loaderafter", 1.6, {
     delay: 7.1,

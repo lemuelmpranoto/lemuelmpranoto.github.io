@@ -491,10 +491,10 @@ a:hover, a:active {
     padding: 15px;
     text-align: right;
 }
-.wrapper ul li li#contactmenu{
+.wrapper ul li li#collectionsmenu{
     top: -11px;
-    right: 110px;
-    width: 95px;
+    right: 135px;
+    width: 120px;
     height: 40px;
     line-height: 50px;
     padding: 15px;
@@ -552,14 +552,14 @@ a:hover, a:active {
     margin: 0;
     position: relative;
     text-decoration: underline;
-    top: 20%;
+    top: 16.5%;
     left: 31%;
     transform: translate(-50%, -50%);
     z-index: 8;
 }
 .about1{
     position: absolute;
-    top: 58%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
   }
@@ -568,8 +568,12 @@ a:hover, a:active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 350px 500px;
+    padding: 380px 500px;
     z-index: 1;
+}
+.about .slide img{
+    max-width: 100%;
+    height: auto;
 }
 .border-about:after {
     display: block;
@@ -601,32 +605,38 @@ a:hover, a:active {
     width: 100%;
     left: 0;
     top: 937px;
-    height: 7937px;
+    height: 3037px;
 }
 .projects h2 {
     margin: 0;
     position: relative;
     text-decoration: underline;
-    top: 2.3%;
+    top: 7%;
     left: 66.5%;
     transform: translate(-50%, -50%);
     z-index: 8;
 }
 .project1 {
     position: absolute;
-    top: 7.5%;
+    top: 20.5%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 .project2 {
     position: absolute;
-    top: 15.5%;
+    top: 40.5%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 .project3 {
     position: absolute;
-    top: 23.5%;
+    top: 60.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.project4 {
+    position: absolute;
+    top: 80.5%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -649,15 +659,28 @@ a:hover, a:active {
     z-index: 8;
     font-size: 40px;
 }
-
-
-
+#projects .resume{
+    margin: 0;
+    position: relative;
+    float: left;
+    top: 152.5%;
+    left: 50%;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transform: translate(-50%, -250%);
+    z-index: 8;
+    font-size: 40px;
+}
+.resume h2{
+    font-size: 20px;
+    text-decoration: none;
+}
 .border-projects{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 3855px 500px;
+    padding: 1375px 500px;
     z-index: 100;
 }
 .border-projects:after {
@@ -682,14 +705,14 @@ a:hover, a:active {
     border-bottom: 6px solid black;
     border-left: 6px solid black;
 }
-.contact {
+.collections {
     position: absolute;
     /* background: #ebb85b; */
     margin: auto;
     padding: 0;
     width: 100%;
     left: 0;
-    top: 8874px;
+    top: 4874px;
     height: 937px;
 }
 .contactblock {
@@ -739,7 +762,7 @@ a:hover, a:active {
     padding: 0;
     width: 100%;
     left: 0;
-    top: 9811px;
+    top: 5811px;
     height: 937px;
 }
 .resume h2 {
@@ -756,7 +779,7 @@ a:hover, a:active {
     padding: 0;
     width: 100%;
     left: 0;
-    top: 10748px;
+    top: 6748px;
     height: 400px;
 }
 .media-for-mobile {
@@ -766,7 +789,7 @@ a:hover, a:active {
     padding: 0;
     width: 100%;
     left: 0;
-    top: 11148px;
+    top: 7148px;
     height: 200px;
 }
 .find-me-on {
@@ -804,7 +827,7 @@ a:hover, a:active {
     padding: 0;
     width: 100%;
     left: 0;
-    top: 11148px;
+    top: 7148px;
     height: 50px;
 }
 
@@ -828,6 +851,14 @@ a:hover, a:active {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+}
+.navigation-about {
+    position: absolute;
+    bottom: 20px;
+    top: 96%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
 }
 .bar{
   width: 10px;
@@ -856,22 +887,22 @@ input[name="r"]{
 }
 .slide img{
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
 #r1-1:checked ~ .s1{
   margin-left: 0;
 }
 #r1-2:checked ~ .s1{
-  margin-left: -10%;
-}
-#r1-3:checked ~ .s1{
   margin-left: -20%;
 }
+#r1-3:checked ~ .s1{
+  margin-left: -29.35%;
+}
 #r1-4:checked ~ .s1{
-  margin-left: -60%;
+  margin-left: -40%;
 }
 #r1-5:checked ~ .s1{
-  margin-left: -80%;
+  margin-left: -54%;
 }
 #r2-1:checked ~ .s2{
   margin-left: 0;
@@ -908,6 +939,16 @@ input[name="r"]{
 #r4-3:checked ~ .s4{
   margin-left: -40%;
 }
+#r5-1:checked ~ .s4{
+    margin-left: 0;
+}
+#r5-2:checked ~ .s4{
+  margin-left: -20%;
+}
+#r5-3:checked ~ .s4{
+  margin-left: -40%;
+}
+
 
 /**************************************** Responsive Support ****************************************/
 @media only screen and (max-width: 480px) { 
