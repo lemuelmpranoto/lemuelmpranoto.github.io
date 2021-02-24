@@ -12,9 +12,9 @@ function openTab(tabName) {
 
 $(document).ready(function (){
     $('.submit').click(function (event){
-        var name = $('.name').val();
-        var email = $('.email').val();
-        var message = $('.message').val();
+        var name = $('td[name = "name"]').val();
+        var email = $('td[name = "email"]').val();
+        var message = $('td[name = "message"]').val();
         var status = $('.status');
         status.empty();
         if(email.length > 2 && email.includes('@') && email.includes('.')){

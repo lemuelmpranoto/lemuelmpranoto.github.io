@@ -529,7 +529,7 @@ a:hover, a:active {
     position: relative;
     top: 100%;
     width: 100%;
-    height: 5900px;
+    height: 5820px;
     z-index: 1;
     /* font-family: 'Poppins', sans-serif; */
     font-family: 'Roboto', sans-serif;
@@ -611,7 +611,7 @@ a:hover, a:active {
     margin: 0;
     position: relative;
     text-decoration: underline;
-    top: 7%;
+    top: 8%;
     left: 66.5%;
     transform: translate(-50%, -50%);
     z-index: 8;
@@ -664,7 +664,7 @@ a:hover, a:active {
     position: relative;
     float: left;
     height: 200px;
-    top: 104%;
+    top: 103%;
     left: 50%;
     letter-spacing: 2px;
     text-decoration: none;
@@ -681,7 +681,7 @@ a:hover, a:active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 1375px 500px;
+    padding: 1345px 500px;
     z-index: 100;
 }
 .border-projects:after {
@@ -830,7 +830,7 @@ a:hover, a:active {
 .gmail {
     display: inline-block;
 }
-.contact-form {
+/* .contact-form {
     position: relative;
     top: 15%;
     left: 50%;
@@ -842,7 +842,7 @@ a:hover, a:active {
 }
 .contact-form label{
     font-size: 20px;
-}
+} */
 
 
 
@@ -854,7 +854,7 @@ a:hover, a:active {
 	text-align:center;
 }
 
-#form-main{
+#contact-form{
 	width:100%;
 	float:left;
     padding-top:0px;
@@ -1071,7 +1071,7 @@ input[type=submit]:hover {
     padding: 0;
     width: 100%;
     left: 0;
-    top: 5761px;
+    top: 5759px;
     height: 50px;
 }
 .copyright {
@@ -1082,7 +1082,7 @@ input[type=submit]:hover {
     padding: 0;
     width: 100%;
     left: 0;
-    top: 5830px;
+    top: 5790px;
     height: 50px;
 }
 
