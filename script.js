@@ -12,33 +12,22 @@ function openTab(tabName) {
 
 $(document).ready(function (){
     $('.submit').click(function (event){
-        
-        console.log('button clicked');
-
         var name = $('.name').val();
         var email = $('.email').val();
         var message = $('.message').val();
         var status = $('.status');
         status.empty();
-
         if(email.length > 2 && email.includes('@') && email.includes('.')){
-            status.append('<div>Email is valid</div>')
-            console.log("email test valid");
         } else {
             event.preventDefault();
             status.append('<div>Email is invalid</div>')
-            console.log("email not valid");
         }
-
-        if(name.length > 2){
-            status.append('<div>Name is valid</div>')
+        if(name.length > 2){ 
         } else {
             event.preventDefault();
             status.append('<div>Name is invalid</div>')
         }
-
         if(message.length > 2){
-            status.append('<div>Message is valid</div>')
         } else {
             event.preventDefault();
             status.append('<div>Email is invalid</div>')
