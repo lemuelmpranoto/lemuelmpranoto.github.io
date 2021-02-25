@@ -672,7 +672,23 @@ a:hover, a:active {
     z-index: 8;
     font-size: 40px;
 }
-.resume h2{
+
+.resume {
+    position: absolute;
+    /* background: #c5cbe3; */
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    top: 5811px;
+    height: 937px;
+}
+.resume p {
+    margin: 0;
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 20px;
     text-decoration: none;
 }
@@ -765,23 +781,7 @@ a:hover, a:active {
     transform: translateY(-5%);
     z-index: 5;
 }
-.resume {
-    position: absolute;
-    /* background: #c5cbe3; */
-    margin: auto;
-    padding: 0;
-    width: 100%;
-    left: 0;
-    top: 5811px;
-    height: 937px;
-}
-.resume h2 {
-    margin: 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 .connect{
     position: absolute;
     background: #dfdbdb;
