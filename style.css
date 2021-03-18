@@ -19,6 +19,8 @@ html, body {
 body {
     background: #dfdbdb;
     overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
 }
 div {
     text-align: center;
