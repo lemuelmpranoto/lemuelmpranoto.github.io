@@ -34,7 +34,7 @@ window.onload = function() {
 
     // document.getElementById('transition-home').className = 'transition transition-1 is-active';
     //     document.getElementById('transition-about').className = 'transition transition-2 is-active';
-        const anchors = document.querySelectorAll('a');
+        const anchors = document.getElementsByClassName('transition-link');
         const transition_el = document.querySelector('.transition');
         console.log(transition_el);
     
