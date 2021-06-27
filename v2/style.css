@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@font-face {
+    font-family: 'ikaros_sansregular';
+    src: url('ikaros-regular-webfont.woff2') format('woff2'),
+         url('ikaros-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'GTCinetypeRegular';
+    src: url('GTCinetypeRegular.woff2') format('woff2'),
+        url('GTCinetypeRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TIMMONS NY';
+    src: url('TIMMONSNY-Regular.woff2') format('woff2'),
+        url('TIMMONSNY-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/**************************************** General ****************************************/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+body {
+    background:#F5F5F5;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    position: relative;
+}
+div {
+    text-align: center;
+}
+a {
+    font-family: 'GTCinetypeRegular'; 
+    font-weight: normal;
+    font-style: normal;
+    color: #000;
+    text-decoration: none;
+}
+footer {
+    position: relative;
+    height: 10vh;
+    transform: translate(50%,-10vh);
+    z-index: 10;
+    width: 50vw;
+    /* background-color: #dc7b7b; */
+    border-radius: 0.4rem;
+}
+ion-icon {
+    color: #000;
+    transition: 0.5s;
+}
+ion-icon:hover {
+    color: #7d8383;
+}
+
+/**************************************** Home Page ****************************************/
+header .header-title {
+    position: fixed;
+    top: 3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+header .header-title a {
+    font-size: 1.5rem; 
+    font-weight: 700;
+    letter-spacing: 0.2vw;
+}
+
+.mobile-header-title {
+    display: none;
+}
+
+.nav-menu {
+    position: fixed;
+    left: 0;
+    width: fit-content;
+    display: flex;
+    bottom: 3%;
+    margin-left: 3%;
+    z-index: 10;
+}
+
+.nav-menu a {
+    font-size: 1rem; 
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+}
+
+.menu-item {
+    padding-right: 15%;
+}
+
+.connect-icons {
+    position: fixed;
+    right: 0;
+    width: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    bottom: 3%;
+    margin-right: 3%;
+    z-index: 10;
+}
+
+.linkedin, .facebook, .instagram, .github {
+    padding-left: 30%;
+}
+
+.clip-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip: rect(0, auto, auto, 0); 
+}
+
+.background-home {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:#f5f5f5;
+    z-index: 5;
+}
+
+.background-home a {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.75vh) * 100);
+    color: #8cd3ff;
+}
+
+.home-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    z-index: 6; 
+}
+
+.home-intro a {
+    font-family: 'GTCinetypeRegular'; 
+    font-weight: 500;
+}
+
+.about-link {
+  display: inline-block;
+  position: relative;
+}
+
+.about-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.1em;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.about-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.scroll-icon {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    
+    z-index: 6; 
+}
+
+.scroll-icon img {
+    margin-top: 10%;
+    height: 6vh;
+}
+
+#intro-title {
+    font-size: 5vw;
+}
+
+#intro-greetings {
+    font-size: 4vw;
+}
+
+#intro-desc {
+    font-size: 3vw;
+}
+
+.background-projects {
+    position: relative;
+    height: 300vh;
+    background-color: bisque;
+}
+
+.background-projects a {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.75vh) * 100);
+    color: rgb(208, 44, 44);
+}
+
+.background-collections {
+    position: relative;
+    height: 200vh;
+    background-color:rgb(87, 194, 162);
+}
+
+.background-collections a {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.75vh) * 100);
+    color: rgb(76, 81, 214);
+}
+
+footer .rocket {
+    font-size: 3vh;
+    height: 4vh;
+}
+footer .rocket i:hover {
+    transform: rotate(-45deg);
+    font-size: 3.7vh;
+    transition: 0.5s ease-out;
+}
+
+footer .copyright {
+    align-items: center;
+    vertical-align: middle;
+    line-height: 4vh;
+}
+footer .copyright a {
+    font-weight: 600;
+}
+
+
+
+/****************************************************************************************************
+********************************************About Page***********************************************
+****************************************************************************************************/
+
+.background-about {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:#2c9fdd;
+    z-index: 5;
+}
+
+.background-about a {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.75vh) * 100);
+    color: #f13c20;
+}
+
+.background-about-content {
+    position: relative;
+    height: 300vh;
+    width: 100vw;
+    background-color:#efe2ba;
+    z-index: 5;
+}
+
+.background-about-content a {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.75vh) * 100);
+    color: #f13c20;
+}
+
+.about-page-contact {
+    position: relative;
+    height: 300vh;
+    background-color: #f5f5f5;
+}
+
+.about-page-contact a {
+    position: fixed;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.3vh) * 100);
+    color: #85d89c;
+}
