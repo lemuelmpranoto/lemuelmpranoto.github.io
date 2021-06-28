@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;0,700;1,600&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
 @font-face {
     font-family: 'ikaros_sansregular';
     src: url('ikaros-regular-webfont.woff2') format('woff2'),
@@ -195,7 +196,7 @@ header #header-title-about {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60vw;
+    /* width: 60vw; */
     z-index: 6; 
 }
 
@@ -227,6 +228,118 @@ header #header-title-about {
   transform-origin: bottom left;
 }
 
+#intro-title {
+    font-size: 5vw;
+}
+
+#intro-greetings {
+    font-size: 3.5vw;
+}
+
+#intro-desc {
+    font-size: 3vw;
+}
+
+.bounce-animation {
+	/* width: 60px; */
+	display: block;
+	text-align: center;
+	/* font:normal 45px 'FontAwesome'; */
+	/* line-height:60px;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased; */
+}
+
+.bounce {
+	/* position: absolute; */
+	/* bottom: 30px;
+	left: 50% ;
+	width: 60px;
+	height: 60px ;
+	margin-left:-30px; */
+/* 	border: 2px solid #990000; */
+/* 	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%; */
+	animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+}
+ 
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+.gradient-text{
+  /* font-family:"Abril Fatface", sans-serif; */
+  background: linear-gradient(to right, #000000,#7e7a7a, #000000);
+  background-size: 200% 200%;
+  animation: rainbow 2.5s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:rgba(0,0,0,1);
+  /* font-size:10rem; */
+  /* width:80vw;
+  margin:30vh auto; */
+  display:block;
+  text-align:center;
+  transition: color .2s ease-in-out;
+  /* text-transform:uppercase; */
+  /* font-weight:900; */
+}
+.gradient-text:hover{
+  color:rgba(0,0,0,0);
+}
+@keyframes rainbow { 
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+
+#hidden-click-me {
+    position: fixed;
+    width: fit-content;
+    transform: translate(170%, -80%);
+    /* width: 60vw; */
+    z-index: 6; 
+    font-size: 6vw;
+    display: none;
+}
+
+#hidden-click-me a {
+    font-size: 3vw;
+    font-family: 'GTCinetypeRegular'; 
+    font-weight: 800;
+}
+
+.appear-pointer {
+    transform: rotate(-50deg);
+}
+
+#bounce:hover + #hidden-click-me {
+    display:block;
+}
 
 .scroll-icon {
     position: fixed;
@@ -240,18 +353,6 @@ header #header-title-about {
 .scroll-icon img {
     margin-top: 10%;
     height: 6vh;
-}
-
-#intro-title {
-    font-size: 5vw;
-}
-
-#intro-greetings {
-    font-size: 4vw;
-}
-
-#intro-desc {
-    font-size: 3vw;
 }
 
 .background-projects {
@@ -518,6 +619,7 @@ footer .copyright.home a {
     background-color: #6474e5;
     color: #c6fad2;
 }
+
 
 
 
