@@ -3,7 +3,16 @@
 
 window.onload = function() {
     /* Scroll Down Icon Effect */
-    const scroll_icon = document.querySelector(".scroll-icon");
+    const scroll_icon = document.querySelector('.scroll-icon');
+
+    const header_title_home_page = document.getElementById('header-title-home');
+    const nav_menu_home_page = document.getElementsByClassName('nav-menu-home');
+    const icons_home_page = document.getElementsByClassName('icons-home-page');
+
+    const header_title_about_page = document.getElementById('header-title-about');
+    const nav_menu_about_page = document.getElementsByClassName('nav-menu-about');
+    const icons_about_page = document.getElementsByClassName('icons-about-page');
+
     window.addEventListener('scroll', scrollEffect);
     function scrollEffect() {
         if(window.scrollY>=1) {
@@ -12,12 +21,87 @@ window.onload = function() {
             scroll_icon.style.transition = 'visibility 0s linear 300ms, opacity 300ms';
             // scroll_icon.style.transform = 'translateY(-1vh)';
             // scroll_icon.style.transition = '1s ease-in-out';
-            about_desc_flag = true;
         } else if(window.scrollY == 0) {
             scroll_icon.style.visibility = 'visible';
             scroll_icon.style.opacity = '1';
             scroll_icon.style.transition = 'visibility 0s linear 30ms, opacity 300ms';
         }
+
+        var availableScroll = $(document).height() - $(window).height();
+        var x = $(window).scrollTop();
+
+        if(header_title_home_page != null) {
+            if(x<=availableScroll*0.01) {
+                for (let i = 0; i < nav_menu_home_page.length; i++) {
+                    nav_menu_home_page[i].style.color = '';
+                }
+                for (let i = 0; i < icons_home_page.length; i++) {
+                    icons_home_page[i].style.color = '';
+                }
+            } 
+            if(x<=availableScroll*0.608 && x>availableScroll*0.01) {
+                for (let i = 0; i < nav_menu_home_page.length; i++) {
+                    nav_menu_home_page[i].style.color = 'rgb(208, 44, 44)';
+                }
+                for (let i = 0; i < icons_home_page.length; i++) {
+                    icons_home_page[i].style.color = 'rgb(208, 44, 44)';
+                }
+            } 
+            if(x>availableScroll*0.608) {   
+                for (let i = 0; i < nav_menu_home_page.length; i++) {
+                    nav_menu_home_page[i].style.color = 'rgb(76, 81, 214)';
+                }
+                for (let i = 0; i < icons_home_page.length; i++) {
+                    icons_home_page[i].style.color = 'rgb(76, 81, 214)';
+                }
+            } 
+            if(x<=availableScroll*0.20) {
+                header_title_home_page.style.color = '';
+            } 
+            if(x<=availableScroll*0.79 && x>availableScroll*0.20) {
+                header_title_home_page.style.color = 'rgb(208, 44, 44)';
+            }
+            if( x>availableScroll*0.79) {
+                header_title_home_page.style.color = 'rgb(76, 81, 214)';
+            }
+        } else if (header_title_about_page != null) {
+            if(x>availableScroll*0.75) {
+                for (let i = 0; i < nav_menu_about_page.length; i++) {
+                    nav_menu_about_page[i].style.color = '#6474e5';
+                    // scroll_icon.style.transform = 'translateY(-1vh)';
+                    // scroll_icon.style.transition = '1s ease-in-out';
+                    // about_desc_flag = true;
+                }
+                for (let i = 0; i < icons_about_page.length; i++) {
+                    icons_about_page[i].style.color = '#6474e5';
+                    // scroll_icon.style.transform = 'translateY(-1vh)';
+                    // scroll_icon.style.transition = '1s ease-in-out';
+                    // about_desc_flag = true;
+                }
+            } else {
+                for (let i = 0; i < nav_menu_about_page.length; i++) {
+                    nav_menu_about_page[i].style.color = ''; 
+                }
+                for (let i = 0; i < icons_about_page.length; i++) {
+                    icons_about_page[i].style.color = '';
+                }
+            }
+            if(x>availableScroll*0.987) {
+                header_title_about_page.style.color = '#6474e5';
+            } else {
+                header_title_about_page.style.color = '';
+            }
+        }
+
+        
+
+
+        // } else if(window.scrollY == 0) {
+        //     scroll_icon.style.visibility = 'visible';
+        //     scroll_icon.style.opacity = '1';
+        //     scroll_icon.style.transition = 'visibility 0s linear 30ms, opacity 300ms';
+        // }
+
     }
     scrollEffect();
 
