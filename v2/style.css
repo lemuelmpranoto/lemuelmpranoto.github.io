@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;0,700;1,600&display=swap');
 @font-face {
     font-family: 'ikaros_sansregular';
     src: url('ikaros-regular-webfont.woff2') format('woff2'),
@@ -24,6 +25,16 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'F37 Ginger';
+    src: url('F37Ginger-Bold.woff2') format('woff2'),
+        url('F37Ginger-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 /**************************************** General ****************************************/
 html, body {
@@ -308,7 +319,7 @@ footer .copyright a {
 .about-page-contact {
     position: relative;
     height: 100vh;
-    background-color: #f5f5f5;
+    background-color: #f2763d;
 }
 
 .about-page-contact a {
@@ -318,7 +329,66 @@ footer .copyright a {
     transform: translate(-50%, -50%);
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.3vh) * 100);
-    color: #85d89c;
+    /* color: #85d89c; */
+    color: #fff;
+}
+
+.contact-buttons {
+    position: fixed;
+    flex: 50%;
+    max-height: 100vh;
+    width: 20vw;
+    /* background-color: #AA7269; */
+    /* transform: translate(50vw,10vh); */
+    left: 51%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+}
+
+.buttons {
+    position: relative;
+    padding-bottom: 8vh;
+    transition: all .2s ease-in-out; 
+}
+
+.buttons a{
+    padding: 0.8vh 0.8vw 0.8vh 0.8vw;
+    border-radius: 0.2em;
+    position: absolute;
+    font-size: 2.5vw;
+}
+
+.buttons.email a {
+    background-color: #34a853;
+    
+}
+.buttons.linkedin a {
+    background-color: #0e76a8;
+}
+.buttons.insta a {
+    background-color: #c32aa3;
+}
+
+.buttons:hover {
+    opacity: 0.7;
+}
+
+.contact-buttons ul {
+    max-width: 40vw;
+    position: absolute;
+    list-style: none;
+}
+
+.contact-buttons ul li {
+    max-width: 40vw;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.contact-buttons ul li a {
+    font-size: 2vw;
+    background-color: #2c9fdd;
 }
 
 .contact-form {
@@ -329,20 +399,29 @@ footer .copyright a {
     /* background-color: #AA7269; */
     /* transform: translate(50vw,10vh); */
     left: 70%;
-    top: 45%;
+    top: 47.5%;
     transform: translate(-50%, -50%);
     padding: 5vh 0vw 5vh 4vw;
 }
 
 .contact-form p {
-    font-family: 'Poppins';
-    font-size: 1.5vw;
-    font-weight: 800;
+    font-family: 'TIMMONS NY';
+    /* font-weight: bold;
+    font-style: normal; */
+    font-size: 3.5vw;
+    /* font-weight: 700; */
+    height: 1vh;
+    color: #fff;
+    padding-bottom: 2vh;
     margin-left: 1vw;
 }
 
+.emoji {
+    font-size: 4vw;
+}
+
 .contact-wrap {
-	width: 30vw;
+	width: 100%;
 	height: auto;
 	margin: auto;
 	display: flex;
@@ -353,61 +432,62 @@ footer .copyright a {
 	padding: 2vh 4vw 2vh 1vw;
 }
 
-.contact-in form {
+.contact-in .form {
 	width: 100%;
 	height: auto;
 }
 
 .contact-in-input {
-    width: 100%;
-    max-width: 30vw;
-    min-width: 30vw;
+    max-width: 27.75vw;
+    min-width: 27.75vw;
 	height: 5vh;
 	margin-bottom: 2.5vh;
-	border: 0.1vw solid #000;
+	border: 0.1vw solid #fff;
 	outline: none;
 	padding-left: 0.3vw;
 	background: transparent;
-	color: #000;
-	font-size: 0.7vw;
-	font-weight: 300;
+	color: #fff;
+	font-size: 0.85vw;
+	font-weight: 400;
 	font-family: 'Poppins', sans-serif;
 }
 
 .contact-in-input::placeholder {
-	color: #000;
+	color: #fff;
 }
 
 .contact-in-textarea {
-    width: 100%;
-    max-width: 30vw;
-    min-width: 30vw;
+    max-width: 27.75vw;
+    min-width: 27.75vw;
+    /* max-width: 30vw;
+    min-width: 30vw; */
     height: 20vh;
     min-height: 20vh;
     max-height: 29vh;
 	margin-bottom: 2.5vh;
-	border: 0.1vw solid #000;
+	border: 0.1vw solid #fff;
 	outline: none;
-	padding-top: 1vh;
+	padding-top: 1.5vh;
 	padding-left: 0.3vw;
 	background: transparent;
-	color: #000;
-	font-size: 0.7vw;
-	font-weight: 300;
+	color: #fff;
+	font-size: 0.85vw;
+	font-weight: 400;
 	font-family: 'Poppins', sans-serif;
 }
 
 .contact-in-textarea::placeholder {
-	color: #000;
+	color: #fff;
 }
 
 .contact-form-button {
-    width: 100%;
+    max-width: 28.25vw;
+    min-width: 28.25vw;
     height: 5vh;
-    border: 0.1vw solid #000;
+    border: 0.1vw solid #fff;
 	outline: none;
     background: transparent;
-    color: #000;
+    color: #fff;
 	font-size: 0.7vw;
 	font-weight: 300;
 	font-family: 'Poppins', sans-serif;
@@ -415,6 +495,6 @@ footer .copyright a {
 }
 
 .contact-form-button:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
