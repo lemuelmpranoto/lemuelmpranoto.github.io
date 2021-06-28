@@ -373,53 +373,44 @@ footer .copyright.home a {
 
 .about-page-contact a {
     position: fixed;
-    left: 20%;
-    top: 50%;
+    left: 30%;
+    top: 45%;
     transform: translate(-50%, -50%);
     font-family: 'TIMMONS NY';
-    font-size: calc(var(--vh, 0.3vh) * 100);
+    font-size: calc(var(--vh, 0.4vh) * 100);
     /* color: #85d89c; */
     color: #6474e5;
 }
 
-.contact-buttons {
+.contact-email {
     position: fixed;
     flex: 50%;
-    max-height: 100vh;
-    width: 20vw;
     /* background-color: #AA7269; */
     /* transform: translate(50vw,10vh); */
-    left: 51%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 30%;
+    top: 70%;
+    /* transform: translate(-50%, -50%); */
     z-index: 6;
 }
 
-.buttons {
+.contact-email .inner {
     position: relative;
-    padding-bottom: 8vh;
     transition: all .2s ease-in-out; 
 }
 
-.buttons a{
+.contact-email .inner a{
+    background-color: #34a853;
+    white-space: nowrap;
     padding: 0.8vh 0.8vw 0.8vh 0.8vw;
     border-radius: 0.2em;
     position: absolute;
     font-size: 2.5vw;
+    letter-spacing: 3px;
     color: #f6ffee;
 }
 
-.buttons.email a {
-    background-color: #34a853;
-}
-.buttons.linkedin a {
-    background-color: #0e76a8;
-}
-.buttons.insta a {
-    background-color: #c32aa3;
-}
-
-.buttons:hover {
+.contact-email:hover {
+    transform: scale(1.1);
     opacity: 0.7;
 }
 
