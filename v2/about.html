@@ -83,30 +83,51 @@
         <div class="clip-text">
             <a>CONTACT</a>
         </div>
-        <div class="contact-form">
-            <p>Chat with me!</p>
-            <div class="contact-wrap">
-                <div class="contact-in">
-                    <form id="reused_form">
-                        <input type="text" name="name" placeholder="Full Name" class="contact-in-input">
-                        <input type="text" name="email" placeholder="Your Email" class="contact-in-input">
-                        <input type="text" name="subject" placeholder="Subject" class="contact-in-input">
-                        <textarea name="message" placeholder="Say hi!" class="contact-in-textarea"></textarea>
-                        <!-- <input type="submit" value="SUBMIT" class="contact-in-btn"> -->
-                        <button class="contact-form-button">SUBMIT</button>
-                    </form>
-                    <div id="error_message" style="width:100%; height:100%; display:none;">
-                        <h4>
-                            Error
-                        </h4>
-                        Sorry, your form was not sent. Please try again.
-                    </div>
-                    <div id="success_message" style="width:100%; height:100%; display:none;">
-                        <h2>Thank You! Your message has been received.</h2>
-                    </div>
-                </div>           
+        <div class="clip-text">
+            <div class="contact-form">
+                <p>Chat with me!</p>
+                <div class="contact-wrap">
+                    <div class="contact-in">
+                        <form action="https://formspree.io/f/xqkgoory" method="POST" id="reused_form">
+                            <input type="text" name="name" placeholder="Full Name" class="contact-in-input">
+                            <input type="text" name="_replyto" placeholder="Your Email" class="contact-in-input">
+                            <input type="text" name="subject" placeholder="Subject" class="contact-in-input">
+                            <textarea name="message" placeholder="Say hi!" class="contact-in-textarea"></textarea>
+                            <!-- <input type="submit" value="SUBMIT" class="contact-in-btn"> -->
+                            <button type="submit" class="contact-form-button">SUBMIT</button>
+                        </form>
+
+                        <!-- <form
+  action="https://formspree.io/f/xqkgoory"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+
+  <button type="submit">Send</button>
+</form> -->
+
+                        <div id="error_message" style="width:100%; height:100%; display:none;">
+                            <h4>
+                                Error
+                            </h4>
+                            Sorry, your form was not sent. Please try again.
+                        </div>
+                        <div id="success_message" style="width:100%; height:100%; display:none;">
+                            <h2>Thank You! Your message has been received.</h2>
+                        </div>
+                    </div>           
+                </div>
             </div>
         </div>
+        
    </div>
 
 
