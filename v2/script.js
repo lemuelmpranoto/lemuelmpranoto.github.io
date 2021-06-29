@@ -150,10 +150,19 @@ window.onload = function() {
             }, 500);
         })
     }
-
-    
 }
 
+document.addEventListener('mousemove', function(e) {
+    let body = document.querySelector('body');
+    let circle = document.getElementById('hidden-click-me');
+    let pointer = document.getElementById('appear-pointer');
+    let left = e.offsetX;
+    let top = e.offsetY;
+    circle.style.left = left + 'px';
+    circle.style.top = top + 'px';
+    //pointer.style.transform = 'rotate('+ 20 + ')deg';
+    pointer.style.transform = 'rotate('+(0.2)*left+'deg)'; 
+});
 
 
 let desc = document.getElementById('home-intro');

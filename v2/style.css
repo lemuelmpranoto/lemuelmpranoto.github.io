@@ -325,7 +325,7 @@ header #header-title-about {
 #hidden-click-me {
     position: fixed;
     width: fit-content;
-    transform: translate(170%, -80%);
+    transform: translate(110%, -120%);
     /* width: 60vw; */
     z-index: 6; 
     font-size: 6vw;
@@ -338,8 +338,8 @@ header #header-title-about {
     font-weight: 800;
 }
 
-.appear-pointer {
-    transform: rotate(-50deg);
+#appear-pointer {
+    /* transform: rotate(-70deg); */
 }
 
 #bounce:hover + #hidden-click-me {
