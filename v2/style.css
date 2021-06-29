@@ -702,6 +702,39 @@ footer .copyright.home a {
     transform: scale(1.1);
 }
 
+.mobile-contact-email {
+    position: fixed;
+    flex: 50%;
+    /* background-color: #AA7269; */
+    /* transform: translate(50vw,10vh); */
+    left: 25%;
+    top: 25%;
+    /* transform: translate(-50%, -50%); */
+    transition: 0.5s;
+    z-index: 6;
+}
+
+.mobile-contact-email .inner {
+    position: relative;
+    transition: all .2s ease-in-out; 
+}
+
+.mobile-contact-email .inner a{
+    background-color: #34a853;
+    white-space: nowrap;
+    padding: 0.8vh 0.8vw 0.8vh 0.8vw;
+    border-radius: 0.2em;
+    position: absolute;
+    font-family: 'TIMMONS NY';
+    font-size: 8.5vw;
+    letter-spacing: 3px;
+    color: #f6ffee;
+}
+
+.mobile-contact-email:hover {
+    transform: scale(1.1);
+}
+
 .contact-form {
     position: fixed;
     flex: 50%;
