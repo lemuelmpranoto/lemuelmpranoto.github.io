@@ -103,9 +103,11 @@ ion-icon#icons-about-page:hover {
     z-index: 10;
 }
 .header-title a {
-    font-size: 1.5rem; 
+    font-size: 1.8em; 
     font-weight: 700;
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.2em;
+    margin-right: -0.2em;
+    white-space: nowrap;
 }
 
 #header-title-home {
@@ -166,7 +168,8 @@ ion-icon#icons-about-page:hover {
 .nav-menu a {
     font-size: 1rem; 
     font-weight: 700;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.3em;
+    margin-right: -0.3em;
 }
 
 .menu-item {
@@ -202,7 +205,7 @@ ion-icon#icons-about-page:hover {
     transform: translateX(-50%); */
     width: 100%;
     bottom: 3%;
-    z-index: 10;
+    z-index: 1000;
 }
 .mobile-nav-menu ul {
     display: inline-block;
@@ -644,6 +647,29 @@ footer .copyright.home a {
     color: #6474e5;
 }
 
+.mobile-about-page-contact {
+    display: none;
+}
+.mobile-about-page-contact {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:#c6fad2;
+    z-index: 5;
+}
+
+.mobile-about-page-contact a {
+    position: fixed;
+    right: -2.5%;
+    top: 45%;
+    transform-origin: center center;
+    transform:  rotate(90deg) translateX(-25%);
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.1vh) * 100);
+    /* color: #85d89c; */
+    color: #6474e5;
+}
+
 .contact-email {
     position: fixed;
     flex: 50%;
@@ -865,6 +891,9 @@ footer .copyright.home a {
     .background-about-content {
         display: none;
     }
+    .about-page-contact {
+        display: none;
+    }
 
 
     .mobile-background-home {
@@ -881,6 +910,9 @@ footer .copyright.home a {
         display: block;
     }
     .mobile-background-about-content {
+        display: block;
+    }
+    .mobile-about-page-contact {
         display: block;
     }
 
