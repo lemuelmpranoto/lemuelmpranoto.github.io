@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;0,700;1,600&display=swap');
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
 @font-face {
     font-family: 'ikaros_sansregular';
     src: url('ikaros-regular-webfont.woff2') format('woff2'),
@@ -192,20 +191,33 @@ ion-icon#icons-about-page:hover {
     display: none;
 }
 .mobile-nav-menu {
+    text-align: center;
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 86%;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100vw;
     bottom: 3%;
     z-index: 10;
+}
+.mobile-nav-menu ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style-type: none;
+}
+.mobile-nav-menu li {
+    display:inline;
+    left: 0;
+    right: 0;
+    padding: 3%;
 }
 .mobile-nav-menu a {
     font-size: 0.8em; 
     font-weight: 700;
     letter-spacing: 0.3rem;
-}
-.mobile-menu-item {
-    padding: 3%;
 }
 
 
@@ -788,7 +800,7 @@ footer .copyright.home a {
         display: none;
     }
     .mobile-nav-menu {
-        display: flex;
+        display: inline-block;
     }
 
     .background-home {
