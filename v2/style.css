@@ -485,9 +485,6 @@ footer .rocket i:hover {
     color: rgb(76, 81, 214);
 }
 
-.mobile-rocket {
-    display: none;
-}
 
 footer .copyright {
     align-items: center;
@@ -506,9 +503,13 @@ footer .copyright.home a {
     font-weight: 600;
 }
 
-.mobile-copyright {
+
+
+.mobile-footer {
     display: none;
 }
+
+
 .mobile-copyright {
     align-items: center;
     vertical-align: middle;
