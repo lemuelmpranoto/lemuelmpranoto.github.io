@@ -129,7 +129,7 @@ ion-icon#icons-about-page:hover {
     z-index: 10;
 }
 .mobile-header-title a {
-    font-size: 1.5rem; 
+    font-size: 8vw; 
     font-weight: 700;
     letter-spacing: 0.2vw;
 }
@@ -176,11 +176,15 @@ ion-icon#icons-about-page:hover {
 .nav-menu-home {
     transition: 0.5s;
     color: #000;
+    letter-spacing: 0.15em;
+    margin-right: -0.15em;
 }
 
 .nav-menu-about {
     transition: 0.5s;
     color: #f13c20;
+    letter-spacing: 0.5em;
+    margin-right: -0.5em;
 }
 
 #about-nav-menu {
@@ -217,12 +221,11 @@ ion-icon#icons-about-page:hover {
 }
 .mobile-nav-menu li {
     display: inline;
-    /* padding: 0 5% 0 5%; */
+    padding: 0 5vw 0 5vw;
 }
 .mobile-nav-menu a {
-    font-size: 0.8em; 
+    font-size: 4vw; 
     font-weight: 700;
-    letter-spacing: 0.3rem;
 }
 
 
