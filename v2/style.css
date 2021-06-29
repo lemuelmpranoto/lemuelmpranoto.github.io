@@ -195,7 +195,7 @@ ion-icon#icons-about-page:hover {
     position: fixed;
     /* left: 50%;
     transform: translateX(-50%); */
-    width: 100vw;
+    width: 100%;
     bottom: 3%;
     z-index: 10;
 }
@@ -207,12 +207,13 @@ ion-icon#icons-about-page:hover {
     left: 50%;
     transform: translateX(-50%);
     list-style-type: none;
+    white-space: nowrap;
 }
 .mobile-nav-menu li {
-    display:inline;
+    display: inline;
     left: 0;
     right: 0;
-    padding: 3%;
+    /* margin-left: 21%; */
 }
 .mobile-nav-menu a {
     font-size: 0.8em; 
