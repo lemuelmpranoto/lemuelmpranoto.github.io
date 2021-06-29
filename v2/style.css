@@ -191,8 +191,9 @@ ion-icon#icons-about-page:hover {
     display: none;
 }
 .mobile-nav-menu {
-    text-align: center;
     position: fixed;
+    text-align: center;
+    /* justify-content: center; */
     /* left: 50%;
     transform: translateX(-50%); */
     width: 100%;
@@ -200,20 +201,23 @@ ion-icon#icons-about-page:hover {
     z-index: 10;
 }
 .mobile-nav-menu ul {
-    padding: 0;
-    margin: 0;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    text-align: left;
+    /* margin-right: auto;
+    margin-left: auto;
     position: relative;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center; */
+    /* left: 50%;
+    transform: translateX(-50%); */
     list-style-type: none;
     white-space: nowrap;
 }
 .mobile-nav-menu li {
     display: inline;
-    left: 0;
-    right: 0;
-    /* margin-left: 21%; */
+    /* padding: 0 5% 0 5%; */
 }
 .mobile-nav-menu a {
     font-size: 0.8em; 
@@ -840,7 +844,7 @@ footer .copyright.home a {
         display: none;
     }
     .mobile-nav-menu {
-        display: inline-block;
+        display: flex;
     }
 
     .background-home {
