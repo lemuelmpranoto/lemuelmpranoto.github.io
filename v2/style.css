@@ -96,35 +96,25 @@ ion-icon#icons-about-page:hover {
 /****************************************************************************************************
 ********************************************* Home-page *********************************************
 ****************************************************************************************************/
-header .header-title {
+.header-title {
     position: fixed;
     top: 3vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
 }
-header .header-title a {
+.header-title a {
     font-size: 1.5rem; 
     font-weight: 700;
     letter-spacing: 0.2vw;
 }
 
-header #header-title-home {
+#header-title-home {
     transition: 0.5s;
     color: #000;
 }
 
-header #header-title-about {
-    transition: 0.5s;
-    color: #f13c20;
-}
-
-.nav-menu-home {
-    transition: 0.5s;
-    color: #000;
-}
-
-.nav-menu-about {
+#header-title-about {
     transition: 0.5s;
     color: #f13c20;
 }
@@ -132,6 +122,38 @@ header #header-title-about {
 .mobile-header-title {
     display: none;
 }
+.mobile-header-title {
+    position: fixed;
+    top: 3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.mobile-header-title a {
+    font-size: 1.5rem; 
+    font-weight: 700;
+    letter-spacing: 0.2vw;
+}
+
+#mobile-header-title-home {
+    transition: 0.5s;
+    color: #000;
+}
+#mobile-header-title-about {
+    transition: 0.5s;
+    color: #f13c20;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .nav-menu {
     position: fixed;
@@ -152,9 +174,42 @@ header #header-title-about {
     padding-right: 15%;
 }
 
+.nav-menu-home {
+    transition: 0.5s;
+    color: #000;
+}
+
+.nav-menu-about {
+    transition: 0.5s;
+    color: #f13c20;
+}
+
 #about-nav-menu {
     display: none;
 }
+
+.mobile-nav-menu {
+    display: none;
+}
+.mobile-nav-menu {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 86%;
+    bottom: 3%;
+    z-index: 10;
+}
+.mobile-nav-menu a {
+    font-size: 0.8em; 
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+}
+.mobile-menu-item {
+    padding: 3%;
+}
+
+
+
 
 .connect-icons {
     position: fixed;
@@ -194,6 +249,28 @@ header #header-title-about {
     font-size: calc(var(--vh, 0.75vh) * 100);
     color: #8cd3ff;
 }
+
+.mobile-background-home {
+    display: none;
+}
+.mobile-background-home {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:#f5f5f5;
+    z-index: 5;
+}
+.mobile-background-home a {
+    position: fixed;
+    left: -5%;
+    top: 50%;
+    transform-origin: center center;
+    transform:  rotate(-90deg) translateX(25%);
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.1vh) * 100);
+    color: #8cd3ff;
+}
+
 
 .home-intro {
     position: absolute;
@@ -609,4 +686,59 @@ footer .copyright.home a {
         16 0,
       auto;
       transition-duration: 2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ iPhone X ------------------ */
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+    .header-title {
+        display: none;
+    }
+    .mobile-header-title {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+    .mobile-nav-menu {
+        display: flex;
+    }
+
+    .background-home {
+        display: none;
+    }
+    .mobile-background-home {
+        display: block;
+    }
+
+    .connect-icons {
+        display: none;
+    }
+
+    .scroll-icon {
+        display: none;
+    }
+    
+    
+
 }
