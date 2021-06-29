@@ -562,6 +562,27 @@ footer .copyright.home a {
     color: #f13c20;
 }
 
+.mobile-background-about {
+    display: none;
+}
+.mobile-background-about {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:#2c9fdd;
+    z-index: 5;
+}
+.mobile-background-about a {
+    position: fixed;
+    left: 2.5%;
+    top: 50%;
+    transform-origin: center center;
+    transform:  rotate(-90deg) translateX(25%);
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.1vh) * 100);
+    color: #f13c20;
+}
+
 .background-about-content {
     position: relative;
     height: 300vh;
@@ -577,6 +598,24 @@ footer .copyright.home a {
     transform: translate(-50%, -50%);
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.75vh) * 100);
+    color: #f13c20;
+}
+
+.mobile-background-about-content {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:#efe2ba;
+    z-index: 5;
+}
+.mobile-background-about-content a {
+    position: fixed;
+    left: 2.5%;
+    top: 50%;
+    transform-origin: center center;
+    transform:  rotate(-90deg) translateX(25%);
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.1vh) * 100);
     color: #f13c20;
 }
 
@@ -812,6 +851,14 @@ footer .copyright.home a {
     .background-collections {
         display: none;
     }
+    .background-about {
+        display: none;
+    }
+    .background-about-content {
+        display: none;
+    }
+
+
     .mobile-background-home {
         display: block;
     }
@@ -819,6 +866,13 @@ footer .copyright.home a {
         display: block;
     }
     .mobile-background-collections {
+        display: block;
+    }
+
+    .mobile-background-about {
+        display: block;
+    }
+    .mobile-background-about-content {
         display: block;
     }
 
