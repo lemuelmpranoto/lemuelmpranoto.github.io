@@ -35,9 +35,9 @@
     font-display: swap;
 }
 
-
-
-/**************************************** General ****************************************/
+/****************************************************************************************************
+********************************************** General **********************************************
+****************************************************************************************************/
 html, body {
     margin: 0;
     padding: 0;
@@ -72,7 +72,6 @@ footer {
     transform: translate(-50%,-10vh);
     z-index: 10;
     width: 20vw;
-    /* background-color: #dc7b7b; */
     border-radius: 0.4rem;
 }
 ion-icon {
@@ -94,7 +93,9 @@ ion-icon#icons-about-page:hover {
     transition: 0.5s;
 }
 
-/**************************************** Home Page ****************************************/
+/****************************************************************************************************
+********************************************* Home-page *********************************************
+****************************************************************************************************/
 header .header-title {
     position: fixed;
     top: 3vh;
@@ -141,7 +142,6 @@ header #header-title-about {
     margin-left: 3%;
     z-index: 10;
 }
-
 .nav-menu a {
     font-size: 1rem; 
     font-weight: 700;
@@ -185,7 +185,6 @@ header #header-title-about {
     background-color:#f5f5f5;
     z-index: 5;
 }
-
 .background-home a {
     position: fixed;
     left: 50%;
@@ -204,7 +203,6 @@ header #header-title-about {
     /* width: 60vw; */
     z-index: 6; 
 }
-
 .home-intro a {
     font-family: 'GTCinetypeRegular'; 
     font-weight: 500;
@@ -214,7 +212,6 @@ header #header-title-about {
   display: inline-block;
   position: relative;
 }
-
 .about-link::after {
   content: '';
   position: absolute;
@@ -227,7 +224,6 @@ header #header-title-about {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-
 .about-link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -236,55 +232,33 @@ header #header-title-about {
 #intro-title {
     font-size: 5vw;
 }
-
 #intro-greetings {
     font-size: 3.5vw;
 }
-
 #intro-desc {
     font-size: 3vw;
 }
 
 .bounce-animation {
-	/* width: 60px; */
 	display: block;
 	text-align: center;
-	/* font:normal 45px 'FontAwesome'; */
-	/* line-height:60px;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased; */
 }
-
 .bounce {
-	/* position: absolute; */
-	/* bottom: 30px;
-	left: 50% ;
-	width: 60px;
-	height: 60px ;
-	margin-left:-30px; */
-/* 	border: 2px solid #990000; */
-/* 	-webkit-border-radius:50%;
-	-moz-border-radius:50%;
-	-ms-border-radius:50%;
-	border-radius:50%; */
 	animation: bounce 2s infinite;
 	-webkit-animation: bounce 2s infinite;
 	-moz-animation: bounce 2s infinite;
 	-o-animation: bounce 2s infinite;
 }
- 
 @-webkit-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	
 	40% {-webkit-transform: translateY(-30px);}
 	60% {-webkit-transform: translateY(-15px);}
 }
- 
 @-moz-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
 	40% {-moz-transform: translateY(-30px);}
 	60% {-moz-transform: translateY(-15px);}
 }
- 
 @-o-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
 	40% {-o-transform: translateY(-30px);}
@@ -297,26 +271,20 @@ header #header-title-about {
 }
 
 .gradient-text{
-  /* font-family:"Abril Fatface", sans-serif; */
   background: linear-gradient(to right, #000000,#7e7a7a, #000000);
   background-size: 200% 200%;
-  animation: rainbow 2.5s ease-in-out infinite;
+  animation: gradient 2.5s ease-in-out infinite;
   background-clip: text;
   -webkit-background-clip:text;
   color:rgba(0,0,0,1);
-  /* font-size:10rem; */
-  /* width:80vw;
-  margin:30vh auto; */
   display:block;
   text-align:center;
   transition: color .2s ease-in-out;
-  /* text-transform:uppercase; */
-  /* font-weight:900; */
 }
 .gradient-text:hover{
   color:rgba(0,0,0,0);
 }
-@keyframes rainbow { 
+@keyframes gradient { 
   0%{background-position:left}
   50%{background-position:right}
   100%{background-position:left}
@@ -326,22 +294,15 @@ header #header-title-about {
     position: fixed;
     width: fit-content;
     transform: translate(110%, -120%);
-    /* width: 60vw; */
     z-index: 6; 
     font-size: 6vw;
     display: none;
 }
-
 #hidden-click-me a {
     font-size: 3vw;
     font-family: 'GTCinetypeRegular'; 
     font-weight: 800;
 }
-
-#appear-pointer {
-    /* transform: rotate(-70deg); */
-}
-
 #bounce:hover + #hidden-click-me {
     display:block;
 }
@@ -351,10 +312,8 @@ header #header-title-about {
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, 40%);
-    
     z-index: 6; 
 }
-
 .scroll-icon img {
     margin-top: 10%;
     height: 6vh;
@@ -365,7 +324,6 @@ header #header-title-about {
     height: 300vh;
     background-color: bisque;
 }
-
 .background-projects a {
     position: fixed;
     left: 50%;
@@ -381,7 +339,6 @@ header #header-title-about {
     height: 200vh;
     background-color:rgb(87, 194, 162);
 }
-
 .background-collections a {
     position: fixed;
     left: 50%;
@@ -396,17 +353,14 @@ footer .rocket {
     font-size: 3vh;
     height: 4vh;
 }
-
 footer .rocket i:hover {
     transform: rotate(-45deg);
     font-size: 3.7vh;
     transition: 0.5s ease-out;
 }
-
 .fa-rocket-launch.about {
     color: #6474e5;
 }
-
 .fa-rocket-launch.home {
     color: rgb(76, 81, 214);
 }
@@ -419,12 +373,10 @@ footer .copyright {
 footer .copyright a {
     font-weight: 600;
 }
-
 footer .copyright.about a {
     color: #6474e5;
     font-weight: 600;
 }
-
 footer .copyright.home a {
     color: rgb(76, 81, 214);
     font-weight: 600;
@@ -432,7 +384,7 @@ footer .copyright.home a {
 
 
 /****************************************************************************************************
-********************************************About Page***********************************************
+******************************************** About page *********************************************
 ****************************************************************************************************/
 
 .background-about {
@@ -542,6 +494,25 @@ footer .copyright.home a {
     margin-left: 1vw;
 }
 
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+  
+@keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(16.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-10.0deg) }
+     30% { transform: rotate(16.0deg) }
+     40% { transform: rotate(-6.0deg) }
+     50% { transform: rotate(12.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+}
+
 .emoji {
     font-size: 4vw;
 }
@@ -625,20 +596,17 @@ footer .copyright.home a {
     color: #c6fad2;
 }
 
-
-
-
-
-
-/******************************************* Cursors *******************************************/
-.pointer-finger-cursor {
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='125' viewport='0 0 100 100' style='fill:black;font-size:68px;'><text y='50%'>🖕</text></svg>")
-        16 0,
-      auto;
-}
-
+/****************************************************************************************************
+********************************************** Cursors **********************************************
+****************************************************************************************************/
 .cool-face-cursor {
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='125' viewport='0 0 100 100' style='fill:black;font-size:68px;'><text y='50%'>😎</text></svg>")
         16 0,
       auto;
+}
+.pointer-finger-cursor {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='125' viewport='0 0 100 100' style='fill:black;font-size:68px;'><text y='50%'>🖕</text></svg>")
+        16 0,
+      auto;
+      transition-duration: 2s;
 }
