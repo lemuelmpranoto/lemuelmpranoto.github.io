@@ -6,6 +6,7 @@ window.onload = function() {
     const scroll_icon = document.querySelector('.scroll-icon');
 
     const header_title_home_page = document.getElementById('header-title-home');
+    const mobile_header_title_home_page = document.getElementById('mobile-header-title-home');
     const about_nav_menu = document.getElementById('about-nav-menu');
     const nav_menu_home_page = document.getElementsByClassName('nav-menu-home');
     const icons_home_page = document.getElementsByClassName('icons-home-page');
@@ -58,12 +59,15 @@ window.onload = function() {
             } 
             if(x<=availableScroll*0.19) {
                 header_title_home_page.style.color = '';
+                mobile_header_title_home_page.style.color = '';
             } 
             if(x<=availableScroll*0.79 && x>availableScroll*0.19) {
                 header_title_home_page.style.color = 'rgb(208, 44, 44)';
+                mobile_header_title_home_page.style.color = 'rgb(208, 44, 44)';
             }
             if(x>availableScroll*0.79) {
                 header_title_home_page.style.color = 'rgb(76, 81, 214)';
+                mobile_header_title_home_page.style.color = 'rgb(76, 81, 214)';
             }
             if(x>availableScroll*0.80) {
                 about_nav_menu.style.display = 'block';

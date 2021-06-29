@@ -411,6 +411,28 @@ ion-icon#icons-about-page:hover {
     color: rgb(208, 44, 44);
 }
 
+.mobile-background-projects {
+    display: none;
+}
+.mobile-background-projects {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    z-index: 5;
+}
+.mobile-background-projects a {
+    position: fixed;
+    right: -5%;
+    top: 50%;
+    transform-origin: center center;
+    transform:  rotate(90deg) translateX(-25%);
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.1vh) * 100);
+    color: rgb(208, 44, 44);
+}
+
+
 .background-collections {
     position: relative;
     height: 200vh;
@@ -423,6 +445,27 @@ ion-icon#icons-about-page:hover {
     transform: translate(-50%, -50%);
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.75vh) * 100);
+    color: rgb(76, 81, 214);
+}
+
+.mobile-background-collections {
+    display: none;
+}
+.mobile-background-collections {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(87, 194, 162);
+    z-index: 5;
+}
+.mobile-background-collections a {
+    position: fixed;
+    left: -11%;
+    top: 50%;
+    transform-origin: center center;
+    transform:  rotate(-90deg) translateX(25%);
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.1vh) * 100);
     color: rgb(76, 81, 214);
 }
 
@@ -442,6 +485,10 @@ footer .rocket i:hover {
     color: rgb(76, 81, 214);
 }
 
+.mobile-rocket {
+    display: none;
+}
+
 footer .copyright {
     align-items: center;
     vertical-align: middle;
@@ -455,6 +502,26 @@ footer .copyright.about a {
     font-weight: 600;
 }
 footer .copyright.home a {
+    color: rgb(76, 81, 214);
+    font-weight: 600;
+}
+
+.mobile-copyright {
+    display: none;
+}
+.mobile-copyright {
+    align-items: center;
+    vertical-align: middle;
+    line-height: 0vh;
+}
+.mobile-copyright a {
+    font-weight: 600;
+}
+.mobile-copyright.about a {
+    color: #6474e5;
+    font-weight: 600;
+}
+.mobile-copyright.home a {
     color: rgb(76, 81, 214);
     font-weight: 600;
 }
@@ -726,7 +793,19 @@ footer .copyright.home a {
     .background-home {
         display: none;
     }
+    .background-projects {
+        display: none;
+    }
+    .background-collections {
+        display: none;
+    }
     .mobile-background-home {
+        display: block;
+    }
+    .mobile-background-projects {
+        display: block;
+    }
+    .mobile-background-collections {
         display: block;
     }
 
@@ -738,6 +817,12 @@ footer .copyright.home a {
         display: none;
     }
     
+    .rocket {
+        display: none;
+    }
+    .copyright {
+        display: none;
+    }
     
 
 }
