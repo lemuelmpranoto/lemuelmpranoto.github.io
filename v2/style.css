@@ -134,7 +134,7 @@ header #header-title-about {
 .nav-menu {
     position: fixed;
     left: 0;
-    width: fit-content;
+    width: 15vw;
     display: flex;
     bottom: 3%;
     margin-left: 3%;
@@ -149,6 +149,10 @@ header #header-title-about {
 
 .menu-item {
     padding-right: 15%;
+}
+
+#about-nav-menu {
+    display: none;
 }
 
 .connect-icons {
