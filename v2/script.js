@@ -156,6 +156,13 @@ window.onload = function() {
     }
 }
 
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.width = "";
+}
+
 document.addEventListener('mousemove', function(e) {
     let body = document.querySelector('body');
     let circle = document.getElementById('hidden-click-me');
