@@ -1126,6 +1126,7 @@ footer .copyright.home a {
 
 .mobile-about-page-contact .about-title-background {
     opacity: 0.2;
+    letter-spacing: 1em;
 }
 .mobile-about-page-contact {
     display: none;
@@ -1147,11 +1148,13 @@ footer .copyright.home a {
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.35vh) * 100);
     color: #6271e4;
+    transform: translateX(0%);
 }
 .about-title-lower-contact {
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.35vh) * 100);
     color: #6271e4;
+    transform: translateX(3%);
 }
 
 
