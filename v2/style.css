@@ -1185,6 +1185,7 @@ footer .copyright.home a {
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
+    z-index: 10;
     /* padding: 5vh 0vw 5vh 4vw; */
 }
 .mobile-contact-form p {
@@ -1259,6 +1260,7 @@ footer .copyright.home a {
     background-color: #2c9fdd;
     padding: 10px 20px 10px 20px;
     border-radius: 1em;
+    z-index: 11;
 }
 .mobile-email a {
     font-size: 1.2em;
