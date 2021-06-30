@@ -338,8 +338,20 @@ input[type="checkbox"] {
     letter-spacing: 0.15em;
     margin-right: -0.15em;
 }
+.mobile-nav-menu-home {
+    transition: 0.5s;
+    color: #000;
+    letter-spacing: 0.15em;
+    margin-right: -0.15em;
+}
 
 .nav-menu-about {
+    transition: 0.5s;
+    color: #f13c20;
+    letter-spacing: 0.5em;
+    margin-right: -0.5em;
+}
+.mobile-nav-menu-about {
     transition: 0.5s;
     color: #f13c20;
     letter-spacing: 0.5em;
