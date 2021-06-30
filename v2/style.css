@@ -128,7 +128,7 @@ ion-icon#icons-about-page:hover {
     top: 3vh;
     left: 10%;
     /* transform: translateX(-50%); */
-    z-index: 101;
+    z-index: 10;
 }
 .mobile-header-title a {
     font-size: 1.1em; 
@@ -141,6 +141,13 @@ ion-icon#icons-about-page:hover {
     color: #000;
 }
 #mobile-header-title-about {
+    transition: 0.5s;
+    color: #f13c20;
+}
+#socials-link {
+    transition: 0.5s;
+}
+#socials-link-about {
     transition: 0.5s;
     color: #f13c20;
 }
