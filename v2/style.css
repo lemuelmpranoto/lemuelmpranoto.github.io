@@ -33,6 +33,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Dumbnerd';
+    src: url('Dumbnerd.woff2') format('woff2'),
+        url('Dumbnerd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 /****************************************************************************************************
 ********************************************** General **********************************************
@@ -131,9 +139,10 @@ ion-icon#icons-about-page:hover {
     z-index: 10;
 }
 .mobile-header-title a {
-    font-size: 1.1em; 
+    font-family: 'Dumbnerd';
+    font-size: 1.8em; 
     font-weight: 700;
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.5vw;
 }
 
 #mobile-header-title-home {
@@ -762,30 +771,6 @@ footer .copyright.about a {
     font-weight: 600;
 }
 footer .copyright.home a {
-    color: rgb(76, 81, 214);
-    font-weight: 600;
-}
-
-
-
-.mobile-footer {
-    display: none;
-}
-
-
-.mobile-copyright {
-    align-items: center;
-    vertical-align: middle;
-    line-height: 0vh;
-}
-.mobile-copyright a {
-    font-weight: 600;
-}
-.mobile-copyright.about a {
-    color: #6474e5;
-    font-weight: 600;
-}
-.mobile-copyright.home a {
     color: rgb(76, 81, 214);
     font-weight: 600;
 }

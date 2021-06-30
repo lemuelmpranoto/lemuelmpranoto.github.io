@@ -94,7 +94,7 @@ window.onload = function() {
                 for (let i = 0; i < nav_menu_home_page.length; i++) {
                     mobile_nav_menu_home_page[i].style.color = 'rgb(208, 44, 44)';
                 }
-            } 
+            }
             if(x>availableScroll*0.53) {   
                 for (let i = 0; i < nav_menu_home_page.length; i++) {
                     mobile_nav_menu_home_page[i].style.color = 'rgb(76, 81, 214)';
