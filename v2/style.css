@@ -128,7 +128,7 @@ ion-icon#icons-about-page:hover {
     top: 3vh;
     left: 10%;
     /* transform: translateX(-50%); */
-    z-index: 10;
+    z-index: 101;
 }
 .mobile-header-title a {
     font-size: 1.1em; 
@@ -144,9 +144,6 @@ ion-icon#icons-about-page:hover {
     transition: 0.5s;
     color: #f13c20;
 }
-
-
-
 
 
 
@@ -181,28 +178,31 @@ ion-icon#icons-about-page:hover {
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
+    z-index: 6;
 }
 .overlay a {
     display: block;
     font-size: 4vh;
-    top: 3%;
+    top: 2%;
+    font-weight: 800;
     right: 10%;    
 }
 .overlay .closebtn {
     position: absolute;
+    z-index: 6;
 }
 .overlay-links {
     padding: 1.5vh 0 1.5vh 0;
 }
 .wrapper-footer {
     position: relative;
-    width: 70vw;
+    width: 60vw;
     left: 50%;
     padding-top: 10vh;
     transform: translateX(-50%);
     font-family: 'GTCinetypeRegular';
-    font-size: 0.8em;
-    font-weight: 700;
+    font-size: 0.7em;
+    font-weight: 500;
 }
 
 
@@ -435,6 +435,17 @@ input[type="checkbox"] {
     color: #fff;
     z-index: 5;
 }
+.mobile-background-home-socials {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:#fff;
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.35vh) * 100);
+    color: #f2f2f2;
+    z-index: 5;
+}
+
 .home-title-background {
     position: fixed;
     left: 50%;
@@ -447,6 +458,12 @@ input[type="checkbox"] {
 }
 .home-title-lower {
     transform: translateX(10%);
+}
+.home-title-upper-socials {
+    transform: translateX(-9%);
+}
+.home-title-lower-socials {
+    transform: translateX(15%);
 }
 
 .home-intro {
