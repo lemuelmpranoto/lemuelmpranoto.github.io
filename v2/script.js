@@ -37,8 +37,8 @@ window.onload = function() {
 
         var availableScroll = $(document).height() - $(window).height();
         var x = $(window).scrollTop();
-        // console.log("x: " + x);
-        // console.log("availableScroll: " + availableScroll);
+        console.log("x: " + x);
+        console.log("availableScroll: " + availableScroll);
 
         if(header_title_home_page != null) {
 
@@ -167,6 +167,19 @@ window.onload = function() {
                 socials_about.style.color = '';
             }
         }
+
+        // const projects_gallery = document.getElementById('projects-gallery');
+        // if(projects_gallery != null) {
+        //     if(x>=0.33*availableScroll) {
+        //         projects_gallery.classList.add('fixed');
+        //     }
+        //     if(x<0.33*availableScroll){
+        //         projects_gallery.classList.remove('fixed');
+        //     }
+        // }
+        
+
+
         // } else if(window.scrollY == 0) {
         //     scroll_icon.style.visibility = 'visible';
         //     scroll_icon.style.opacity = '1';
