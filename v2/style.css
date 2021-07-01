@@ -1280,13 +1280,24 @@ footer .copyright.home a {
     left: 50%;
     top: 75%;
     transform: translate(-50%, -50%);
-    background-color: #2c9fdd;
-    padding: 10px 20px 10px 20px;
-    border-radius: 1em;
+    /* background-color:rgba(44, 159, 221, 0.4); */
+    
+    
     z-index: 11;
 }
 .mobile-email a {
+    background-color: rgba(255, 93, 18, 0.4);
+    border-radius: 0.5em;
+    padding: 10px 20px 10px 20px;
+    opacity: 1;
     font-size: 1.2em;
+    font-weight: 700;
+}
+
+.mobile-email p {
+    font-family: 'GTCinetypeRegular';
+    font-size: 1em;
+    font-weight: 600;
 }
 
 
