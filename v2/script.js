@@ -302,3 +302,92 @@ $(document).ready(function (){
         }
     })
 })
+
+
+
+
+
+
+/* ------------------------ Projects Section Animations ------------------------ */
+
+//Movement Animation to happen
+const card = document.querySelector(".card");
+const container = document.querySelector(".project-container");
+//Items
+const title = document.querySelector(".title");
+const image = document.querySelector(".project-image img");
+const description = document.querySelector(".info h3");
+
+//Moving Animation Event
+container.addEventListener("mousemove", (e) => {
+    let xAxis = (window.innerWidth / 4 - e.pageX) / 20;
+    let yAxis = (window.innerHeight / 0.3 - e.pageY) / 15;
+    // for(i = 0; i < card.length; i++) {
+        
+        card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
+    // }   
+  
+});
+//Animate In
+container.addEventListener("mouseenter", (e) => {
+  card.style.transition = "none";
+  //Popout
+  title.style.transform = "translateZ(40vh)";
+  image.style.transform = "translateZ(40vh) rotateZ(0deg)";
+  description.style.transform = "translateZ(40vh)";
+});
+//Animate Out
+container.addEventListener("mouseleave", (e) => {
+  card.style.transition = "all 0.5s ease";
+  card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+  //Popback
+  title.style.transform = "translateZ(0px)";
+  image.style.transform = "translateZ(0px) rotateZ(0deg)";
+  description.style.transform = "translateZ(0px)";
+});
+
+
+
+
+
+
+
+
+
+
+
+// //Movement Animation to happen
+// const card = document.querySelector(".card");
+// const container = document.querySelector(".project-container");
+// //Items
+// const title = document.querySelector(".title");
+// const image = document.querySelector(".project-image img");
+// const description = document.querySelector(".info h3");
+
+// //Moving Animation Event
+// container.addEventListener("mousemove", (e) => {
+//     let xAxis = (window.innerWidth / 4 - e.pageX) / 20;
+//     let yAxis = (window.innerHeight / 0.3 - e.pageY) / 15;
+//     // for(i = 0; i < card.length; i++) {
+        
+//         card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
+//     // }   
+  
+// });
+// //Animate In
+// container.addEventListener("mouseenter", (e) => {
+//   card.style.transition = "none";
+//   //Popout
+//   title.style.transform = "translateZ(40vh)";
+//   image.style.transform = "translateZ(40vh) rotateZ(0deg)";
+//   description.style.transform = "translateZ(40vh)";
+// });
+// //Animate Out
+// container.addEventListener("mouseleave", (e) => {
+//   card.style.transition = "all 0.5s ease";
+//   card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+//   //Popback
+//   title.style.transform = "translateZ(0px)";
+//   image.style.transform = "translateZ(0px) rotateZ(0deg)";
+//   description.style.transform = "translateZ(0px)";
+// });
