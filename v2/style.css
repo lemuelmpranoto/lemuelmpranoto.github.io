@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;0,700;1,600&display=swap');
 @font-face {
     font-family: 'ikaros_sansregular';
-    src: url('ikaros-regular-webfont.woff2') format('woff2'),
-         url('ikaros-regular-webfont.woff') format('woff');
+    src: url('fonts/ikaros-regular-webfont.woff2') format('woff2'),
+         url('fonts/ikaros-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'GTCinetypeRegular';
-    src: url('GTCinetypeRegular.woff2') format('woff2'),
-        url('GTCinetypeRegular.woff') format('woff');
+    src: url('fonts/GTCinetypeRegular.woff2') format('woff2'),
+        url('fonts/GTCinetypeRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -19,24 +19,24 @@
 
 @font-face {
     font-family: 'TIMMONS NY';
-    src: url('TIMMONSNY-Regular.woff2') format('woff2'),
-        url('TIMMONSNY-Regular.woff') format('woff');
+    src: url('fonts/TIMMONSNY-Regular.woff2') format('woff2'),
+        url('fonts/TIMMONSNY-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'F37 Ginger';
-    src: url('F37Ginger-Bold.woff2') format('woff2'),
-        url('F37Ginger-Bold.woff') format('woff');
+    src: url('fonts/F37Ginger-Bold.woff2') format('woff2'),
+        url('fonts/F37Ginger-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Dumbnerd';
-    src: url('Dumbnerd.woff2') format('woff2'),
-        url('Dumbnerd.woff') format('woff');
+    src: url('fonts/Dumbnerd.woff2') format('woff2'),
+        url('fonts/Dumbnerd.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -523,7 +523,7 @@ input[type="checkbox"] {
 }
 .home-intro a {
     font-family: 'GTCinetypeRegular'; 
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .mobile-home-intro {
@@ -539,7 +539,7 @@ input[type="checkbox"] {
 }
 .mobile-home-intro a {
     font-family: 'GTCinetypeRegular'; 
-    font-weight: 500;
+    font-weight: 800;
 }
 .mobile-home-intro .intro-top {
     position: relative;
@@ -642,7 +642,7 @@ input[type="checkbox"] {
 #hidden-click-me {
     position: fixed;
     width: fit-content;
-    transform: translate(110%, -120%);
+    transform: translate(100%, -120%);
     z-index: 6; 
     font-size: 6vw;
     display: none;
@@ -881,6 +881,44 @@ footer .copyright.home a {
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.1vh) * 100);
     color: #f13c20;
+}
+
+
+
+
+
+.about-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68%;
+    /* width: 60vw; */
+    z-index: 6; 
+}
+
+.about-intro a {
+    font-family: 'GTCinetypeRegular';
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.mobile-about-intro {
+    display: none;
+}
+.mobile-about-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    /* width: 60vw; */
+    z-index: 6; 
+}
+.mobile-about-intro a {
+    font-family: 'GTCinetypeRegular';
+    font-size: 2em;
+    font-weight: 600;
 }
 
 .about-page-contact {
@@ -1327,6 +1365,9 @@ footer .copyright.home a {
     .home-intro {
         display: none;
     }
+    .about-intro {
+        display: none;
+    }
 
 
 
@@ -1352,6 +1393,10 @@ footer .copyright.home a {
     .mobile-home-intro {
         display: block;
     }
+    .mobile-about-intro {
+        display: block;
+    }
+
 
     .connect-icons {
         display: none;
