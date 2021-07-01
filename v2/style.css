@@ -1227,7 +1227,7 @@ footer .copyright.home a {
     min-width: 95%;
 	height: 4vh;
 	margin-bottom: 2.5vh;
-	border: 0.2vw solid #000000;
+	border: 0.5vw solid #000000;
 	outline: none;
 	padding-left: 3vw;
 	background: transparent;
@@ -1246,7 +1246,7 @@ footer .copyright.home a {
     min-height: 5vh;
     max-height: 15vh;
 	margin-bottom: 2vh;
-	border: 0.2vw solid #000000;
+	border: 0.5vw solid #000000;
 	outline: none;
     padding-left: 3vw;
     padding-top: 1vh;
@@ -1262,10 +1262,10 @@ footer .copyright.home a {
 }
 
 .mobile-contact-form-button {
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 101%;
+    min-width: 101%;
     height: 4vh;
-    border: 0.2vw solid #000000;
+    border: 0.5vw solid #000000;
 	outline: none;
     background: transparent;
     color: #000000;
