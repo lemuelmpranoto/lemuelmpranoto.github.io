@@ -675,7 +675,7 @@ input[type="checkbox"] {
 
 .background-projects {
     position: relative;
-    height: 600vh;
+    height: 800vh;
     background-color: bisque;
 }
 .background-projects a {
@@ -691,14 +691,21 @@ input[type="checkbox"] {
 .projects-gallery {
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 170vh;
     transform: translate(-50%, -50%);
     width: calc(100vw - (100vw - 100%));
 }
 .projects-gallery2 {
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 420vh;
+    transform: translate(-50%, -50%);
+    width: calc(100vw - (100vw - 100%));
+}
+.projects-gallery3 {
+    position: absolute;
+    left: 50%;
+    top: 670vh;
     transform: translate(-50%, -50%);
     width: calc(100vw - (100vw - 100%));
 }
@@ -751,6 +758,18 @@ input[type="checkbox"] {
     align-self: flex-end;
     margin: 0 6vw 0 0;
 }
+.card-container5 {
+    transform: translateY(0vh);
+    bottom: -80.5vh;
+    align-self: flex-end;
+    margin: 0 0 0 6vw;
+}
+.card-container6 {
+    /* transform: translateY(30vh); */
+    bottom: -70.5vh;
+    align-self: flex-end;
+    margin: 0 6vw 0 0;
+}
 
 
   
@@ -770,7 +789,7 @@ input[type="checkbox"] {
     display: table;
     padding: 0;
     background-color: rgba(255, 255, 255, .15);   
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05), 0px 0px 50px rgba(0, 0, 0, 0.05);
 }
 .card.tall {
     height: calc(0.8*50vw);
@@ -811,10 +830,19 @@ input[type="checkbox"] {
     z-index: 2;
     transition: all 0.75s ease-out;
 }
-
-.info.project1-title {
-    /* transform: translateY(-5vh); */
+.project-image.img-5 img {
+    width: auto;
+    height: calc(0.6*50vw);
+    z-index: 2;
+    transition: all 0.75s ease-out;
 }
+.project-image.img-6 img {
+    width: 30vw;
+    height: auto;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
 .info h1 {
     font-family: 'GTCinetypeRegular';
     font-size: 2.3vw;
@@ -873,7 +901,7 @@ input[type="checkbox"] {
 
 .background-collections {
     position: relative;
-    height: 200vh;
+    height: 260vh;
     background-color:rgb(87, 194, 162);
 }
 .background-collections a {
@@ -884,7 +912,130 @@ input[type="checkbox"] {
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.75vh) * 100);
     color: rgb(76, 81, 214);
+    z-index: 0;
 }
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    min-height: 100vh;
+    grid-gap: 2rem;
+    position: absolute;
+    top: 33%;
+}
+
+.img-container {
+    overflow: hidden;
+    z-index: 10;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.img-container img:hover {
+    transform: scale(1.2);
+}
+
+.modal {
+    background: rgb(0,0,0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s ease-out;
+    z-index: 11;
+}
+.modal.open {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 11;
+}
+.full-img {
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.25s ease-out;
+}
+.full-img.open {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal p {
+    color: white;
+    font-size: 2vw;
+    font-family: 'GTCinetypeRegular';
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+}
+/* 
+.collections-gallery {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: calc(100vw - 1em);
+    margin: 0;
+    padding: 0;
+    margin: 10vh 0 0 0;
+}
+
+.collections-gallery .left {
+    flex: 1 1 0px;
+    margin: 0;
+    padding: 0;
+}
+.collections-gallery .center {
+    flex: 1 1 0px;
+    margin: 0;
+    padding: 0;
+}
+.collections-gallery .right {
+    flex: 1 1 0px;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+}
+.photo1 {
+    flex: 1 1 0px;
+    margin: 0 2vw 0 2vw;
+}
+.photo1 img {
+    width: 60%;
+    height: auto;
+}
+.photo2 {
+    margin: 0 0 4vh 0;
+   
+}
+.photo2 img {
+    width: 70%;
+    height: auto;
+}
+
+.photo3 {
+    margin: 0 0 0 0;
+  
+}
+.photo3 img {
+    width: auto;
+    height: 20%;
+} */
 
 .mobile-background-collections {
     display: none;

@@ -373,9 +373,9 @@ container3.addEventListener("mousemove", (e) => {
 });
 container3.addEventListener("mouseenter", (e) => {
     card3.style.transition = "none";
-    title3.style.transform = "translateZ(20vh)";
-    image3.style.transform = "translateZ(20vh) rotateZ(0deg)";
-    description3.style.transform = "translateZ(20vh)";
+    title3.style.transform = "translateZ(25vh)";
+    image3.style.transform = "translateZ(25vh) rotateZ(0deg)";
+    description3.style.transform = "translateZ(25vh)";
 });
 container3.addEventListener("mouseleave", (e) => {
     card3.style.transition = "all 0.5s ease";
@@ -399,9 +399,9 @@ container4.addEventListener("mousemove", (e) => {
 });
 container4.addEventListener("mouseenter", (e) => {
     card4.style.transition = "none";
-    title4.style.transform = "translateZ(20vh)";
-    image4.style.transform = "translateZ(20vh) rotateZ(0deg)";
-    description4.style.transform = "translateZ(20vh)";
+    title4.style.transform = "translateZ(25vh)";
+    image4.style.transform = "translateZ(25vh) rotateZ(0deg)";
+    description4.style.transform = "translateZ(25vh)";
 });
 container4.addEventListener("mouseleave", (e) => {
     card4.style.transition = "all 0.5s ease";
@@ -411,6 +411,78 @@ container4.addEventListener("mouseleave", (e) => {
     description4.style.transform = "translateZ(0px)";
 });
 
+/******************************* home-sec *******************************/
+const card5 = document.querySelector(".home-sec");
+const container5 = document.querySelector(".home-sec");
+const image5 = document.querySelector(".img-5 img");
+const description5 = document.querySelector(".project5-title h3");
+const title5 = document.querySelector(".project5-h1");
+container5.addEventListener("mousemove", (e) => {
+    let xAxis = (window.innerWidth / 4 - e.pageX) / 20;
+    let yAxis = (window.innerHeight / 0.14 - e.pageY) / 15;
+    card5.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
+});
+container5.addEventListener("mouseenter", (e) => {
+    card5.style.transition = "none";
+    title5.style.transform = "translateZ(25vh)";
+    image5.style.transform = "translateZ(25vh) rotateZ(0deg)";
+    description5.style.transform = "translateZ(25vh)";
+});
+container5.addEventListener("mouseleave", (e) => {
+    card5.style.transition = "all 0.5s ease";
+    card5.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    title5.style.transform = "translateZ(0px)";
+    image5.style.transform = "translateZ(0px) rotateZ(0deg)";
+    description5.style.transform = "translateZ(0px)";
+});
+
+
+/******************************* personal website v1 *******************************/
+const card6 = document.querySelector(".personal-website-v1");
+const container6 = document.querySelector(".personal-website-v1");
+const image6 = document.querySelector(".img-6 img");
+const description6 = document.querySelector(".project6-title h3");
+const title6 = document.querySelector(".project6-h1");
+container6.addEventListener("mousemove", (e) => {
+    let xAxis = (window.innerWidth / 1.3 - e.pageX) / 20;
+    let yAxis = (window.innerHeight / 0.14 - e.pageY) / 15;
+    card6.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
+});
+container6.addEventListener("mouseenter", (e) => {
+    card6.style.transition = "none";
+    title6.style.transform = "translateZ(40vh)";
+    image6.style.transform = "translateZ(40vh) rotateZ(0deg)";
+    description6.style.transform = "translateZ(40vh)";
+});
+container6.addEventListener("mouseleave", (e) => {
+    card6.style.transition = "all 0.5s ease";
+    card6.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    title6.style.transform = "translateZ(0px)";
+    image6.style.transform = "translateZ(0px) rotateZ(0deg)";
+    description6.style.transform = "translateZ(0px)";
+});
 
 
 
+const modal = document.querySelector('.modal');
+const previews = document.querySelectorAll('.gallery img');
+const original = document.querySelector('.full-img');
+const caption = document.querySelector('.caption');
+
+previews.forEach(preview => {
+    preview.addEventListener('click', () => {
+        modal.classList.add('open');
+        original.classList.add('open');
+        const originalSrc = preview.getAttribute('data-original');
+        original.src = originalSrc;
+        const altText = preview.alt;
+        caption.textContent = altText;
+    })
+})
+
+modal.addEventListener('click', (e) => {
+    if(e.target.classList.contains('modal')) {
+        modal.classList.remove('open');
+        original.classList.remove('open');
+    }
+})
