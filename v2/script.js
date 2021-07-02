@@ -312,13 +312,13 @@ $(document).ready(function (){
 
 /******************************* chat'r *******************************/
 const card1 = document.querySelector(".chatr");
-const container1 = document.querySelector(".card-container1");
+const container1 = document.querySelector(".chatr");
 const image1 = document.querySelector(".img-1 img");
 const description1 = document.querySelector(".project1-title h3");
 const title1 = document.querySelector(".project1-h1");
 container1.addEventListener("mousemove", (e) => {
     let xAxis = (window.innerWidth / 4 - e.pageX) / 20;
-    let yAxis = (window.innerHeight / 0.3 - e.pageY) / 15;
+    let yAxis = (window.innerHeight / 0.4 - e.pageY) / 15;
     card1.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
 });
 container1.addEventListener("mouseenter", (e) => {
@@ -337,13 +337,13 @@ container1.addEventListener("mouseleave", (e) => {
 
 /******************************* event-manager *******************************/
 const card2 = document.querySelector(".event-manager");
-const container2 = document.querySelector(".card-container2");
+const container2 = document.querySelector(".event-manager");
 const image2 = document.querySelector(".img-2 img");
 const description2 = document.querySelector(".project2-title h3");
 const title2 = document.querySelector(".project2-h1");
 container2.addEventListener("mousemove", (e) => {
     let xAxis = (window.innerWidth / 1.3 - e.pageX) / 20;
-    let yAxis = (window.innerHeight / 0.3 - e.pageY) / 15;
+    let yAxis = (window.innerHeight / 0.4 - e.pageY) / 15;
     card2.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
 });
 container2.addEventListener("mouseenter", (e) => {
@@ -362,20 +362,20 @@ container2.addEventListener("mouseleave", (e) => {
 
 /******************************* line-following robot *******************************/
 const card3 = document.querySelector(".line-following-robot");
-const container3 = document.querySelector(".card-container3");
+const container3 = document.querySelector(".line-following-robot");
 const image3 = document.querySelector(".img-3 img");
 const description3 = document.querySelector(".project3-title h3");
 const title3 = document.querySelector(".project3-h1");
 container3.addEventListener("mousemove", (e) => {
     let xAxis = (window.innerWidth / 4 - e.pageX) / 20;
-    let yAxis = (window.innerHeight / 0.23 - e.pageY) / 15;
+    let yAxis = (window.innerHeight / 0.21 - e.pageY) / 15;
     card3.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
 });
 container3.addEventListener("mouseenter", (e) => {
     card3.style.transition = "none";
-    title3.style.transform = "translateZ(40vh)";
-    image3.style.transform = "translateZ(40vh) rotateZ(0deg)";
-    description3.style.transform = "translateZ(40vh)";
+    title3.style.transform = "translateZ(20vh)";
+    image3.style.transform = "translateZ(20vh) rotateZ(0deg)";
+    description3.style.transform = "translateZ(20vh)";
 });
 container3.addEventListener("mouseleave", (e) => {
     card3.style.transition = "all 0.5s ease";
@@ -388,20 +388,20 @@ container3.addEventListener("mouseleave", (e) => {
 
 /******************************* DE-Booth *******************************/
 const card4 = document.querySelector(".DE-Booth");
-const container4 = document.querySelector(".card-container4");
+const container4 = document.querySelector(".DE-Booth");
 const image4 = document.querySelector(".img-4 img");
 const description4 = document.querySelector(".project4-title h3");
 const title4 = document.querySelector(".project4-h1");
 container4.addEventListener("mousemove", (e) => {
     let xAxis = (window.innerWidth / 1.3 - e.pageX) / 20;
-    let yAxis = (window.innerHeight / 0.23 - e.pageY) / 15;
+    let yAxis = (window.innerHeight / 0.21 - e.pageY) / 15;
     card4.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
 });
 container4.addEventListener("mouseenter", (e) => {
     card4.style.transition = "none";
-    title4.style.transform = "translateZ(40vh)";
-    image4.style.transform = "translateZ(40vh) rotateZ(0deg)";
-    description4.style.transform = "translateZ(40vh)";
+    title4.style.transform = "translateZ(20vh)";
+    image4.style.transform = "translateZ(20vh) rotateZ(0deg)";
+    description4.style.transform = "translateZ(20vh)";
 });
 container4.addEventListener("mouseleave", (e) => {
     card4.style.transition = "all 0.5s ease";
