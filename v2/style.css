@@ -668,6 +668,11 @@ input[type="checkbox"] {
     height: 6vh;
 }
 
+
+
+
+
+
 .background-projects {
     position: relative;
     height: 600vh;
@@ -743,9 +748,9 @@ input[type="checkbox"] {
   .card {
     transform-style: preserve-3d;
     min-height: 60vh;
-    width: 35rem;
-    border-radius: 30px;
-    padding: 0rem 5rem;
+    width: 35vw;
+    /* border-radius: 5px; */
+    padding: 0;
     background-color: rgba(175, 117, 117, 0.2);
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
   }
@@ -756,22 +761,22 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
   }
-  .project-image.chat-app img {
+  .project-image.img-1 img {
     width: 30rem;
     z-index: 2;
     transition: all 0.75s ease-out;
   }
-  .project-image.event-manager img {
+  .project-image.img-2 img {
     width: 30rem;
     z-index: 2;
     transition: all 0.75s ease-out;
   }
-  .project-image.line-following img {
+  .project-image.img-3 img {
     height: 20vw;
     z-index: 2;
     transition: all 0.75s ease-out;
   }
-  .project-image.debooth img {
+  .project-image.img-4 img {
     height: 20vw;
     z-index: 2;
     transition: all 0.75s ease-out;
@@ -792,24 +797,6 @@ input[type="checkbox"] {
   }
   
 
-
-  .shark-1 {
-    transform: translateY(0vh);
-    bottom: -20vh;
-    align-self: flex-end;
-  }
-
-  .shark-2 {
-    transform: translateY(20vh);
-    bottom: 0vh;
-    align-self: flex-end;
-  }
-  
-  .shark-3 {
-    transform: translateY(40vh);
-    bottom: 20vh;
-    align-self: flex-end;
-  }
 
 
 /* .column.chat img {

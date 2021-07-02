@@ -310,84 +310,107 @@ $(document).ready(function (){
 
 /* ------------------------ Projects Section Animations ------------------------ */
 
-//Movement Animation to happen
-const card = document.querySelector(".card");
-const container = document.querySelector(".project-container");
-//Items
-const title = document.querySelector(".title");
-const image = document.querySelector(".project-image img");
-const description = document.querySelector(".info h3");
-
-//Moving Animation Event
-container.addEventListener("mousemove", (e) => {
+/******************************* chat'r *******************************/
+const card1 = document.querySelector(".chatr");
+const container1 = document.querySelector(".card-container1");
+const image1 = document.querySelector(".img-1 img");
+const description1 = document.querySelector(".project1-title h3");
+const title1 = document.querySelector(".project1-h1");
+container1.addEventListener("mousemove", (e) => {
     let xAxis = (window.innerWidth / 4 - e.pageX) / 20;
     let yAxis = (window.innerHeight / 0.3 - e.pageY) / 15;
-    // for(i = 0; i < card.length; i++) {
-        
-        card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
-    // }   
-  
+    card1.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
 });
-//Animate In
-container.addEventListener("mouseenter", (e) => {
-  card.style.transition = "none";
-  //Popout
-  title.style.transform = "translateZ(40vh)";
-  image.style.transform = "translateZ(40vh) rotateZ(0deg)";
-  description.style.transform = "translateZ(40vh)";
+container1.addEventListener("mouseenter", (e) => {
+    card1.style.transition = "none";
+    title1.style.transform = "translateZ(40vh)";
+    image1.style.transform = "translateZ(40vh) rotateZ(0deg)";
+    description1.style.transform = "translateZ(40vh)";
 });
-//Animate Out
-container.addEventListener("mouseleave", (e) => {
-  card.style.transition = "all 0.5s ease";
-  card.style.transform = `rotateY(0deg) rotateX(0deg)`;
-  //Popback
-  title.style.transform = "translateZ(0px)";
-  image.style.transform = "translateZ(0px) rotateZ(0deg)";
-  description.style.transform = "translateZ(0px)";
+container1.addEventListener("mouseleave", (e) => {
+    card1.style.transition = "all 0.5s ease";
+    card1.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    title1.style.transform = "translateZ(0px)";
+    image1.style.transform = "translateZ(0px) rotateZ(0deg)";
+    description1.style.transform = "translateZ(0px)";
 });
 
+/******************************* event-manager *******************************/
+const card2 = document.querySelector(".event-manager");
+const container2 = document.querySelector(".card-container2");
+const image2 = document.querySelector(".img-2 img");
+const description2 = document.querySelector(".project2-title h3");
+const title2 = document.querySelector(".project2-h1");
+container2.addEventListener("mousemove", (e) => {
+    let xAxis = (window.innerWidth / 1.3 - e.pageX) / 20;
+    let yAxis = (window.innerHeight / 0.3 - e.pageY) / 15;
+    card2.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
+});
+container2.addEventListener("mouseenter", (e) => {
+    card2.style.transition = "none";
+    title2.style.transform = "translateZ(40vh)";
+    image2.style.transform = "translateZ(40vh) rotateZ(0deg)";
+    description2.style.transform = "translateZ(40vh)";
+});
+container2.addEventListener("mouseleave", (e) => {
+    card2.style.transition = "all 0.5s ease";
+    card2.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    title2.style.transform = "translateZ(0px)";
+    image2.style.transform = "translateZ(0px) rotateZ(0deg)";
+    description2.style.transform = "translateZ(0px)";
+});
+
+/******************************* line-following robot *******************************/
+const card3 = document.querySelector(".line-following-robot");
+const container3 = document.querySelector(".card-container3");
+const image3 = document.querySelector(".img-3 img");
+const description3 = document.querySelector(".project3-title h3");
+const title3 = document.querySelector(".project3-h1");
+container3.addEventListener("mousemove", (e) => {
+    let xAxis = (window.innerWidth / 4 - e.pageX) / 20;
+    let yAxis = (window.innerHeight / 0.23 - e.pageY) / 15;
+    card3.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
+});
+container3.addEventListener("mouseenter", (e) => {
+    card3.style.transition = "none";
+    title3.style.transform = "translateZ(40vh)";
+    image3.style.transform = "translateZ(40vh) rotateZ(0deg)";
+    description3.style.transform = "translateZ(40vh)";
+});
+container3.addEventListener("mouseleave", (e) => {
+    card3.style.transition = "all 0.5s ease";
+    card3.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    title3.style.transform = "translateZ(0px)";
+    image3.style.transform = "translateZ(0px) rotateZ(0deg)";
+    description3.style.transform = "translateZ(0px)";
+});
+
+
+/******************************* DE-Booth *******************************/
+const card4 = document.querySelector(".DE-Booth");
+const container4 = document.querySelector(".card-container4");
+const image4 = document.querySelector(".img-4 img");
+const description4 = document.querySelector(".project4-title h3");
+const title4 = document.querySelector(".project4-h1");
+container4.addEventListener("mousemove", (e) => {
+    let xAxis = (window.innerWidth / 1.3 - e.pageX) / 20;
+    let yAxis = (window.innerHeight / 0.23 - e.pageY) / 15;
+    card4.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
+});
+container4.addEventListener("mouseenter", (e) => {
+    card4.style.transition = "none";
+    title4.style.transform = "translateZ(40vh)";
+    image4.style.transform = "translateZ(40vh) rotateZ(0deg)";
+    description4.style.transform = "translateZ(40vh)";
+});
+container4.addEventListener("mouseleave", (e) => {
+    card4.style.transition = "all 0.5s ease";
+    card4.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    title4.style.transform = "translateZ(0px)";
+    image4.style.transform = "translateZ(0px) rotateZ(0deg)";
+    description4.style.transform = "translateZ(0px)";
+});
 
 
 
 
-
-
-
-
-
-
-// //Movement Animation to happen
-// const card = document.querySelector(".card");
-// const container = document.querySelector(".project-container");
-// //Items
-// const title = document.querySelector(".title");
-// const image = document.querySelector(".project-image img");
-// const description = document.querySelector(".info h3");
-
-// //Moving Animation Event
-// container.addEventListener("mousemove", (e) => {
-//     let xAxis = (window.innerWidth / 4 - e.pageX) / 20;
-//     let yAxis = (window.innerHeight / 0.3 - e.pageY) / 15;
-//     // for(i = 0; i < card.length; i++) {
-        
-//         card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis/2}deg)`;
-//     // }   
-  
-// });
-// //Animate In
-// container.addEventListener("mouseenter", (e) => {
-//   card.style.transition = "none";
-//   //Popout
-//   title.style.transform = "translateZ(40vh)";
-//   image.style.transform = "translateZ(40vh) rotateZ(0deg)";
-//   description.style.transform = "translateZ(40vh)";
-// });
-// //Animate Out
-// container.addEventListener("mouseleave", (e) => {
-//   card.style.transition = "all 0.5s ease";
-//   card.style.transform = `rotateY(0deg) rotateX(0deg)`;
-//   //Popback
-//   title.style.transform = "translateZ(0px)";
-//   image.style.transform = "translateZ(0px) rotateZ(0deg)";
-//   description.style.transform = "translateZ(0px)";
-// });
