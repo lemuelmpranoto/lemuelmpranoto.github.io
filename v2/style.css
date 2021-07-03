@@ -108,7 +108,7 @@ ion-icon#icons-about-page:hover {
     top: 3vh;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 10;
+    z-index: 15;
 }
 .header-title a {
     font-size: 1.8em; 
@@ -328,7 +328,7 @@ input[type="checkbox"] {
     display: flex;
     bottom: 3%;
     margin-left: 3%;
-    z-index: 10;
+    z-index: 15;
 }
 .nav-menu a {
     font-size: 1rem; 
@@ -938,16 +938,27 @@ input[type="checkbox"] {
 }
 
 .collections-intro {
-    top: 27%;
     position: absolute;
+    top: 27%;
     left: 50%;
+    width: 80vw;
     transform: translate(-50%, -27%);
 }
 .collections-intro a {
-    width: 80vw;
+    position: relative;
+    text-align: center;
+    left: 0;
     color: #fff;
     font-family: 'Poppins';
     font-size: 2vw;
+}
+.collections-intro #top-text {
+    left: -150%;
+    transition: 0.8s ease-in;
+}
+.collections-intro #bottom-text {
+    left: 150%; 
+    transition: 0.8s ease-in;
 }
 
 .gallery {
@@ -1024,7 +1035,7 @@ input[type="checkbox"] {
 }
 .mobile-background-collections {
     position: relative;
-    height: 300vh;
+    height: 280vh;
     width: 100vw;
     background-color: rgb(87, 194, 162);
     z-index: 5;
@@ -1167,7 +1178,7 @@ footer .copyright.home a {
 
 .background-about-content {
     position: relative;
-    height: 300vh;
+    height: 100vh;
     width: 100vw;
     background-color:#efe2ba;
     z-index: 5;
@@ -1176,12 +1187,62 @@ footer .copyright.home a {
 .background-about-content a {
     position: fixed;
     left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.15vh) * 100);
+    color: rgba(241,60,32,1);
+}
+.scroll-menu {
+    /* background-color: #333; */
+  /* overflow: auto;
+  white-space: nowrap; */
+   position: absolute;
+   /* -webkit-overflow-scrolling: touch; Lets it scroll lazy */
+   width: 100%;
+   overflow-x: auto;
+   /* overflow-y: hidden; */
+   /* white-space: nowrap; */
+   cursor: move;
+   display: flex;
+}
+.scroll-menu::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.scroll-menu {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.scroll-menu .block {
+    /* position: fixed; */
+    position: relative;
+    left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'TIMMONS NY';
-    font-size: calc(var(--vh, 0.75vh) * 100);
-    color: #f13c20;
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    margin-right: 50vw;
 }
+.self-photo {
+    flex:1;
+}
+.desc {
+    position: relative;
+    flex:1;
+    overflow-wrap: break-word;
+    width: 40vw;
+}
+.desc h1 {
+    font-family: 'GTCinetypeRegular';
+    font-size: 3vw;
+    font-weight: bolder;
+    color: #000;
+    text-align: left;
+}
+
 
 .mobile-background-about-content {
     display: none;
