@@ -169,23 +169,23 @@ window.onload = function() {
             }
         }
 
-        if(header_title_home_page != null) {
-            const text1 = document.getElementById('top-text');
-            const text2 = document.getElementById('bottom-text');
+        // if(header_title_home_page != null) {
+        //     const text1 = document.getElementById('top-text');
+        //     const text2 = document.getElementById('bottom-text');
             
-            if(x > 0.84*availableScroll) {
-                text1.style.left = '0%';
-                text2.style.left = '0%';
-            }
-            // if(x > 0.89*availableScroll) {
-            //     text1.style.left = '150%';
-            //     text2.style.left = '-150%';
-            // }
-            if(x <= 0.84*availableScroll) {
-                text1.style.left = '-150%';
-                text2.style.left = '150%';
-            }
-        }
+        //     if(x > 0.84*availableScroll) {
+        //         text1.style.left = '0%';
+        //         text2.style.left = '0%';
+        //     }
+        //     // if(x > 0.89*availableScroll) {
+        //     //     text1.style.left = '150%';
+        //     //     text2.style.left = '-150%';
+        //     // }
+        //     if(x <= 0.84*availableScroll) {
+        //         text1.style.left = '-150%';
+        //         text2.style.left = '150%';
+        //     }
+        // }
         
 
         // const projects_gallery = document.getElementById('projects-gallery');
@@ -251,36 +251,6 @@ window.onload = function() {
 }
 
 
-const slider = document.querySelector('.scroll-menu');
-let isDown = false;
-let startX;
-let scrollLeft;
-
-slider.addEventListener('mousedown', (e) => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener('mouseleave', () => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mouseup', () => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mousemove', (e) => {
-  if(!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 3; //scroll-fast
-  slider.scrollLeft = scrollLeft - walk;
-  console.log(walk);
-});
-
-
-
 
 
 function openNav() {
@@ -319,7 +289,7 @@ let about_intro = document.getElementById('about-intro');
 window.addEventListener('scroll', function() {
     let val = window.scrollY;
     if(about_intro != null) {
-        about_intro.style.marginTop = val * 0.27 + 'px';
+        about_intro.style.marginTop = val * 0.21 + 'px';
     }
     // desc.style.opacity = 1 - 0.0012*val;
 })
@@ -539,3 +509,48 @@ if(header_title_home_page != null) {
         }
     })
 }
+
+if(header_title_home_page == null) {
+    const slider = document.querySelector('.scroll-menu');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    const block = document.getElementById('blockYea');
+
+    slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    slider.scrollLeft = scrollLeft - walk;
+    console.log(walk);
+
+
+
+
+    
+    var rect = block.getBoundingClientRect();
+    left = rect.left;
+    y = rect.top;
+    w = rect.width;
+    h = rect.height;
+    console.log("Left: " + left + ", Top: " + y + ", Width: " + w + ", Height: " + h);
+    });
+}
+
+
+
