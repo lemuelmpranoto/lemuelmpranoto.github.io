@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="google-site-verification" content="zgsXaVQLlYaSBDjnemScz8b2wNGk-OKoqKab2FsDJ90" />
+   <title>About</title>
+   <link rel="icon" href="assets/Logo.png">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="transition.css">
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+   <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+   <script src="icon.js"></script>
+   <!-- <script type="text/javascript" src="transition.js"></script> -->
+</head>
+
+<!-- 
+  about
+  projects
+  contact
+  resume
+ -->
+
+<body>
+   <!--------------------------------------1.Wrapper and Media-------------------------------------->
+   <header>
+      <div class="header-title" id="header-title">
+          <a class="transition-link" id="header-title-about" href="index.html">LEMUEL MATTHEW PRANOTO</a>
+      </div>
+      <div class="mobile-header-title" id="mobile-header-title">
+         <a class="transition-link" id="mobile-header-title-about" href="index.html">LMP</a>
+      </div>
+   </header>
+
+   <span class="socials" id="socials-link-about" onclick="openNav()">Socials</span>
+   <div id="overlay-socials" class="overlay">
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+         <a class="overlay-links" href="https://github.com/lemuelmpranoto" target="_blank">GitHub</a>
+         <a class="overlay-links" href="https://www.linkedin.com/in/lemuel-pranoto-81282b193/" target="_blank">LinkedIn</a>
+         <a class="overlay-links" href="https://www.instagram.com/lemuelpranoto/?hl=en" target="_blank">Instagram</a>
+         <a class="overlay-links" href="https://www.facebook.com/lemuelmpranoto" target="_blank">Facebook</a>
+         <div class="wrapper-footer">
+            <div>
+            *Desktop devices are recommended for best viewing experience.
+            </div>
+            <div style='padding-top: 2vh; font-size: 1.5em; font-weight: 800;'>
+               &#169; Lemuel Matthew Pranoto
+            </div>
+         </div>
+      </div>
+      <div class="mobile-background-home-socials" id="background-home">
+         <div class="clip-text">
+            <div class="home-title-background">
+               <div class="home-title-upper-socials">
+                  SOC-
+               </div>
+               <div class="home-title-lower-socials">
+                  IALS
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="nav-menu">
+      <div class="menu-item">
+         <a class="nav-menu-about transition-link" href="index.html">Home</a>
+      </div>
+      <div class="menu-item">
+        <a class="nav-menu-about" href="#contact">Contact</a>
+     </div>
+   </div>
+
+   <div class="mobile-nav-menu">
+      <ul class="mobile-menu-item">
+         <li>
+            <a class="mobile-nav-menu-about transition-link" href="index.html">Home</a>
+         </li>
+         <li>
+            <a class="mobile-nav-menu-about" href="#mobile-contact">Contact</a>
+         </li>
+      </ul>
+   </div>
+
+
+   <div class="connect-icons">
+      <div class="facebook">
+         <a href="https://www.facebook.com/lemuelmpranoto" target="_blank"><ion-icon class="icons-about-page" name="logo-facebook" style="font-size: 1.5rem;"></ion-icon></a>
+      </div>
+      <div class="instagram">
+         <a href="https://www.instagram.com/lemuelpranoto/?hl=en" target="_blank"><ion-icon class="icons-about-page" name="logo-instagram" style="font-size: 1.5rem;"></ion-icon></a>
+      </div>
+      <div class="linkedin">
+         <a href="https://www.linkedin.com/in/lemuel-pranoto-81282b193/" target="_blank"><ion-icon class="icons-about-page" name="logo-linkedin" style="font-size: 1.5rem;"></ion-icon></a>
+      </div>
+      <div class="github">
+         <a href="https://github.com/lemuelmpranoto" target="_blank"><ion-icon class="icons-about-page" name="logo-github" style="font-size: 1.5rem;"></ion-icon></a>
+      </div>
+   </div>
+
+   <div class="transition transition-2 is-active" id="transition-about"></div>
+
+   <div class="background-about" id="background-about">
+      <div class="clip-text">
+         <a>ABOUT</a>
+      </div>
+   </div>
+   <div class="mobile-background-about" id="background-about">
+      <div class="clip-text">
+         <div class="about-title-background">
+            <div class="about-title-upper">
+               AB-
+            </div>
+            <div class="about-title-lower">
+               OUT
+            </div>
+         </div>
+         <div class="about-title-background">
+            <div class="about-title-upper" style="margin-left: 3vw;">
+               AB-
+            </div>
+            <div class="about-title-lower" style="margin-left: 3vw;">
+               OUT
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="scroll-icon" onclick="window.location='#about'" style="cursor: pointer">
+        <img src="assets/scroll_red.png">
+   </div>
+
+
+
+   <div class="background-about-content" id="about">
+      <div class="clip-text">
+          <a style="z-index: 100;">ABOUT</a>
+      </div>
+      <div class="clip-text scroll-menu">
+         <div class="block block1">
+            <div class="self-photo">
+               <img src="assets/about/photo3.png" style="width: 30vw;">
+            </div>
+            <div class="desc">
+              <h1 style="color:#fff;">I'm a 4th year student at The University of British Columbia</h1>
+            </div>
+         </div>
+         <div class="block block2">
+            <div class="desc" style="z-index: 100;" >
+              <h1>I am interested in software related projects such as app or website development that 
+                 has a meaningful impact to society</h1>
+            </div>
+            <div class="self-photo">
+               <img src="assets/about/santorini.jpg">
+            </div>
+         </div>
+         <div class="block block3">
+            <div class="self-photo">
+               <img src="assets/about/snowboard.JPG">
+            </div>
+            <div class="desc">
+              <h1>I enjoy sports, photography, and travelling</h1>
+            </div>
+         </div>
+      </div>
+      
+      <!-- I'm a 4th year student at The University of British Columbia
+       I am interested in software development   
+       -->
+   </div>
+   
+
+
+   <div class="mobile-background-about-content" id="about">
+      <div class="clip-text">
+         <div class="about-title-background">
+            <div class="about-title-upper">
+               AB-
+            </div>
+            <div class="about-title-lower">
+               OUT
+            </div>
+         </div>
+         <div class="about-title-background">
+            <div class="about-title-upper" style="margin-left: 3vw;">
+               AB-
+            </div>
+            <div class="about-title-lower" style="margin-left: 3vw;">
+               OUT
+            </div>
+         </div>
+      </div>
+      <div class="mobile-about-gallery">
+         <div class="mobile-item about1">
+            <img src="assets/about/photo_square.png" lt="personal website v1">
+            <div class="about-title">
+               <h1>I'm a 4th year student at The University of British Columbia</h1>
+            </div>
+         </div>
+         <div class="mobile-item about2">
+            <img src="assets/about/santorini_square.jpg" lt="personal website v1">
+            <div class="about-title">
+               <h1 style="text-align:right;">I am interested in software related projects such as app or website development that 
+                  has a meaningful impact to society</h1>
+            </div>
+         </div>
+         <div class="mobile-item about3">
+            <img src="assets/about/snowboard_square.jpg" lt="personal website v1">
+            <div class="about-title">
+               <h1>I enjoy sports, photography, and travelling</h1>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+
+
+   <div class="about-intro" id="about-intro" >
+      <div style='text-align: center;'>
+         <a>I'm a Computer Engineer </a>
+         <a>who is ambitious and </a>
+         <a>is always looking for new opportunities </a>
+         <a>to constantly develop my skills </a>
+         <a>in all aspects of life.</a>
+      </div>
+   </div>
+   
+   <div class="mobile-about-intro" id="about-intro">
+      <div style='text-align: center;'>
+         <a>I'm a</a><br>
+         <a>Computer Engineer </a>
+         <a>who is ambitious </a>
+         <a>and opportunistic </a>
+         <a>to constantly </a>
+         <a>develop my skills </a>
+         <a>in all aspects of life.</a>
+      </div>
+      <!-- <a id="intro-desc">On this page, you can learn more about myself and what I love to do!</a> -->
+   </div>
+
+
+
+   <div class="about-page-contact" id="contact">
+        <div class="clip-text">
+            <a>CONTACT</a>
+            <div class="contact-email">
+                <div class="inner">
+                    <a class="email pointer-finger-cursor" href="mailto: lemuelmpranoto@example.com">LEMUELMPRANOTO@GMAIL.COM</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="clip-text">
+            
+        </div> -->
+        <div class="clip-text">
+            <div class="contact-form">
+                <p class="contact-form-title">LET'S CHAT <span class="wave emoji">👋</span></p>
+                <div class="contact-wrap">
+                    <div class="contact-in">
+                        <form action="https://formspree.io/f/xqkgoory" method="POST" id="reused_form">
+                            <!-- <input type="text" name="name" placeholder="Full Name" class="contact-in-input"> -->
+                            <input type="text" name="_replyto" placeholder="Your Email" class="contact-in-input">
+                            <!-- <input type="text" name="subject" placeholder="Subject" class="contact-in-input"> -->
+                            <textarea name="message" placeholder="Let me know you dropped by!" class="contact-in-textarea"></textarea>
+                            <!-- <input type="submit" value="SUBMIT" class="contact-in-btn"> -->
+                            <button type="submit" class="contact-form-button">SUBMIT</button>
+                        </form>
+
+                        <!-- <div id="error_message" style="width:100%; height:100%; display:none;">
+                            <h4>
+                                Error
+                            </h4>
+                            Sorry, your form was not sent. Please try again.
+                        </div>
+                        <div id="success_message" style="width:100%; height:100%; display:none;">
+                            <h2>Thank You! Your message has been received.</h2>
+                        </div> -->
+                    </div>           
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <div class="mobile-about-page-contact" id="mobile-contact">
+      <div class="clip-text">
+         <div class="about-title-background">
+            <div class="about-title-upper-contact">
+               CON-
+            </div>
+            <div class="about-title-lower-contact">
+               TACT
+            </div>
+         </div>
+         <div class="about-title-background">
+            <div class="about-title-upper-contact" style="margin-left: 3vw;">
+               CON-
+            </div>
+            <div class="about-title-lower-contact" style="margin-left: 3vw;">
+               TACT
+            </div>
+         </div>
+      </div>
+      <div class="clip-text">
+         <div class="mobile-email">
+            <p>or email me @</p>
+            <a href="mailto:lemuelmpranoto@gmail.com">lemuelmpranoto@gmail.com</a>
+         </div>  
+      </div>
+      <div class="clip-text">
+         <div class="mobile-contact-form">
+             <p class="contact-form-title">LET'S CHAT <span class="mobile wave emoji">👋</span></p>
+             <div class="contact-wrap">
+                 <div class="mobile-contact-in">
+                     <form action="https://formspree.io/f/xqkgoory" method="POST" id="reused_form">
+                         <input type="text" name="_replyto" placeholder="Your Email" class="mobile-contact-in-input">
+                         <textarea name="message" placeholder="Let me know you dropped by!" class="mobile-contact-in-textarea"></textarea>
+                         
+                         <button type="submit" class="mobile-contact-form-button">SUBMIT</button>
+                     </form>
+                 </div>           
+             </div>
+         </div>
+     </div>
+     
+     
+   </div>
+
+   
+
+   <footer>
+      <div class="rocket">
+         <i class="fad fa-rocket-launch about" onclick="location.href='#background-about';" style="cursor: pointer;"></i>
+      </div>
+      <div class="copyright about">
+         <a>&#169; Lemuel Matthew Pranoto</a>
+      </div>
+   </footer>
+   
+<!--------------------------------------------------------------------------------------------------------------------------->
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+   <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
+<!-- Improvements
+-make horizontal drag scrolling snap to divs
+-add hover animation (possibly liquid effect like in ilya kulbachny's website) when hovering over images in horizontal scroll
+-add image reveal on sides like in davide baratta website
+-->

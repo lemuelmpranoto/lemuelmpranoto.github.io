@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <meta name="google-site-verification" content="zgsXaVQLlYaSBDjnemScz8b2wNGk-OKoqKab2FsDJ90" />
-   <title>Lemuel Matthew Pranoto - My Portfolio</title>
+   <title>My Portfolio</title>
+   <link rel="icon" href="assets/Logo.png">
    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&family=Roboto&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="transition.css">
    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+   <script src="icon.js"></script>
 </head>
 
 <!-- 
@@ -26,341 +28,420 @@
 
 <body>
    <!--------------------------------------1.Wrapper and Media-------------------------------------->
-   <div class="wrapper">
-      <ul>
-         <li><ion-icon name="menu" size="large" onclick=""></ion-icon>
-            <ul>
-               <li id="homemenu"><a href="#home">HOME</a></li>
-               <li id="aboutmenu"><a href="#about">ABOUT</a></li>
-               <li><a href="v2/index.html">PROJECTS</a></li>
-               <li id="collectionsmenu"><a href="#collections">COLLECTIONS</a></li>
-               <li id="connectmenu"><a href="#connect">CONNECT</a></li>
-            </ul>
-         </li>
-      </ul>
+   <header>
+      <div class="header-title" id="header-title">
+          <a class="transition-link" id="header-title-home" href="index.html">LEMUEL MATTHEW PRANOTO</a>
+      </div>
+      <div class="mobile-header-title" id="header-title">
+         <a class="transition-link" id="mobile-header-title-home" href="index.html">LMP</a>
+      </div>
+   </header>
+
+   <span class="socials" id="socials-link" onclick="openNav()">Socials</span>
+   <div id="overlay-socials" class="overlay">
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+         <a class="overlay-links" href="https://github.com/lemuelmpranoto" target="_blank">GitHub</a>
+         <a class="overlay-links" href="https://www.linkedin.com/in/lemuel-pranoto-81282b193/" target="_blank">LinkedIn</a>
+         <a class="overlay-links" href="https://www.instagram.com/lemuelpranoto/?hl=en" target="_blank">Instagram</a>
+         <a class="overlay-links" href="https://www.facebook.com/lemuelmpranoto" target="_blank">Facebook</a>
+         <div class="wrapper-footer">
+            <div>
+            *Desktop devices are recommended for best viewing experience.
+            </div>
+            <div style='padding-top: 2vh; font-size: 1.5em; font-weight: 800;'>
+               &#169; Lemuel Matthew Pranoto
+            </div>
+         </div>
+      </div>
+      <div class="mobile-background-home-socials" id="background-home-socials">
+         <div class="clip-text">
+            <div class="home-title-background">
+               <div class="home-title-upper-socials">
+                  SOC-
+               </div>
+               <div class="home-title-lower-socials">
+                  IALS
+               </div>
+            </div>
+         </div>
+      </div>
    </div>
    
-   <div class="media1">
-      <a href="https://www.instagram.com/lemuelpranoto/?hl=en" target="_blank"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
-   </div>
-   <div class="media2">
-      <a href="https://www.linkedin.com/in/lemuel-pranoto-81282b193/" target="_blank"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
-   </div>
-   <div class="media3">
-      <a href="https://www.facebook.com/lemuelmpranoto" target="_blank"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
-   </div>
-   <div class="media4">
-      <a href="https://github.com/lemuelmpranoto" target="_blank"><ion-icon name="logo-github" size="large"></ion-icon></a>
-   </div>
-   <!--------------------------------------Wrapper and Media End-------------------------------------->
 
-<!--------------------------------------------------------------------------------------------------------------------------->
 
-   <!---------------------------------------2.Loading Animation--------------------------------------->
-   <div class="temp"></div>
-   <div class="first-block"></div>
-   <div class="second-block"></div>
-   <div class="temp-block"></div>
-   <div class="loader">
-      <ul>
+   <div class="nav-menu">
+      <div class="menu-item">
+         <a class="nav-menu-home" href="#projects-gallery">Projects</a>
+      </div>
+      <div class="menu-item">
+         <a class="nav-menu-home" href="#collections-title">Collections</a>
+      </div>
+      <div class="menu-item" id="about-nav-menu">
+         <a class="nav-menu-home transition-link" href="about.html">About</a>
+      </div>
+   </div>
+
+   <div class="mobile-nav-menu">
+      <ul class="mobile-menu-item">
          <li>
-            <ul>
-               <li class="row1">L</li><li class="row1">E</li><li class="row1">M</li><li class="row1">U</li><li class="row1">E</li><li class="row1">L</li>
-            </ul>   
+            <a class="mobile-nav-menu-home" href="#mobile-projects">Projects</a>
          </li>
-         <!-- <li class="space1"> </li> -->
          <li>
-            <ul>
-               <li class="row2">M</li><li class="row2">A</li><li class="row2">T</li><li class="row2">T</li><li class="row2">H</li><li class="row2">E</li><li class="row2">W</li>
-            </ul>   
+            <a class="mobile-nav-menu-home" href="#mobile-collections">Collections</a>
          </li>
-         <!-- <li class="space2"> </li> -->
          <li>
-            <ul>
-               <li class="row3">P</li><li class="row3">R</li><li class="row3">A</li><li class="row3">N</li><li class="row3">O</li><li class="row3">T</li><li class="row3">O</li>
-            </ul>   
+            <a class="mobile-nav-menu-home transition-link" href="about.html">About</a>
          </li>
       </ul>
    </div>
-   <div class="loaderafter">
-      <ul>
-         <li>
-            <ul>
-               <li class="row1">L</li><li class="row1">E</li><li class="row1">M</li><li class="row1">U</li><li class="row1">E</li><li class="row1">L</li>
-            </ul>   
-         </li>
-         <!-- <li class="space1"> </li> -->
-         <li>
-            <ul>
-               <li class="row2">M</li><li class="row2">A</li><li class="row2">T</li><li class="row2">T</li><li class="row2">H</li><li class="row2">E</li><li class="row2">W</li>
-            </ul>   
-         </li>
-         <!-- <li class="space2"> </li> -->
-         <li>
-            <ul>
-               <li class="row3">P</li><li class="row3">R</li><li class="row3">A</li><li class="row3">N</li><li class="row3">O</li><li class="row3">T</li><li class="row3">O</li>
-            </ul>   
-         </li>
-      </ul>
+
+   <div class="connect-icons">
+      <div class="facebook">
+         <a href="https://www.facebook.com/lemuelmpranoto" target="_blank"><ion-icon class="icons-home-page" name="logo-facebook" style="font-size: 1.5rem;"></ion-icon></a>
+      </div>
+      <div class="instagram">
+         <a href="https://www.instagram.com/lemuelpranoto/?hl=en" target="_blank"><ion-icon class="icons-home-page" name="logo-instagram" style="font-size: 1.5rem;"></ion-icon></a>
+      </div>
+      <div class="linkedin">
+         <a href="https://www.linkedin.com/in/lemuel-pranoto-81282b193/" target="_blank"><ion-icon class="icons-home-page" name="logo-linkedin" style="font-size: 1.5rem;"></ion-icon></a>
+      </div>
+      <div class="github">
+         <a href="https://github.com/lemuelmpranoto" target="_blank"><ion-icon class="icons-home-page" name="logo-github" style="font-size: 1.5rem;"></ion-icon></a>
+      </div>
    </div>
-   <div class="border"><span></span></div>
-   <div class="third-block" id="home"></div>
-   <!----------------------------------------Loading Animation End---------------------------------------->
-  
-<!--------------------------------------------------------------------------------------------------------------------------->
 
-   <!----------------------------------------3.Content of the Page---------------------------------------->
-   <div class="content">
-      <div class="about" id="about">
-         <h2>ABOUT</h2>
-         
-         <div class="slidershow about1">
-           <div class="slides">
-             <input type="radio" name="r" id="r1-1" checked>
-             <input type="radio" name="r" id="r1-2">
-             <input type="radio" name="r" id="r1-3">
-             <input type="radio" name="r" id="r1-4">
-             <input type="radio" name="r" id="r1-5">
-             <input type="radio" name="r" id="r1-6">
-             
-             <div class="slide s1">
-               <!-- third year computer engineer at ubc
-               photographer, film maker, sports enthusiast, family man
-               core principles: integrity, perseverance,  -->
-               <img src="assets/slide1.jpg" alt="">
-             </div>
-             <div class="slide">
-               <img src="assets/slide2.jpg" alt="">
-             </div>
-             <div class="slide">
-               <img src="assets/slide3 edit.jpg" alt="">
-             </div>
-             <div class="slide">
-               <img src="assets/slide4 edit.jpg" alt="">
-             </div>
-             <!-- <div class="slide">
-               <img src="assets/004.jpg" alt="">
-             </div> -->
-           </div>
-           <div class="navigation-about">
-             <label for="r1-1" class="bar" style="display:inline-block; overflow: hidden;"></label>
-             <label for="r1-2" class="bar" style="display:inline-block; overflow: hidden;"></label>
-             <label for="r1-3" class="bar" style="display:inline-block; overflow: hidden;"></label>
-             <label for="r1-4" class="bar" style="display:inline-block; overflow: hidden;"></label>
-             <label for="r1-5" class="bar" style="display:inline-block; overflow: hidden;"></label>
-             <label for="r1-6" class="bar" style="display:inline-block; overflow: hidden;"></label>
-            
-           </div>
-         </div>
-         <div class="border-about" style="z-index: 1;"><span></span></div>
+   <div class="transition transition-1 is-active" id="transition-home"></div>
+
+   <div class="background-home" id="background-home">
+      <div class="clip-text">
+         <a>WELCOME</a>
       </div>
-      <div class="projects" id="projects">
-         <!-- IMAGE RATIO: 3:1.8 -->
-         <!-- DE Booth, Home Security System, Chat App, Line Follower Robot, rock paper scissors game or flappy bird game -->
-         <!-- Include high level designs if possible -->
-         <h2>PROJECTS</h2>
-         <div class="slidershow project1" id="project1">
-            <div class="slides">
-              <input type="radio" name="r" id="r2-1" checked>
-              <input type="radio" name="r" id="r2-2">
-              <input type="radio" name="r" id="r2-3">
-              <div class="slide s2">
-                  <img src="assets/chat1.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img src="assets/chat2.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img src="assets/chat3.jpg" alt="">
-              </div>
+   </div>
+
+   <div class="mobile-background-home" id="background-home">
+      <div class="clip-text">
+         <div class="home-title-background">
+            <div class="home-title-upper">
+               WEL-
             </div>
-            <div class="project-name">
-               <h2>"CHAT'R"</h2>
-            </div>
-            <div class="navigation">
-              <label for="r2-1" class="bar"></label>
-              <label for="r2-2" class="bar"></label>
-              <label for="r2-3" class="bar"></label>
+            <div class="home-title-lower">
+               COME
             </div>
          </div>
-         <div class="slidershow project2">
-            <div class="slides">
-              <input type="radio" name="r" id="r3-1" checked>
-              <input type="radio" name="r" id="r3-2">
-              <input type="radio" name="r" id="r3-3">
-              <div class="slide s3">
-                  <div class="debooth">
-                     <iframe width="760" height="456" 
-                     src="https://www.youtube.com/embed/lcsSj8Oy9BU" frameborder="0" 
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                     gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+   </div>
+
+   <div class="home-intro" id="home-intro" >
+      <div style='text-align: center;'>
+         <div style='float: left;'>
+            <a id="intro-title">Hi, I'm</a>
+         </div>
+         <div class="bounce" id="bounce" style='float: right; margin-left: 1vw;'>
+            <a class="transition-link about-link cool-face-cursor bounce-animation gradient-text" id="intro-title" href="about.html">Lemuel</a>
+         </div>
+         <div id="hidden-click-me" style='text-align: center;'>
+            <div class="appear-pointer" id="appear-pointer" style='float: left;'>
+               <a >👇</a>
+            </div>
+            <div style='float: right; margin-left: 0.5vw;'>
+               <a>Click Me</a>
+            </div>
+         </div>
+      </div>
+      <a id="intro-greetings">glad you're here :)</a>
+      <!-- <a id="intro-desc">On this page, you can learn more about myself and what I love to do!</a> -->
+   </div>
+   
+   <div class="mobile-home-intro" id="home-intro">
+      <div style='text-align: center;'>
+         <div class="intro-top">
+            <a id="intro-title">Hi, I'm</a>
+         </div>
+         <div class="bounce intro-center" id="bounce">
+            <a class="transition-link about-link bounce-animation" id="intro-title" href="about.html">Lemuel</a>
+         </div>
+      </div>
+      <div class="intro-bottom">
+         <a id="intro-greetings">glad you're here :)</a>
+      </div>
+      <!-- <a id="intro-desc">On this page, you can learn more about myself and what I love to do!</a> -->
+   </div>
+
+   <div class="scroll-icon" onclick="window.location='#projects'" style="cursor: pointer">
+      <img src="assets/scroll.png">
+   </div>
+
+   <div class="background-projects" id="projects">
+      <div class="clip-text">
+         <a>PROJECTS</a>
+      </div>
+      <div class="projects-gallery" id="projects-gallery">
+         <div class="container">
+            <div class="item card-container1 project-container">
+               <div class="card chatr">
+                  <div class="inner">
+                     <div class="project-image img-1">
+                        <img src="assets/Projects/CHAT'R/home.jpg" lt="chat-app">
+                     </div>
+                     <div class="info project1-title">
+                        <h1 class="title project1-h1" style="text-align: center;">CHAT'R</h1>
+                        <h3 style="text-align: center;">JavaScript, HTML, CSS, MongoDB, NodeJs</h3>
+                     </div>
                   </div>
-              </div>
-              <div class="slide">
-                <img src="assets/debooth1.png" alt="">
-              </div>
-              <div class="slide">
-                <img src="assets/debooth2.png" alt="">
-              </div>
+               </div>
             </div>
-            <div class="project-name">
-               <h2>"DE Booth"</h2>
-            </div>
-            <div class="navigation">
-              <label for="r3-1" class="bar"></label>
-              <label for="r3-2" class="bar"></label>
-              <label for="r3-3" class="bar"></label>
-            </div>
-         </div>
-         <div class="slidershow project3">
-            <div class="slides">
-              <input type="radio" name="r" id="r4-1" checked>
-              <input type="radio" name="r" id="r4-2">
-              <input type="radio" name="r" id="r4-3">
-              <div class="slide s4">
-                  <div class="sec-sys">
-                     <iframe width="760" height="456" 
-                     src="https://www.youtube.com/embed/yRU4acTwtLU" frameborder="0" 
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                     gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <div class="item card-container2 project-container">
+               <div class="card event-manager">
+                  <div class="inner">
+                     <div class="project-image img-2">
+                        <img src="assets/Projects/Event Manager App/HomePage.png" lt="event-manager">
+                     </div>
+                     <div class="info project2-title">
+                        <h1 class="title project2-h1" style="text-align: center;">Event Manager</h1>
+                        <h3 style="text-align: center;">AWS, React, Restful APIs, JavaScript, HTML, CSS</h3>
+                     </div>
                   </div>
-              </div>
-              <div class="slide">
-                <img src="assets/hero.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img src="assets/tokyo1.jpg" alt="">
-              </div>
-            </div>
-            <div class="project-name">
-               <h2>"HOME SECURITY SYSTEM"</h2>
-            </div>
-            <div class="navigation">
-              <label for="r4-1" class="bar"></label>
-              <label for="r4-2" class="bar"></label>
-              <label for="r4-3" class="bar"></label>
+               </div>
             </div>
          </div>
-         <div class="slidershow project4">
-            <div class="slides">
-              <input type="radio" name="r" id="r5-1" checked>
-              <input type="radio" name="r" id="r5-2">
-              <input type="radio" name="r" id="r5-3">
-              <div class="slide s5">
-                  <div class="robot">
-                     <iframe width="760" height="456" 
-                     src="https://www.youtube.com/embed/sqdC2kabE9k" frameborder="0" 
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                     gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="projects-gallery2" id="projects-gallery">
+         <div class="container">
+            <div class="item card-container3 project-container">
+               <div class="card tall line-following-robot">
+                  <div class="inner">
+                     <div class="project-image img-3">
+                        <img src="assets/Projects/Line Following Robot/robot.jpg" lt="robot">
+                     </div>
+                     <div class="info project3-title">
+                        <h1 class="title project3-h1" style="text-align: center;">Line-Following Robot</h1>
+                        <h3 style="text-align: center;">Raspberry Pi 3, Raspbian, Python, GPIO</h3>
+                     </div>
                   </div>
-              </div>
-              <div class="slide">
-                <img src="assets/hero.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img src="assets/tokyo1.jpg" alt="">
-              </div>
+               </div>
             </div>
-            <div class="project-name">
-               <h2>"LINE - FOLLOWING ROBOT"</h2>
-            </div>
-            <div class="navigation">
-              <label for="r5-1" class="bar"></label>
-              <label for="r5-2" class="bar"></label>
-              <label for="r5-3" class="bar"></label>
+            <div class="item card-container4 project-container">
+               <div class="card tall DE-Booth">
+                  <div class="inner">
+                     <div class="project-image img-4">
+                        <img src="assets/Projects/DE Booth/debooth.jpg" lt="DE-Booth">
+                     </div>
+                     <div class="info project4-title">
+                        <h1 class="title project4-h1" style="text-align: center;">DE-Booth</h1>
+                        <h3 style="text-align: center;">C, Verilog, Python, DE1-SoC</h3>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
-         <div class="resume">
-            <p>Download my</p>
-            <p><a style="text-decoration: underline;" href="assets/Lemuel-Pranoto-Resume.pdf" target="_blank">RESUME</a></p>
-         </div>
-         <div class="border-projects" style="z-index: 1;"><span></span></div>
       </div>
 
-
-      <div class="collections" id="collections">
-         
-         <h2>COLLECTIONS</h2>
-         <h2 style="font-size: 25px; text-decoration: none;">Coming Soon</h2>
-    
-              <!-- <div class="slide">
-                <i class="fa">&#128241;</i>
-                <div class="contactblock">
-                   <h1>Reach me at</h1>
-                   <h3>+62-813-8276-9999 (active)</h3>
-                   <h3>+1-604-780-0672 (currently inactive)</h3>
-                </div>
-              </div>
-              <div class="slide">
-                 <i class="fa">&#9993;</i>
-                 <div class="contactblock">
-                  <h1>Email me at</h1>
-                  <h3>lemuelmpranoto@gmail.com</h3>
-               </div> -->
-         
-      </div>
-
-      <div class="connect" id="connect">
-         <p class="find-me-on" style="z-index: 5;">CONNECT</p>
-         <div class="connect-block" id="connect">
-            <div>
-               <a href="https://www.linkedin.com/in/lemuel-pranoto-81282b193/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+      <div class="projects-gallery3" id="projects-gallery">
+         <div class="container">
+            <div class="item card-container5 project-container">
+               <div class="card tall home-sec">
+                  <div class="inner">
+                     <div class="project-image img-5">
+                        <img src="assets/Projects/Security Vault/vault.png" lt="home-sec">
+                     </div>
+                     <div class="info project5-title">
+                        <h1 class="title project5-h1" style="text-align: center; font-size: 1.8vw;">Home Security System Prototype</h1>
+                        <h3 style="text-align: center;">Raspberry Pi 3, Raspbian, Python, GPIO</h3>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div>
-               <a href="https://www.facebook.com/lemuelmpranoto" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-            </div>
-            <div>
-               <a href="https://www.instagram.com/lemuelpranoto/?hl=en" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-            </div>
-            <div>
-               <a href="https://github.com/lemuelmpranoto" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-            </div>
-            <div>
-               <a href="mailto: lemuelmpranoto@gmail.com" target="_blank"><ion-icon name="mail"></ion-icon></a>
+            <div class="item card-container6 project-container">
+               <div class="card personal-website-v1">
+                  <div class="inner">
+                     <div class="project-image img-6">
+                        <img src="assets/Projects/Personal Website V1/website.png" lt="personal website v1">
+                     </div>
+                     <div class="info project6-title">
+                        <h1 class="title project6-h1" style="text-align: center;">Personal Website V1</h1>
+                        <h3 style="text-align: center;">JavaScript, HTML, CSS, NodeJs</h3>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
-         <div id="contact-form">
-            <div id="form-div">
-              <form action="https://formspree.io/f/xqkgoory" method="post" class="montform" id="reused_form">
-                <p class="name">
-                  <input name="name" type="text" class="feedback-input" required placeholder="Name" id="name" />
-                </p>
-                <p class="email">
-                  <input name="email" type="email" required  class="feedback-input" id="email" placeholder="Email" />
-                </p>
-                <p class="text">
-                  <textarea name="message" class="feedback-input" id="comment" placeholder="Message"></textarea>
-                </p>
-                      <div class="submit">
-                         <div class="status"></div>
-                  <button type="submit" class="button-blue">SUBMIT</button>
-                  <div class="ease"></div>
-                </div>
-              </form>
+      </div> 
+   </div>
+
+
+   <div class="mobile-background-projects" id="mobile-projects">
+      <div class="clip-text">
+         <a>PROJECTS</a>
+      </div>
+      <div class="mobile-projects-gallery">
+         <div class="mobile-item project1">
+               <img src="assets/Projects/CHAT'R/home.jpg" lt="personal website v1">
+            <div class="project-title">
+               <h1>CHAT'R</h1>
             </div>
          </div>
-         <!-- <div class="contact-form">
-            <h2 style="font-size: 30px;">or message me here!</h2>
-            <form action="https://formspree.io/f/xqkgoory" method="post">
-               <label>Name<input type="text" name="name" class="name"/></label>
-               <label>Email<input type="email" name="email "class="email"/></label>
-               <label>Message<textarea class="message" name="message"></textarea></label>
-               <div class="status"></div>
-               <input type="submit" class="submit">
-            </form>
-         </div> -->
-         <div class="border-connect" style="z-index: 1;"><span></span></div>
+         <div class="mobile-item project2">
+            <img src="assets/Projects/Event Manager App/HomePage.png" lt="personal website v1">
+            <div class="project-title">
+               <h1>Event Manager</h1>
+            </div>
+         </div>
+         <div class="mobile-item project3">
+            <img src="assets/Projects/Line Following Robot/robot.jpg" lt="personal website v1">
+            <div class="project-title">
+               <h1>Line-Following Robot</h1>
+            </div>
+         </div>
+         <div class="mobile-item project4">
+            <img src="assets/Projects/DE Booth/debooth.jpg" lt="personal website v1">
+            <div class="project-title">
+               <h1>DE-Booth</h1>
+            </div>
+         </div>
+         <div class="mobile-item project5">
+            <img src="assets/Projects/Security Vault/vault.png" lt="personal website v1">
+            <div class="project-title">
+               <h1>Home Security System Prototype</h1>
+            </div>
+         </div>
+         <div class="mobile-item project6">
+            <img src="assets/Projects/Personal Website V1/website.png" lt="personal website v1">
+            <div class="project-title">
+               <h1>Personal Website V1</h1>
+            </div>
+         </div>
       </div>
-      
-      <div class="back-to-top" id="back-to-top">
-         <a href="#home">back to top</a>
+   </div>
+
+
+   <div class="background-collections" id="collections">
+      <div class="clip-text" id="collections-title">
+         <a>COLLECTIONS</a>
       </div>
-      <div class="copyright" id="copyright">
+         <div class="collections-intro" id="collections-intro">
+            <a id="top-text">I picked up photography as a side hobby which I am passionate about.</a><br>
+            <a id="bottom-text"> These are some of my favourite photographs in recent years.</a>
+         </div>
+      <div class="gallery">
+         <div class="img-container">
+             <img 
+                 src="assets/Collections/bromo_square.jpg"
+                 alt="Bromo, ID, 2018"
+                 data-original="assets/Collections/bromo.jpg"
+             />
+         </div>
+         <div class="img-container">
+             <img 
+                 src="assets/Collections/mykonos_square.jpg"
+                 alt="Mykonos, GR, 2018"
+                 data-original="assets/Collections/mykonos.jpg"
+             />
+         </div>
+         <div class="img-container">
+             <img 
+                 src="assets/Collections/santorini_square.jpg"
+                 alt="Santorini, GR, 2018"
+                 data-original="assets/Collections/santorini.jpg"
+             />
+         </div>
+         <div class="img-container">
+            <img 
+                src="assets/Collections/banff_square.jpg"
+                alt="Banff, CA, 2019"
+                data-original="assets/Collections/banff.jpg"
+            />
+        </div>
+         <div class="img-container">
+             <img 
+                 src="assets/Collections/seattle_square.jpg"
+                 alt="Seattle, USA, 2019"
+                 data-original="assets/Collections/seattle.jpg"
+             />
+         </div>
+     </div>
+     <div class="modal">
+         <img class="full-img" src="assets/Collections/banff_square.jpg" alt=""/>
+         <p class="caption">Caption</p>
+     </div>
+   </div>
+
+
+   <div class="mobile-background-collections" id="mobile-collections">
+      <div class="clip-text">
+         <a>COLLECTIONS</a>
+      </div>
+      <div class="mobile-collections-gallery">
+         <div class="mobile-item image1">
+               <img src="assets/Collections/bromo_square.jpg" lt="bromo">
+            <div class="image-title">
+               <h1>Bromo, 🇮🇩, 2018</h1>
+            </div>
+         </div>
+         <div class="mobile-item image2">
+            <img src="assets/Collections/mykonos_square.jpg" lt="mykonos">
+            <div class="image-title">
+               <h1>Mykonos, 🇬🇷, 2018</h1>
+            </div>
+         </div>
+         <div class="mobile-item image3">
+            <img src="assets/Collections/santorini_square.jpg" lt="santorini">
+            <div class="image-title">
+               <h1>Santorini, 🇬🇷, 2018</h1>
+            </div>
+         </div>
+         <div class="mobile-item image4">
+            <img src="assets/Collections/banff_square.jpg" lt="banff">
+            <div class="image-title">
+               <h1>Banff, 🇨🇦, 2019</h1>
+            </div>
+         </div>
+         <div class="mobile-item image5">
+            <img src="assets/Collections/seattle_square.jpg" lt="seattle">
+            <div class="image-title">
+               <h1>Seattle, 🇺🇸, 2019</h1>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <footer>
+      <div class="rocket">
+         <i class="fad fa-rocket-launch home" onclick="location.href='#background-home';" style="cursor: pointer;"></i>
+      </div>
+      <div class="copyright home">
          <a>&#169; Lemuel Matthew Pranoto</a>
       </div>
-   </div>
-   <!---------------------------------------Content of the Page End--------------------------------------->
 
+      <!-- <div class="mobile-footer">
+         <div class="mobile-connect-icons">
+            <div class="facebook">
+               <a href="https://www.facebook.com/lemuelmpranoto" target="_blank"><ion-icon class="icons-home-page" name="logo-facebook" style="font-size: 1.5rem;"></ion-icon></a>
+            </div>
+            <div class="instagram">
+               <a href="https://www.instagram.com/lemuelpranoto/?hl=en" target="_blank"><ion-icon class="icons-home-page" name="logo-instagram" style="font-size: 1.5rem;"></ion-icon></a>
+            </div>
+            <div class="linkedin">
+               <a href="https://www.linkedin.com/in/lemuel-pranoto-81282b193/" target="_blank"><ion-icon class="icons-home-page" name="logo-linkedin" style="font-size: 1.5rem;"></ion-icon></a>
+            </div>
+            <div class="github">
+               <a href="https://github.com/lemuelmpranoto" target="_blank"><ion-icon class="icons-home-page" name="logo-github" style="font-size: 1.5rem;"></ion-icon></a>
+            </div>
+         </div>
+         <a>*Best experience on desktop.</a>
+         <div class="mobile-rocket">
+            <i class="fad fa-rocket-launch home" onclick="location.href='#background-home';" style="cursor: pointer;"></i>
+         </div>
+         <div class="mobile-copyright home">
+            <a>&#169; Lemuel Matthew Pranoto</a>
+         </div>
+      </div> -->
+      
+   </footer>
+   
 <!--------------------------------------------------------------------------------------------------------------------------->
    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
    <script type="text/javascript" src="script.js"></script>
@@ -368,82 +449,18 @@
 </html>
 
 
-
-
-
-
-<!-- Improvements:
-     1. add parallax animation for collections section 
-     2. add text animation for about section when moving to next slide
-     3. mov div of sections as child to div of border to their corresponding sections
-     4. improve timing of afterloader div appearance
-     5. make expanding page for collections when pressed
-     6. make grid style for collections section when expanded
-     7. change font to better one
-     8. change the navigation menu to open new screen on mobile
+<!--
+Improvements: 
+-when on projects page, highlight the projects on navbar using animation
+-when press on the rocket icon, make page shake as if we're taking off
 -->
 
+<!--
+Projects: 
+-serverless events manager app
+-de booth
+-line following robot
+-security vault system
+-CHAT'R (chat app)
 
-
-
-
-
-
-
-
-
-
-      <!-- <div class="logo">
-          <span>
-            <li href="index.html"><ion-icon name="home" size="large"></ion-icon></li>
-          </span>    
-      </div> -->
-
-      <!-- <div class="content">
-            <div class="heading">
-                  <span>About Me</span>
-            </div>
-            <div class="desc">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium omnis nostrum eum, ipsa quia voluptatem. Quia ut, iste ad obcaecati doloremque voluptas porro at maiores eaque?</p>
-            </div>
-            <div class="link">
-                  <button type="button">VISIT NOW</button>
-            </div>
-      </div> -->
-
-      <!-- <div class="content">
-            <div class="aboutme">
-                  <span>About Me</span>
-                  
-            </div>
-            <div class="img">
-                  <img src="assets/hero.jpg" alt="" >
-            </div>
-      </div>
-       -->
-
-       <!-- <section>
-         <img src="assets/bg.jpg" id="bg">
-         <img src="assets/moon.png" id="moon">
-         <img src="assets/mountain.png" id="mountain">
-         <img src="assets/road.png" id="road">
-         <h2 id="text">Moon Light</h2>
-     </section>
-     <script type="text/javascript">
-         let bg = document.getElementById("bg");
-         let moon = document.getElementById("moon");
-         let mountain = document.getElementById("mountain");
-         let road = document.getElementById("road");
-         let text = document.getElementById("text");
-         window.addEventListener('scroll', function(){
-             var value = window.scrollY;
-             bg.style.top = value * 0.5 + 'px';
-             moon.style.left = -value * 0.5 + 'px';
-             mountain.style.top = -value * 0.15 + 'px';
-             road.style.top = value * 0.15 + 'px';
-             text.style.top = value * 1 + 'px';
-         })
-     </script> -->
-     <!-- <div class="watch">
-         <ion-icon name="play"></ion-icon>
-     </div> -->
+-->
