@@ -1285,6 +1285,18 @@ footer .copyright.home a {
     background-color: #2c9fdd;
     z-index: 5;
 }
+.mobile-background-about-content .about-title-background {
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.35vh) * 100);
+    color: #f13c20;
+    opacity: 0.5;
+}
+.mobile-background-about-content .about-title-upper {
+    transform: translateX(-15%);
+}
+.mobile-background-about-content .about-title-lower {
+    transform: translateX(10.5%);
+}
 .mobile-background-about-content a {
     position: fixed;
     left: 1.2vw;
