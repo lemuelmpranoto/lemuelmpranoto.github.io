@@ -1036,8 +1036,7 @@ input[type="checkbox"] {
 }
 .mobile-background-collections {
     position: relative;
-    /* height: 200vh; */
-    height: 450vh;
+    height: 360vh;
     width: 100vw;
     background-color: rgb(87, 194, 162);
     z-index: 5;
@@ -1056,15 +1055,10 @@ input[type="checkbox"] {
     position: absolute;
     width: 65vw;
     right: 7vw;
-    top: 0vh;
-    padding: 0;
-    margin: 0;
-    display: table;
-    border-spacing: 0 5vh;
+    top: 25vh;
 }
-.mobile-collections-gallery .mobile-item {
-    
-    display: table-row;
+.mobile-item {
+    padding-bottom: 15vh;
 }
 .mobile-item img {
     width: 100%;
@@ -1855,7 +1849,7 @@ footer .copyright.home a {
         display: block;
     }
     .mobile-background-collections {
-        display: inline-block;
+        display: block;
     }
 
     .mobile-background-about {
