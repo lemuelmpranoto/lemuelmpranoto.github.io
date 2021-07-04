@@ -1299,11 +1299,11 @@ footer .copyright.home a {
   background-size: contain;
 }
 
-.bounce {
-  animation: bounce 2s infinite;
+.bounce-right {
+  animation: bounceRight 2s infinite;
 }
 
-@keyframes bounce {
+@keyframes bounceRight {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }

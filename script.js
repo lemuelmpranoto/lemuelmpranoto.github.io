@@ -1,6 +1,8 @@
 /* Go back to the top of the page on refresh*/
 // window.onscroll = function () { window.scrollTo(0, 0); };
 
+
+
 const header_title_home_page = document.getElementById('header-title-home');
 const header_title_about_page = document.getElementById('header-title-about');
 
@@ -551,6 +553,3 @@ if(header_title_home_page == null) {
     console.log("Left: " + left + ", Top: " + y + ", Width: " + w + ", Height: " + h);
     });
 }
-
-
-
