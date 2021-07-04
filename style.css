@@ -1036,7 +1036,7 @@ input[type="checkbox"] {
 }
 .mobile-background-collections {
     position: relative;
-    height: 280vh;
+    height: 360vh;
     width: 100vw;
     background-color: rgb(87, 194, 162);
     z-index: 5;
