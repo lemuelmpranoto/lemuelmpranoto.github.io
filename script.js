@@ -22,7 +22,7 @@ window.onload = function() {
     const mobile_nav_menu_about_page = document.getElementsByClassName('mobile-nav-menu-about');
     const icons_about_page = document.getElementsByClassName('icons-about-page');
 
-    const about_nav_menu = document.getElementById('about-nav-menu');
+    // const about_nav_menu = document.getElementById('about-nav-menu');
 
     window.addEventListener('scroll', scrollEffect);
     function scrollEffect() {
@@ -81,11 +81,11 @@ window.onload = function() {
                 header_title_home_page.style.color = 'rgb(76, 81, 214)';
             }
 
-            if(x>availableScroll*0.80) {
-                about_nav_menu.style.display = 'block';
-            } else {
-                about_nav_menu.style.display = 'none';
-            }
+            // if(x>availableScroll*0.80) {
+            //     about_nav_menu.style.display = 'block';
+            // } else {
+            //     about_nav_menu.style.display = 'none';
+            // }
 
             /*--------------------------- For mobile ---------------------------*/
             if(x<=availableScroll*0.028) {

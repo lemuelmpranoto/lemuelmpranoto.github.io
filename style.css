@@ -367,9 +367,9 @@ input[type="checkbox"] {
     margin-right: -0.5em;
 }
 
-#about-nav-menu {
+/* #about-nav-menu {
     display: none;
-}
+} */
 
 .mobile-nav-menu {
     display: none;
@@ -1180,20 +1180,10 @@ footer .copyright.home a {
 
 .background-about-content {
     position: relative;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     background-color:#efe2ba;
     z-index: 5;
-}
-
-.background-about-content a {
-    position: fixed;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 0%);
-    font-family: 'TIMMONS NY';
-    font-size: calc(var(--vh, 0.15vh) * 100);
-    color: rgba(241,60,32,1);
 }
 .scroll-menu {
     /* background-color: #333; */
@@ -1275,16 +1265,51 @@ footer .copyright.home a {
 
 .drag-text {
     position: fixed;
-    left: 5%;
-    top: 50%;
-    transform: translate(-5%, -50%);
-    width: 8vw;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -0%);
+    /* width: 8vw; */
+    overflow: hidden;
+    z-index: 10;
 }
-.drag-text a {
+.drag-text.slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 4px;
+    background-color: #000000;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    -webkit-animation-name: drag-slider;
+    animation-name: drag-slider;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.26, 1.74);
+    animation-timing-function: cubic-bezier(0.17, 0.67, 0.26, 1.74);
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.drag-text.slider .inner{
+    display: block;
     font-family: 'GTCinetypeRegular';
-    font-size: 2vw;
-    padding-bottom: 2vh;
+    font-size: 1.5vh;
+    font-weight: bold;
+    padding: 15px 11px 0px 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     color: #000;
+}
+@keyframes drag-slider {
+    0%{
+        -webkit-transform:translate3d(-100%, 0, 0);
+        transform:translate3d(-100%, 0, 0)
+    }
+    100%{
+        -webkit-transform:translate3d(100%, 0, 0);
+        transform:translate3d(100%, 0, 0)
+    }    
 }
 .arrow
 {
@@ -1300,10 +1325,10 @@ footer .copyright.home a {
 }
 
 .bounce-right {
-  animation: bounceRight 2s infinite;
+  animation: swipe 2s infinite;
 }
 
-@keyframes bounceRight {
+@keyframes swipe {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
