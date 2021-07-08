@@ -10,6 +10,10 @@ window.onload = function() {
     /* Scroll Down Icon Effect */
     const scroll_icon = document.querySelector('.mouse_scroll');
 
+    const collections_menu_item = document.getElementById('collections-menu-item');
+    const projects_menu_item = document.getElementById('projects-menu-item');
+    const contact_menu_item = document.getElementById('contact-menu-item');
+
     const mobile_header_title_home_page = document.getElementById('mobile-header-title-home');
     const socials = document.getElementById('socials-link');
     const nav_menu_home_page = document.getElementsByClassName('nav-menu-home');
@@ -46,39 +50,41 @@ window.onload = function() {
         if(header_title_home_page != null) {
 
             /*--------------------------- For desktop ---------------------------*/
-            if(x<=availableScroll*0.01) {
-                for (let i = 0; i < nav_menu_home_page.length; i++) {
-                    nav_menu_home_page[i].style.color = '';
-                }
-                for (let i = 0; i < icons_home_page.length; i++) {
-                    icons_home_page[i].style.color = '';
-                }
-            } 
-            if(x<=availableScroll*0.608 && x>availableScroll*0.01) {
-                for (let i = 0; i < nav_menu_home_page.length; i++) {
-                    nav_menu_home_page[i].style.color = 'rgb(208, 44, 44)';
-                }
-                for (let i = 0; i < icons_home_page.length; i++) {
-                    icons_home_page[i].style.color = 'rgb(208, 44, 44)';
-                }
-            } 
-            if(x>availableScroll*0.608) {   
-                for (let i = 0; i < nav_menu_home_page.length; i++) {
-                    nav_menu_home_page[i].style.color = 'rgb(76, 81, 214)';
-                }
-                for (let i = 0; i < icons_home_page.length; i++) {
-                    icons_home_page[i].style.color = 'rgb(76, 81, 214)';
-                }
-            }
+            // if(x<=availableScroll*0.01) {
+            //     for (let i = 0; i < nav_menu_home_page.length; i++) {
+            //         nav_menu_home_page[i].style.color = '';
+            //     }
+            //     for (let i = 0; i < icons_home_page.length; i++) {
+            //         icons_home_page[i].style.color = '';
+            //     }
+            // } 
+            // if(x<=availableScroll*0.608 && x>availableScroll*0.01) {
+            //     for (let i = 0; i < nav_menu_home_page.length; i++) {
+            //         nav_menu_home_page[i].style.color = 'rgb(208, 44, 44)';
+            //     }
+            //     for (let i = 0; i < icons_home_page.length; i++) {
+            //         icons_home_page[i].style.color = 'rgb(208, 44, 44)';
+            //     }
+            // } 
+            // if(x>availableScroll*0.608) {   
+            //     for (let i = 0; i < nav_menu_home_page.length; i++) {
+            //         nav_menu_home_page[i].style.color = 'rgb(76, 81, 214)';
+            //     }
+            //     for (let i = 0; i < icons_home_page.length; i++) {
+            //         icons_home_page[i].style.color = 'rgb(76, 81, 214)';
+            //     }
+            // }
 
-            if(x<=availableScroll*0.19) {
-                header_title_home_page.style.color = '';
-            } 
-            if(x<=availableScroll*0.79 && x>availableScroll*0.19) {
-                header_title_home_page.style.color = 'rgb(208, 44, 44)';
+            if(x>availableScroll*0.81) {
+                projects_menu_item.classList.remove('projects-anchor');
+                collections_menu_item.classList.add('collections-anchor');
             }
-            if(x>availableScroll*0.79) {
-                header_title_home_page.style.color = 'rgb(76, 81, 214)';
+            if(x<=availableScroll*0.81) {
+                projects_menu_item.classList.add('projects-anchor');
+                collections_menu_item.classList.remove('collections-anchor');
+            } 
+            if(x<=availableScroll*0.05) {
+                projects_menu_item.classList.remove('projects-anchor');
             }
 
             // if(x>availableScroll*0.80) {
@@ -120,32 +126,38 @@ window.onload = function() {
         } else if (header_title_about_page != null) {
 
             /*--------------------------- For desktop ---------------------------*/
-            if(x>availableScroll*0.76) {
-                for (let i = 0; i < nav_menu_about_page.length; i++) {
-                    nav_menu_about_page[i].style.color = '#6474e5';
-                    // scroll_icon.style.transform = 'translateY(-1vh)';
-                    // scroll_icon.style.transition = '1s ease-in-out';
-                    // about_desc_flag = true;
-                }
-                for (let i = 0; i < icons_about_page.length; i++) {
-                    icons_about_page[i].style.color = '#6474e5';
-                    // scroll_icon.style.transform = 'translateY(-1vh)';
-                    // scroll_icon.style.transition = '1s ease-in-out';
-                    // about_desc_flag = true;
-                }
-            } else {
-                for (let i = 0; i < nav_menu_about_page.length; i++) {
-                    nav_menu_about_page[i].style.color = ''; 
-                }
-                for (let i = 0; i < icons_about_page.length; i++) {
-                    icons_about_page[i].style.color = '';
-                }
-            }
+            // if(x>availableScroll*0.76) {
+            //     for (let i = 0; i < nav_menu_about_page.length; i++) {
+            //         nav_menu_about_page[i].style.color = '#6474e5';
+            //         // scroll_icon.style.transform = 'translateY(-1vh)';
+            //         // scroll_icon.style.transition = '1s ease-in-out';
+            //         // about_desc_flag = true;
+            //     }
+            //     for (let i = 0; i < icons_about_page.length; i++) {
+            //         icons_about_page[i].style.color = '#6474e5';
+            //         // scroll_icon.style.transform = 'translateY(-1vh)';
+            //         // scroll_icon.style.transition = '1s ease-in-out';
+            //         // about_desc_flag = true;
+            //     }
+            // } else {
+            //     for (let i = 0; i < nav_menu_about_page.length; i++) {
+            //         nav_menu_about_page[i].style.color = ''; 
+            //     }
+            //     for (let i = 0; i < icons_about_page.length; i++) {
+            //         icons_about_page[i].style.color = '';
+            //     }
+            // }
 
-            if(x>availableScroll*0.987) {
-                header_title_about_page.style.color = '#6474e5';
-            } else {
-                header_title_about_page.style.color = '';
+            // if(x>availableScroll*0.987) {
+            //     header_title_about_page.style.color = '#6474e5';
+            // } else {
+            //     header_title_about_page.style.color = '';
+            // }
+            if(x>availableScroll*0.81) {
+                contact_menu_item.classList.add('contact-anchor');
+            }
+            if(x<=availableScroll*0.81) {
+                contact_menu_item.classList.remove('contact-anchor');
             }
 
             /*--------------------------- For mobile ---------------------------*/
@@ -169,6 +181,7 @@ window.onload = function() {
                 mobile_header_title_about_page.style.color = '';
                 socials_about.style.color = '';
             }
+            
         }
 
         // if(header_title_home_page != null) {
@@ -212,7 +225,7 @@ window.onload = function() {
     scrollEffect();
 
 
-    /* Transition Effect */
+    /* -------------------------------- Transition Effect -------------------------------- */
 
     // const loaded = document.querySelector('.header-title');
     // if(loaded.classList.contains('loaded')) {
