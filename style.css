@@ -1838,16 +1838,16 @@ footer .copyright.home a {
 /* -------------------------------- Mouse Scroll -------------------------------- */
 
 .mouse_scroll {
-	width: 12px;
-	height: 50px;
-    margin-top: 125px;
-    display: block;
-	margin: 0 auto;
-    position: fixed;
-    bottom: 2vh;
-    left: 50%;
-    transform: translate(-50%, -2vh);
-    z-index: 6;
+  width: 12px;
+  height: 50px;
+  margin-top: 125px;
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 2vh;
+  left: 50%;
+  transform: translate(-50%, -2vh);
+  z-index: 6;
 }
 .m_scroll_arrows
 {
@@ -2000,17 +2000,15 @@ footer .copyright.home a {
     .header-title {
         display: none;
     }
-    .mobile-header-title {
-        display: block;
-    }
-
     .nav-menu {
         display: none;
     }
-    .mobile-nav-menu {
-        display: flex;
+    .connect-icons {
+        display: none;
     }
-
+    .mouse_scroll {
+        display: none;
+    }
     .background-home {
         display: none;
     }
@@ -2035,9 +2033,18 @@ footer .copyright.home a {
     .about-intro {
         display: none;
     }
+    .rocket {
+        display: none;
+    }
+    .copyright {
+        display: none;
+    }
 
 
 
+    .mobile-header-title {
+        display: block;
+    }
     .mobile-background-home {
         display: block;
     }
@@ -2047,7 +2054,9 @@ footer .copyright.home a {
     .mobile-background-collections {
         display: block;
     }
-
+    .mobile-nav-menu {
+        display: flex;
+    }
     .mobile-background-about {
         display: block;
     }
@@ -2063,25 +2072,7 @@ footer .copyright.home a {
     .mobile-about-intro {
         display: block;
     }
-
-
-    .connect-icons {
-        display: none;
-    }
-
-    .scroll-icon {
-        display: none;
-    }
     .socials {
         display: block;
     }
-    
-    .rocket {
-        display: none;
-    }
-    .copyright {
-        display: none;
-    }
-    
-
 }
