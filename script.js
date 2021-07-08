@@ -94,34 +94,34 @@ window.onload = function() {
             // }
 
             /*--------------------------- For mobile ---------------------------*/
-            if(x<=availableScroll*0.028) {
-                for (let i = 0; i < mobile_nav_menu_home_page.length; i++) {
-                    mobile_nav_menu_home_page[i].style.color = '';
-                }
-            } 
-            if(x<=availableScroll*0.53 && x>availableScroll*0.028) {
-                for (let i = 0; i < nav_menu_home_page.length; i++) {
-                    mobile_nav_menu_home_page[i].style.color = 'rgb(208, 44, 44)';
-                }
-            }
-            if(x>availableScroll*0.53) {   
-                for (let i = 0; i < nav_menu_home_page.length; i++) {
-                    mobile_nav_menu_home_page[i].style.color = 'rgb(76, 81, 214)';
-                }
-            }
+            // if(x<=availableScroll*0.028) {
+            //     for (let i = 0; i < mobile_nav_menu_home_page.length; i++) {
+            //         mobile_nav_menu_home_page[i].style.color = '';
+            //     }
+            // } 
+            // if(x<=availableScroll*0.53 && x>availableScroll*0.028) {
+            //     for (let i = 0; i < nav_menu_home_page.length; i++) {
+            //         mobile_nav_menu_home_page[i].style.color = 'rgb(208, 44, 44)';
+            //     }
+            // }
+            // if(x>availableScroll*0.53) {   
+            //     for (let i = 0; i < nav_menu_home_page.length; i++) {
+            //         mobile_nav_menu_home_page[i].style.color = 'rgb(76, 81, 214)';
+            //     }
+            // }
 
-            if(x<=availableScroll*0.48) {
-                mobile_header_title_home_page.style.color = '';
-                socials.style.color='';
-            } 
-            if(x<=availableScroll*0.98 && x>availableScroll*0.48) {
-                mobile_header_title_home_page.style.color = 'rgb(208, 44, 44)';
-                socials.style.color='rgb(208, 44, 44)';
-            }
-            if(x>availableScroll*0.98) {
-                mobile_header_title_home_page.style.color = 'rgb(76, 81, 214)';
-                socials.style.color='rgb(76, 81, 214)';
-            }
+            // if(x<=availableScroll*0.48) {
+            //     mobile_header_title_home_page.style.color = '';
+            //     socials.style.color='';
+            // } 
+            // if(x<=availableScroll*0.98 && x>availableScroll*0.48) {
+            //     mobile_header_title_home_page.style.color = 'rgb(208, 44, 44)';
+            //     socials.style.color='rgb(208, 44, 44)';
+            // }
+            // if(x>availableScroll*0.98) {
+            //     mobile_header_title_home_page.style.color = 'rgb(76, 81, 214)';
+            //     socials.style.color='rgb(76, 81, 214)';
+            // }
             
         } else if (header_title_about_page != null) {
 
@@ -161,26 +161,26 @@ window.onload = function() {
             }
 
             /*--------------------------- For mobile ---------------------------*/
-            if(x>availableScroll*0.53) {
-                for (let i = 0; i < mobile_nav_menu_about_page.length; i++) {
-                    mobile_nav_menu_about_page[i].style.color = '#6474e5';
-                    // scroll_icon.style.transform = 'translateY(-1vh)';
-                    // scroll_icon.style.transition = '1s ease-in-out';
-                    // about_desc_flag = true;
-                }
-            } else {
-                for (let i = 0; i < mobile_nav_menu_about_page.length; i++) {
-                    mobile_nav_menu_about_page[i].style.color = ''; 
-                }
-            }
+            // if(x>availableScroll*0.53) {
+            //     for (let i = 0; i < mobile_nav_menu_about_page.length; i++) {
+            //         mobile_nav_menu_about_page[i].style.color = '#6474e5';
+            //         // scroll_icon.style.transform = 'translateY(-1vh)';
+            //         // scroll_icon.style.transition = '1s ease-in-out';
+            //         // about_desc_flag = true;
+            //     }
+            // } else {
+            //     for (let i = 0; i < mobile_nav_menu_about_page.length; i++) {
+            //         mobile_nav_menu_about_page[i].style.color = ''; 
+            //     }
+            // }
 
-            if(x>availableScroll*0.98) {
-                mobile_header_title_about_page.style.color = '#6474e5';
-                socials_about.style.color = '#6474e5';
-            } else {
-                mobile_header_title_about_page.style.color = '';
-                socials_about.style.color = '';
-            }
+            // if(x>availableScroll*0.98) {
+            //     mobile_header_title_about_page.style.color = '#6474e5';
+            //     socials_about.style.color = '#6474e5';
+            // } else {
+            //     mobile_header_title_about_page.style.color = '';
+            //     socials_about.style.color = '';
+            // }
             
         }
 

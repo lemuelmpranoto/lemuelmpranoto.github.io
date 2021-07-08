@@ -151,14 +151,14 @@ ion-icon#icons-about-page:hover {
 }
 #mobile-header-title-about {
     transition: 0.5s;
-    color: #f13c20;
+    color: #000;
 }
 #socials-link {
     transition: 0.5s;
 }
 #socials-link-about {
     transition: 0.5s;
-    color: #f13c20;
+    color: #000;
 }
 
 
@@ -287,7 +287,7 @@ ion-icon#icons-about-page:hover {
 }
 .mobile-nav-menu-about {
     transition: 0.5s;
-    color: #f13c20;
+    color: #000;
     letter-spacing: 0.5em;
     margin-right: -0.5em;
 }
@@ -961,7 +961,7 @@ ion-icon#icons-about-page:hover {
     position: relative;
     height: 360vh;
     width: 100vw;
-    background-color: rgb(87, 194, 162);
+    background-color: rgb(137, 221, 196);
     z-index: 5;
 }
 .mobile-background-collections a {
@@ -972,7 +972,7 @@ ion-icon#icons-about-page:hover {
     transform:  rotate(-90deg) translateX(20%);
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.1vh) * 100);
-    color: rgb(76, 81, 214);
+    color: rgb(0, 145, 255);
 }
 .mobile-collections-gallery {
     position: absolute;
@@ -1205,7 +1205,7 @@ footer .copyright.home a {
     transform: translate(-50%, -50%);
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.75vh) * 100);
-    color: #f5cab1;
+    color: #fdc09c;
     /* opacity: 0.4; */
 }
 
@@ -1216,10 +1216,10 @@ footer .copyright.home a {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color:#2c9fdd;
+    background-color:#f5f5f5;
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.35vh) * 100);
-    color: #f13c20;
+    color: #7ac8da;
     z-index: 5;
 }
 .mobile-background-about .about-title-background {
@@ -1244,7 +1244,7 @@ footer .copyright.home a {
 } */
 
 
-.mobile-background-about .content {
+/* .mobile-background-about .content {
     position: fixed;
     right: 2.5%;
     top: 30%;
@@ -1252,8 +1252,8 @@ footer .copyright.home a {
     transform:  rotate(90deg);
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.1vh) * 100);
-    color: #f13c20;
-}
+    color: #f5f5f5;
+} */
 
 .background-about-content {
     position: relative;
@@ -1427,13 +1427,13 @@ footer .copyright.home a {
     height: 200vh;
     width: 100vw;
     /* background-color:#efe2ba; */
-    background-color: #2c9fdd;
+    background-color: #f5f5f5;
     z-index: 5;
 }
 .mobile-background-about-content .about-title-background {
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.35vh) * 100);
-    color: #f13c20;
+    color: #7ac8da;
     opacity: 0.5;
 }
 .mobile-background-about-content .about-title-upper {
@@ -1461,15 +1461,15 @@ footer .copyright.home a {
 }
 .mobile-about-gallery .about1 {
     position: relative;
-    left: -15vw;
+    left: -7vw;
 }
 .mobile-about-gallery .about2 {
     position: relative;
-    left: 15vw;
+    left: 7vw;
 }
 .mobile-about-gallery .about3 {
     position: relative;
-    left: -15vw;
+    left: -7vw;
 }
 .mobile-item {
     padding-bottom: 15vh;
@@ -1740,7 +1740,7 @@ footer .copyright.home a {
       auto;
 }
 .pointer-finger-cursor {
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='125' viewport='0 0 100 100' style='fill:black;font-size:68px;'><text y='50%'>🖕</text></svg>")
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='125' viewport='0 0 100 100' style='fill:black;font-size:68px;'><text y='50%'>👆</text></svg>")
         16 0,
       auto;
       transition-duration: 2s;
@@ -1781,26 +1781,19 @@ footer .copyright.home a {
 .mobile-about-page-contact {
     position: relative;
     height: 100vh;
-    background-color:#c6fad2;
-    z-index: 5;
-}
-.mobile-background-about-contact {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    background-color:#c6fad2;
+    background-color:#f5f5f5;
     z-index: 5;
 }
 .about-title-upper-contact {
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.35vh) * 100);
-    color: #6271e4;
+    color: #7c766f;
     transform: translateX(0%);
 }
 .about-title-lower-contact {
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.35vh) * 100);
-    color: #6271e4;
+    color: #7c766f;
     transform: translateX(3%);
 }
 
@@ -1891,7 +1884,7 @@ footer .copyright.home a {
     z-index: 11;
 }
 .mobile-email a {
-    background-color: rgba(255, 93, 18, 0.4);
+    background-color: rgba(85, 174, 102, 0.4);
     border-radius: 0.5em;
     padding: 10px 20px 10px 20px;
     opacity: 1;
