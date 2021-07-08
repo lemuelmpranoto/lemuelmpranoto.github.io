@@ -8,7 +8,7 @@ const header_title_about_page = document.getElementById('header-title-about');
 
 window.onload = function() {
     /* Scroll Down Icon Effect */
-    const scroll_icon = document.querySelector('.scroll-icon');
+    const scroll_icon = document.querySelector('.mouse_scroll');
 
     const mobile_header_title_home_page = document.getElementById('mobile-header-title-home');
     const socials = document.getElementById('socials-link');
