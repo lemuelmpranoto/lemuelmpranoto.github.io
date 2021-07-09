@@ -530,7 +530,7 @@ if(header_title_home_page == null) {
     let isDown = false;
     let startX;
     let scrollLeft;
-    const block = document.getElementById('blockYea');
+    const block = document.getElementById('about-block1');
 
     slider.addEventListener('mousedown', (e) => {
     isDown = true;

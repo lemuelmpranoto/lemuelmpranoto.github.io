@@ -1194,7 +1194,7 @@ footer .copyright.home a {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color:#f5f5f5;
+    background-color:#f3eee8;
     z-index: 5;
 }
 
@@ -1205,7 +1205,7 @@ footer .copyright.home a {
     transform: translate(-50%, -50%);
     font-family: 'TIMMONS NY';
     font-size: calc(var(--vh, 0.75vh) * 100);
-    color: #fdc09c;
+    color: #e2d9cb;
     /* opacity: 0.4; */
 }
 
@@ -1259,7 +1259,7 @@ footer .copyright.home a {
     position: relative;
     height: 120vh;
     width: 100vw;
-    background-color:#f5f5f5;
+    background-color:#f3eee8;
     z-index: 5;
 }
 .scroll-menu {
@@ -1529,7 +1529,7 @@ footer .copyright.home a {
 .about-page-contact {
     position: relative;
     height: 100vh;
-    background-color: #f5f5f5;
+    background-color: #f3eee8;
 }
 
 .about-page-contact a {
@@ -1624,7 +1624,7 @@ footer .copyright.home a {
     font-family: 'TIMMONS NY';
     font-size: 3.5vw;
     height: 1vh;
-    color: #8a8a8a;
+    color: #b8b8b8;
     padding-bottom: 2vh;
     margin-left: 1vw;
 }
