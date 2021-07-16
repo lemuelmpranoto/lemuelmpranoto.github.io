@@ -959,7 +959,7 @@ ion-icon#icons-about-page:hover {
 }
 .mobile-background-collections {
     position: relative;
-    height: 360vh;
+    height: calc(65vw*9);
     width: 100vw;
     background-color: rgb(137, 221, 196);
     z-index: 5;
