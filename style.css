@@ -806,7 +806,7 @@ ion-icon#icons-about-page:hover {
 }
 .mobile-background-projects {
     position: relative;
-    height: 420vh;
+    height: 850vw;
     width: 100vw;
     background-color: bisque;
     z-index: 5;
@@ -828,7 +828,7 @@ ion-icon#icons-about-page:hover {
     top: 25vh;
 }
 .mobile-item {
-    padding-bottom: 15vh;
+    padding-bottom: 30vw;
 }
 .mobile-item img {
     width: 100%;
@@ -959,7 +959,7 @@ ion-icon#icons-about-page:hover {
 }
 .mobile-background-collections {
     position: relative;
-    height: calc(65vw*9);
+    height: calc(575vw); /* 65vw*5 + 30vw*5 + 100vw*/
     width: 100vw;
     background-color: rgb(137, 221, 196);
     z-index: 5;
@@ -981,7 +981,7 @@ ion-icon#icons-about-page:hover {
     top: 25vh;
 }
 .mobile-item {
-    padding-bottom: 15vh;
+    padding-bottom: 30vw;
 }
 .mobile-item img {
     width: 100%;
@@ -1472,7 +1472,7 @@ footer .copyright.home a {
     left: -7vw;
 }
 .mobile-item {
-    padding-bottom: 15vh;
+    padding-bottom: 30vw;
 }
 .mobile-item img {
     width: 100%;
