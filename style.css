@@ -1424,7 +1424,7 @@ footer .copyright.home a {
 }
 .mobile-background-about-content {
     position: relative;
-    height: 400vw;
+    height: 370vw;
     width: 100vw;
     /* background-color:#efe2ba; */
     background-color: #f5f5f5;
@@ -1522,7 +1522,7 @@ footer .copyright.home a {
 }
 .mobile-about-intro a {
     font-family: 'GTCinetypeRegular';
-    font-size: calc(var(--vh, 0.1vw) * 100);
+    font-size: calc(var(--vh, 0.08vw) * 100);
     font-weight: 600;
 }
 
