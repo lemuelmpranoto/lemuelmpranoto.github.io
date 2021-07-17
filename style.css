@@ -966,7 +966,7 @@ ion-icon#icons-about-page:hover {
 }
 .mobile-background-collections a {
     position: fixed;
-    left: -12vw;
+    left: -11vw;
     top: 50%;
     transform-origin: center center;
     transform:  rotate(-90deg) translateX(20%);
