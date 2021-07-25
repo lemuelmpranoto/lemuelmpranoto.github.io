@@ -265,12 +265,9 @@ ion-icon#icons-about-page:hover {
     );
 }
 
-
 .nav-menu-home {
     transition: 0.5s;
     color: #000;
-    letter-spacing: 0.15em;
-    margin-right: -0.15em;
 }
 .mobile-nav-menu-home {
     transition: 0.5s;
@@ -282,10 +279,19 @@ ion-icon#icons-about-page:hover {
 .nav-menu-about {
     transition: 0.5s;
     color: #000;
+}
+.mobile-nav-menu-about {
+    transition: 0.5s;
+    color: #000;
     letter-spacing: 0.5em;
     margin-right: -0.5em;
 }
-.mobile-nav-menu-about {
+
+.nav-menu-projects {
+    transition: 0.5s;
+    color: #000;
+}
+.mobile-nav-menu-projects {
     transition: 0.5s;
     color: #000;
     letter-spacing: 0.5em;
@@ -714,7 +720,6 @@ ion-icon#icons-about-page:hover {
     padding: 0;
     background-color: rgba(255, 255, 255, .15);   
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05), 0px 0px 50px rgba(0, 0, 0, 0.05);
-    cursor: pointer;
 }
 .card.tall {
     height: calc(0.8*50vw);
@@ -784,6 +789,19 @@ ion-icon#icons-about-page:hover {
     color: #242121;
     font-weight: bold;
     transition: all 0.75s ease-out;
+}
+.click-link {
+    position: absolute;
+    font-size: 2vw !important;
+    color: #000 !important;
+    display: block;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.75s ease-out;
+    transform-origin: left;
+    z-index: 100;
+    /* opacity: 0; */
 }
 
 /* .column.chat img {
@@ -1749,26 +1767,6 @@ footer .copyright.home a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .mobile-about-page-contact .about-title-background {
     opacity: 0.2;
     letter-spacing: 1em;
@@ -1894,6 +1892,73 @@ footer .copyright.home a {
     font-family: 'GTCinetypeRegular';
     font-size: 1em;
     font-weight: 600;
+}
+
+
+
+
+
+/* ---------------------------------- Projects Page ---------------------------------- */
+.projects-content {
+    position: relative;
+    height: 120vh;
+    width: 100vw;
+    background-color:#f3eee8;
+    z-index: 5;
+}
+.projects-inner {
+    /* background-color: #333; */
+    /* overflow: auto;
+    white-space: nowrap; */
+    position: absolute;
+    /* -webkit-overflow-scrolling: touch; Lets it scroll lazy */
+    width: calc(100vw - 1em);
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* white-space: nowrap; */
+    display: flex;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.projects-inner::-webkit-scrollbar {
+    display: none;
+}
+.projects-inner .block {
+    position: absolute;
+    top: 12.5%;
+    display: flex;
+    min-width: 80vw;
+    align-items: center;
+}
+.projects-inner .block h1 {
+    text-align: left;
+}
+.project-photo {
+    flex:1;
+}
+.project-photo img {
+    width: 20vw;
+    z-index: 10;
+}
+.project-title {
+    position: relative;
+    flex:1;
+    margin-left: 5vw;
+    overflow-wrap: break-word;
+}
+.project-title h1 {
+    font-family: 'GTCinetypeRegular';
+    font-size: 5vw;
+    width: 40vw;
+    font-weight: bolder;
+    color: #000;
+    z-index: 100;
+}
+
+.project-title .desc {
+    font-size: 1vw;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 

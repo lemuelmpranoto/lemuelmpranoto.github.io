@@ -30,16 +30,18 @@ window.onload = function() {
 
     window.addEventListener('scroll', scrollEffect);
     function scrollEffect() {
-        if(window.scrollY>=1) {
-            scroll_icon.style.visibility = 'hidden';
-            scroll_icon.style.opacity = '0';
-            scroll_icon.style.transition = 'visibility 0s linear 300ms, opacity 300ms';
-            // scroll_icon.style.transform = 'translateY(-1vh)';
-            // scroll_icon.style.transition = '1s ease-in-out';
-        } else if(window.scrollY == 0) {
-            scroll_icon.style.visibility = 'visible';
-            scroll_icon.style.opacity = '1';
-            scroll_icon.style.transition = 'visibility 0s linear 30ms, opacity 300ms';
+        if(scroll_icon != null) {
+            if(window.scrollY>=1) {
+                scroll_icon.style.visibility = 'hidden';
+                scroll_icon.style.opacity = '0';
+                scroll_icon.style.transition = 'visibility 0s linear 300ms, opacity 300ms';
+                // scroll_icon.style.transform = 'translateY(-1vh)';
+                // scroll_icon.style.transition = '1s ease-in-out';
+            } else if(window.scrollY == 0) {
+                scroll_icon.style.visibility = 'visible';
+                scroll_icon.style.opacity = '1';
+                scroll_icon.style.transition = 'visibility 0s linear 30ms, opacity 300ms';
+            }
         }
 
         var availableScroll = $(document).height() - $(window).height();
@@ -237,18 +239,20 @@ window.onload = function() {
 
     // document.getElementById('transition-home').className = 'transition transition-1 is-active';
     //     document.getElementById('transition-about').className = 'transition transition-2 is-active';
-        const anchors = document.getElementsByClassName('transition-link');
-        const transition_el = document.querySelector('.transition');
-        // console.log(transition_el);
-    
-        setTimeout(() => {
-        transition_el.classList.remove('is-active');
-        }, 500);
-    
-        for (let i = 0; i < anchors.length; i++) {
-            const anchor = anchors[i];
-    
-            anchor.addEventListener('click', e => {
+    const anchors = document.getElementsByClassName('transition-link');
+    const anchors_projects_to_about = document.getElementsByClassName('transition-link-projects-to-about');
+    const transition_el = document.querySelector('.transition');
+    const transition_projects_to_about = document.getElementsByClassName('transition-projects-to-about');
+    // console.log(transition_el);
+
+    setTimeout(() => {
+    transition_el.classList.remove('is-active');
+    }, 500);
+
+    for (let i = 0; i < anchors.length; i++) {
+        const anchor = anchors[i];
+
+        anchor.addEventListener('click', e => {
             e.preventDefault();
             let target = e.target.href;
     
@@ -257,6 +261,24 @@ window.onload = function() {
             transition_el.classList.add('is-active');
     
             console.log(transition_el);
+    
+            setInterval(() => {
+            window.location.href = target;
+            }, 500);
+        })
+    }
+    for (let i = 0; i < anchors_projects_to_about.length; i++) {
+        const anchor = anchors_projects_to_about[i];
+
+        anchor.addEventListener('click', e => {
+            e.preventDefault();
+            let target = e.target.href;
+    
+            console.log(transition_projects_to_about[0]);
+            transition_projects_to_about[0].classList.add('is-active');
+            // transition_el.classList.add('is-active');
+    
+            console.log(transition_projects_to_about[0]);
     
             setInterval(() => {
             window.location.href = target;
@@ -353,6 +375,7 @@ if(header_title_home_page != null) {
     const image1 = document.querySelector(".img-1 img");
     const description1 = document.querySelector(".project1-title h3");
     const title1 = document.querySelector(".project1-h1");
+    const clickable1 = document.querySelector(".click-link.chatr");
     container1.addEventListener("mousemove", (e) => {
         let xAxis = (window.innerWidth / 4 - e.pageX) / 20;
         let yAxis = (window.innerHeight / 0.4 - e.pageY) / 15;
@@ -360,14 +383,16 @@ if(header_title_home_page != null) {
     });
     container1.addEventListener("mouseenter", (e) => {
         card1.style.transition = "none";
-        title1.style.transform = "translateZ(40vh)";
-        image1.style.transform = "translateZ(40vh) rotateZ(0deg)";
+        title1.style.transform = "translateZ(35vh)";
+        clickable1.style.transform = "translateZ(40vh) translateX(-17.5vw) translateY(-15vw)";
+        image1.style.transform = "translateZ(35vh) rotateZ(0deg)";
         description1.style.transform = "translateZ(40vh)";
     });
     container1.addEventListener("mouseleave", (e) => {
         card1.style.transition = "all 0.5s ease";
         card1.style.transform = `rotateY(0deg) rotateX(0deg)`;
         title1.style.transform = "translateZ(0px)";
+        clickable1.style.transform = "translateZ(0px) translateX(-17.5vw) translateY(-15vw)";
         image1.style.transform = "translateZ(0px) rotateZ(0deg)";
         description1.style.transform = "translateZ(0px)";
     });
@@ -378,6 +403,7 @@ if(header_title_home_page != null) {
     const image2 = document.querySelector(".img-2 img");
     const description2 = document.querySelector(".project2-title h3");
     const title2 = document.querySelector(".project2-h1");
+    const clickable2 = document.querySelector(".click-link.event-manager");
     container2.addEventListener("mousemove", (e) => {
         let xAxis = (window.innerWidth / 1.3 - e.pageX) / 20;
         let yAxis = (window.innerHeight / 0.4 - e.pageY) / 15;
@@ -386,6 +412,7 @@ if(header_title_home_page != null) {
     container2.addEventListener("mouseenter", (e) => {
         card2.style.transition = "none";
         title2.style.transform = "translateZ(40vh)";
+        clickable2.style.transform = "translateZ(40vh) translateX(-17.5vw) translateY(-15vw)";
         image2.style.transform = "translateZ(40vh) rotateZ(0deg)";
         description2.style.transform = "translateZ(40vh)";
     });
@@ -393,6 +420,7 @@ if(header_title_home_page != null) {
         card2.style.transition = "all 0.5s ease";
         card2.style.transform = `rotateY(0deg) rotateX(0deg)`;
         title2.style.transform = "translateZ(0px)";
+        clickable2.style.transform = "translateZ(0px) translateX(-17.5vw) translateY(-15vw)";
         image2.style.transform = "translateZ(0px) rotateZ(0deg)";
         description2.style.transform = "translateZ(0px)";
     });
@@ -403,6 +431,7 @@ if(header_title_home_page != null) {
     const image3 = document.querySelector(".img-3 img");
     const description3 = document.querySelector(".project3-title h3");
     const title3 = document.querySelector(".project3-h1");
+    const clickable3 = document.querySelector(".click-link.line-following-robot");
     container3.addEventListener("mousemove", (e) => {
         let xAxis = (window.innerWidth / 4 - e.pageX) / 20;
         let yAxis = (window.innerHeight / 0.21 - e.pageY) / 15;
@@ -411,6 +440,7 @@ if(header_title_home_page != null) {
     container3.addEventListener("mouseenter", (e) => {
         card3.style.transition = "none";
         title3.style.transform = "translateZ(25vh)";
+        clickable3.style.transform = "translateZ(40vh) translateX(-17.5vw) translateY(-20vw)";
         image3.style.transform = "translateZ(25vh) rotateZ(0deg)";
         description3.style.transform = "translateZ(25vh)";
     });
@@ -418,6 +448,7 @@ if(header_title_home_page != null) {
         card3.style.transition = "all 0.5s ease";
         card3.style.transform = `rotateY(0deg) rotateX(0deg)`;
         title3.style.transform = "translateZ(0px)";
+        clickable3.style.transform = "translateZ(0px) translateX(-17.5vw) translateY(-20vw)";
         image3.style.transform = "translateZ(0px) rotateZ(0deg)";
         description3.style.transform = "translateZ(0px)";
     });
@@ -429,6 +460,7 @@ if(header_title_home_page != null) {
     const image4 = document.querySelector(".img-4 img");
     const description4 = document.querySelector(".project4-title h3");
     const title4 = document.querySelector(".project4-h1");
+    const clickable4 = document.querySelector(".click-link.DE-booth");
     container4.addEventListener("mousemove", (e) => {
         let xAxis = (window.innerWidth / 1.3 - e.pageX) / 20;
         let yAxis = (window.innerHeight / 0.21 - e.pageY) / 15;
@@ -437,6 +469,7 @@ if(header_title_home_page != null) {
     container4.addEventListener("mouseenter", (e) => {
         card4.style.transition = "none";
         title4.style.transform = "translateZ(25vh)";
+        clickable4.style.transform = "translateZ(40vh) translateX(-17.5vw) translateY(-20vw)";
         image4.style.transform = "translateZ(25vh) rotateZ(0deg)";
         description4.style.transform = "translateZ(25vh)";
     });
@@ -444,6 +477,7 @@ if(header_title_home_page != null) {
         card4.style.transition = "all 0.5s ease";
         card4.style.transform = `rotateY(0deg) rotateX(0deg)`;
         title4.style.transform = "translateZ(0px)";
+        clickable4.style.transform = "translateZ(0px) translateX(-17.5vw) translateY(-20vw)";
         image4.style.transform = "translateZ(0px) rotateZ(0deg)";
         description4.style.transform = "translateZ(0px)";
     });
@@ -454,6 +488,7 @@ if(header_title_home_page != null) {
     const image5 = document.querySelector(".img-5 img");
     const description5 = document.querySelector(".project5-title h3");
     const title5 = document.querySelector(".project5-h1");
+    const clickable5 = document.querySelector(".click-link.home-sec");
     container5.addEventListener("mousemove", (e) => {
         let xAxis = (window.innerWidth / 4 - e.pageX) / 20;
         let yAxis = (window.innerHeight / 0.14 - e.pageY) / 15;
@@ -462,6 +497,7 @@ if(header_title_home_page != null) {
     container5.addEventListener("mouseenter", (e) => {
         card5.style.transition = "none";
         title5.style.transform = "translateZ(25vh)";
+        clickable5.style.transform = "translateZ(40vh) translateX(-17.5vw) translateY(-20vw)";
         image5.style.transform = "translateZ(25vh) rotateZ(0deg)";
         description5.style.transform = "translateZ(25vh)";
     });
@@ -469,6 +505,7 @@ if(header_title_home_page != null) {
         card5.style.transition = "all 0.5s ease";
         card5.style.transform = `rotateY(0deg) rotateX(0deg)`;
         title5.style.transform = "translateZ(0px)";
+        clickable5.style.transform = "translateZ(0px) translateX(-17.5vw) translateY(-20vw)";
         image5.style.transform = "translateZ(0px) rotateZ(0deg)";
         description5.style.transform = "translateZ(0px)";
     });
@@ -480,6 +517,7 @@ if(header_title_home_page != null) {
     const image6 = document.querySelector(".img-6 img");
     const description6 = document.querySelector(".project6-title h3");
     const title6 = document.querySelector(".project6-h1");
+    const clickable6 = document.querySelector(".click-link.personal-website-v1");
     container6.addEventListener("mousemove", (e) => {
         let xAxis = (window.innerWidth / 1.3 - e.pageX) / 20;
         let yAxis = (window.innerHeight / 0.14 - e.pageY) / 15;
@@ -488,6 +526,7 @@ if(header_title_home_page != null) {
     container6.addEventListener("mouseenter", (e) => {
         card6.style.transition = "none";
         title6.style.transform = "translateZ(40vh)";
+        clickable6.style.transform = "translateZ(40vh) translateX(-17.5vw) translateY(-15vw)";
         image6.style.transform = "translateZ(40vh) rotateZ(0deg)";
         description6.style.transform = "translateZ(40vh)";
     });
@@ -495,6 +534,7 @@ if(header_title_home_page != null) {
         card6.style.transition = "all 0.5s ease";
         card6.style.transform = `rotateY(0deg) rotateX(0deg)`;
         title6.style.transform = "translateZ(0px)";
+        clickable6.style.transform = "translateZ(0px) translateX(-17.5vw) translateY(-15vw)";
         image6.style.transform = "translateZ(0px) rotateZ(0deg)";
         description6.style.transform = "translateZ(0px)";
     });
