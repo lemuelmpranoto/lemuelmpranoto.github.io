@@ -386,7 +386,7 @@ if(header_title_home_page != null) {
         title1.style.transform = "translateZ(35vh)";
         clickable1.style.transform = "translateZ(40vh) translateX(-17.5vw) translateY(-15vw)";
         image1.style.transform = "translateZ(35vh) rotateZ(0deg)";
-        description1.style.transform = "translateZ(40vh)";
+        description1.style.transform = "translateZ(35vh)";
     });
     container1.addEventListener("mouseleave", (e) => {
         card1.style.transition = "all 0.5s ease";
@@ -411,10 +411,10 @@ if(header_title_home_page != null) {
     });
     container2.addEventListener("mouseenter", (e) => {
         card2.style.transition = "none";
-        title2.style.transform = "translateZ(40vh)";
+        title2.style.transform = "translateZ(35vh)";
         clickable2.style.transform = "translateZ(40vh) translateX(-17.5vw) translateY(-15vw)";
-        image2.style.transform = "translateZ(40vh) rotateZ(0deg)";
-        description2.style.transform = "translateZ(40vh)";
+        image2.style.transform = "translateZ(35vh) rotateZ(0deg)";
+        description2.style.transform = "translateZ(35vh)";
     });
     container2.addEventListener("mouseleave", (e) => {
         card2.style.transition = "all 0.5s ease";
@@ -525,10 +525,10 @@ if(header_title_home_page != null) {
     });
     container6.addEventListener("mouseenter", (e) => {
         card6.style.transition = "none";
-        title6.style.transform = "translateZ(40vh)";
+        title6.style.transform = "translateZ(35vh)";
         clickable6.style.transform = "translateZ(40vh) translateX(-17.5vw) translateY(-15vw)";
-        image6.style.transform = "translateZ(40vh) rotateZ(0deg)";
-        description6.style.transform = "translateZ(40vh)";
+        image6.style.transform = "translateZ(35vh) rotateZ(0deg)";
+        description6.style.transform = "translateZ(35vh)";
     });
     container6.addEventListener("mouseleave", (e) => {
         card6.style.transition = "all 0.5s ease";
