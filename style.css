@@ -827,7 +827,7 @@ ion-icon#icons-about-page:hover {
     background-color: bisque;
     z-index: 5;
 }
-.mobile-background-projects a {
+.mobile-background-projects .projects-background-title {
     position: fixed;
     right: -6vw;
     top: 50%;
@@ -859,7 +859,17 @@ ion-icon#icons-about-page:hover {
     font-weight: bolder;
     margin: 0;
 }
-
+.mobile-click-link {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.75s ease-out;
+    z-index: 100;
+}
+/* .mobile-click-link.chatr {
+    height: 8%;
+} */
 
 .background-collections {
     position: relative;
