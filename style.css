@@ -1961,6 +1961,13 @@ footer .copyright.home a {
     margin-left: 5vw;
     overflow-wrap: break-word;
 }
+.vertical-image .project-photo {
+    flex: 1 4;
+}
+.vertical-image .project-title {
+    flex: 3 4;
+    margin-right: 20vw;
+}
 .project-title h1 {
     font-family: 'GTCinetypeRegular';
     /* width: 40vw; */
