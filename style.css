@@ -862,7 +862,7 @@ ion-icon#icons-about-page:hover {
 .mobile-click-link {
     position: absolute;
     display: block;
-    height: 100%;
+    height: 20%;
     width: 100%;
     transition: all 0.75s ease-out;
     z-index: 100;
@@ -985,7 +985,7 @@ ion-icon#icons-about-page:hover {
 }
 .mobile-background-collections {
     position: relative;
-    height: calc(575vw); /* 65vw*5 + 30vw*5 + 100vw*/
+    height: 575vw; /* 65vw*5 + 30vw*5 + 100vw*/
     width: 100vw;
     background-color: rgb(137, 221, 196);
     z-index: 5;
@@ -2010,11 +2010,11 @@ footer .copyright.home a {
     width: 90%;
     padding-bottom: 20vh;
 }
-.project-images.video {
+.project-images .video {
     position: relative;
     width: 90%;
-    height: 70vh;
-    margin: 20vh 5% 20vh 5%;
+    height: 90vh;
+    margin: 0 5% 20vh 5%;
 }
 .project-vid {
     position: absolute;
@@ -2112,8 +2112,8 @@ footer .copyright.home a {
     position: relative;
     top: 0;
     left: 0;
-    width: 90%;
-    height: 50vw;
+    width: 100%;
+    height: 60vw;
     margin-bottom: 5vh;
 }
 .mobile-features-section {
