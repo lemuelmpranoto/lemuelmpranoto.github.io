@@ -2051,6 +2051,7 @@ footer .copyright.home a {
     padding: 0;
 }
 .projects-navlist li {
+    position: relative;
     padding: 0 2vw 0 2vw;
 }
 .projects-navlist li a {
@@ -2059,16 +2060,40 @@ footer .copyright.home a {
     max-width: 10vw;
     line-height: 2em;
 }
-#project-image-hidden {
-    position: fixed;
+.projects-nav-link {
+    position: relative;
+    z-index: 10;
+}
+.project-image-hidden {
+    position: absolute;
     width: fit-content;
-    /* transform: translate(100%, -120%); */
-    z-index: 20; 
-    font-size: 6vw;
+    top: -500%;
+    left: 0%;
+    z-index: 9;
     display: none;
 }
-.li-chatr:hover + #project-image-hidden {
+#projects-nav-hover + .project-image-hidden{
+    animation: animateProjectNavImagesReverse .5s ease-in-out;
+}
+#projects-nav-hover:hover + .project-image-hidden {
     display: block;
+    animation: animateProjectNavImages .8s ease-in-out;
+}
+@keyframes animateProjectNavImages {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes animateProjectNavImagesReverse {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .mobile-projects-section {

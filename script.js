@@ -311,6 +311,53 @@ if(header_title_home_page != null) {
     });
 }
 
+/* ---------------------------- Project pages navigation animations ---------------------------- */ 
+var projects_page_navbar = document.getElementById('projects-page-navbar');
+if(projects_page_navbar != null) {
+    document.addEventListener('mousemove', function(e) {
+        let image = document.getElementById('chatr-hidden-image');
+        let left = e.offsetX;
+        let top = e.offsetY;
+        image.style.left = 1.5*left + 'px';
+        image.style.top = 1.5*top + 'px';
+    });
+    document.addEventListener('mousemove', function(e) {
+        let image = document.getElementById('eventmanager-hidden-image');
+        let left = e.offsetX;
+        let top = e.offsetY;
+        image.style.left = 1.5*left + 'px';
+        image.style.top = 1.5*top + 'px';
+    });
+    document.addEventListener('mousemove', function(e) {
+        let image = document.getElementById('linefollowingrobot-hidden-image');
+        let left = e.offsetX;
+        let top = e.offsetY;
+        image.style.left = 1.5*left + 'px';
+        image.style.top = 1.5*top + 'px';
+    });
+    document.addEventListener('mousemove', function(e) {
+        let image = document.getElementById('debooth-hidden-image');
+        let left = e.offsetX;
+        let top = e.offsetY;
+        image.style.left = 1.5*left + 'px';
+        image.style.top = 1.5*top + 'px';
+    });
+    document.addEventListener('mousemove', function(e) {
+        let image = document.getElementById('homesec-hidden-image');
+        let left = e.offsetX;
+        let top = e.offsetY;
+        image.style.left = 1.5*left + 'px';
+        image.style.top = 1.5*top + 'px';
+    });
+    document.addEventListener('mousemove', function(e) {
+        let image = document.getElementById('personalwebsitev1-hidden-image');
+        let left = e.offsetX;
+        let top = e.offsetY;
+        image.style.left = 1.5*left + 'px';
+        image.style.top = 1.5*top + 'px';
+    });
+}
+
 
 
 let home_intro = document.getElementById('home-intro');
