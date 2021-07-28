@@ -2003,6 +2003,19 @@ footer .copyright.home a {
     width: 90%;
     padding-bottom: 20vh;
 }
+.project-images.video {
+    position: relative;
+    width: 90%;
+    height: 70vh;
+    margin: 20vh 5% 20vh 5%;
+}
+.project-vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .mobile-projects-section {
     display: flex;
@@ -2087,6 +2100,14 @@ footer .copyright.home a {
     object-position: 50% 50%; */
     margin-bottom: 5vh;
     width: 100%;
+}
+.mobile-project-vid {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 50vw;
+    margin-bottom: 5vh;
 }
 .mobile-features-section {
     text-align: center;
