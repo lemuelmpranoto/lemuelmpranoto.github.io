@@ -48,7 +48,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: calc(100vw - 1em);
     height: 100vh;
     scroll-behavior: smooth;
 }
@@ -2023,11 +2023,58 @@ footer .copyright.home a {
     width: 100%;
     height: 100%;
 }
+.projects-nav {
+    padding-bottom: 20vh;
+}
+.projects-nav .inner {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+.projects-nav .title {
+    font-family: 'TIMMONS NY';
+    font-size: 20vw;
+    font-weight: 400;
+    color: #f2f2f2;
+    margin: 0;
+}
+.projects-nav .projects-navlist {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.projects-navlist ul, li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+.projects-navlist li {
+    padding: 0 2vw 0 2vw;
+}
+.projects-navlist li a {
+    font-size: 2vw;
+    font-weight: bolder;
+    max-width: 10vw;
+    line-height: 2em;
+}
+#project-image-hidden {
+    position: fixed;
+    width: fit-content;
+    /* transform: translate(100%, -120%); */
+    z-index: 20; 
+    font-size: 6vw;
+    display: none;
+}
+.li-chatr:hover + #project-image-hidden {
+    display: block;
+}
 
 .mobile-projects-section {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 5vh;
+    /* margin-bottom: 5vh; */
     padding-top: 10vh;
     position: relative;
     z-index: 1;
@@ -2120,11 +2167,52 @@ footer .copyright.home a {
     text-align: center;
     margin-bottom: 15vh;
 }
+.mobile-projects-nav {
+    padding-bottom: 20vh;
+}
+.mobile-projects-nav .inner {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+.mobile-projects-nav .title {
+    font-family: 'TIMMONS NY';
+    font-size: 45vw;
+    font-weight: 400;
+    color: #ebeaea;
+    margin: 0;
+}
+.mobile-projects-nav .mobile-projects-navlist {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.mobile-projects-navlist ul, li {
+    /* display: block; */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.mobile-ul, .mobile-li {
+    display: block;
+}
+.mobile-projects-navlist li a {
+    font-size: 5vw;
+    font-weight: bolder;
+    max-width: 10vw;
+    line-height: 2em;
+}
+
 
 /* ---------------------------------- iPhone X ---------------------------------- */
 @media only screen 
     and (min-device-width: 375px) 
-    and (max-device-width: 912px) { 
+    and (max-device-width: 912px) {
+    html, body {
+        width: 100vw;
+    }
     .header-title {
         display: none;
     }
