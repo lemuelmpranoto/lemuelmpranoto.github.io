@@ -2070,30 +2070,17 @@ footer .copyright.home a {
     top: -500%;
     left: 0%;
     z-index: 9;
-    display: none;
+    visibility:hidden;
+    opacity:0;
+    transition:visibility .5s linear,opacity .5s linear;
 }
-#projects-nav-hover + .project-image-hidden{
-    animation: animateProjectNavImagesReverse .5s ease-in-out;
+.nav-image {
+    position: absolute;
 }
-#projects-nav-hover:hover + .project-image-hidden {
-    display: block;
-    animation: animateProjectNavImages .8s ease-in-out;
-}
-@keyframes animateProjectNavImages {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes animateProjectNavImagesReverse {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+.projects-nav-hover:hover + .project-image-hidden {
+    visibility:visible;
+    opacity:1;
+    transition:visibility 1s linear,opacity 1s linear;
 }
 
 .mobile-projects-section {

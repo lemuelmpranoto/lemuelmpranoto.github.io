@@ -314,47 +314,113 @@ if(header_title_home_page != null) {
 /* ---------------------------- Project pages navigation animations ---------------------------- */ 
 var projects_page_navbar = document.getElementById('projects-page-navbar');
 if(projects_page_navbar != null) {
-    document.addEventListener('mousemove', function(e) {
-        let image = document.getElementById('chatr-hidden-image');
-        let left = e.offsetX;
-        let top = e.offsetY;
-        image.style.left = 1.5*left + 'px';
-        image.style.top = 1.5*top + 'px';
+    const chatr_navbar = document.getElementById('chatr-projects-nav-hover');
+    let chatr_hover = false;
+    chatr_navbar.addEventListener('mouseenter', e => {
+        chatr_hover = true;
     });
-    document.addEventListener('mousemove', function(e) {
-        let image = document.getElementById('eventmanager-hidden-image');
-        let left = e.offsetX;
-        let top = e.offsetY;
-        image.style.left = 1.5*left + 'px';
-        image.style.top = 1.5*top + 'px';
+    chatr_navbar.addEventListener('mousemove', function(e) {
+        if(chatr_hover === true) {
+            let image = document.getElementById('chatr-hidden-image');
+            let left = e.offsetX;
+            let top = e.offsetY;
+            console.log("left: " + left);
+            image.style.left = 1.5*left + 'px';
+            image.style.top = 1.5*top + 'px';
+        }
     });
-    document.addEventListener('mousemove', function(e) {
-        let image = document.getElementById('linefollowingrobot-hidden-image');
-        let left = e.offsetX;
-        let top = e.offsetY;
-        image.style.left = 1.5*left + 'px';
-        image.style.top = 1.5*top + 'px';
+    chatr_navbar.addEventListener('mouseleave', e => {
+        chatr_hover = false;
     });
-    document.addEventListener('mousemove', function(e) {
-        let image = document.getElementById('debooth-hidden-image');
-        let left = e.offsetX;
-        let top = e.offsetY;
-        image.style.left = 1.5*left + 'px';
-        image.style.top = 1.5*top + 'px';
+
+    const eventmanager_navbar = document.getElementById('eventmanager-projects-nav-hover');
+    let eventmanager_hover = false;
+    eventmanager_navbar.addEventListener('mouseenter', e => {
+        eventmanager_hover = true;
     });
-    document.addEventListener('mousemove', function(e) {
-        let image = document.getElementById('homesec-hidden-image');
-        let left = e.offsetX;
-        let top = e.offsetY;
-        image.style.left = 1.5*left + 'px';
-        image.style.top = 1.5*top + 'px';
+    eventmanager_navbar.addEventListener('mousemove', function(e) {
+        if(eventmanager_hover === true) {
+            let image = document.getElementById('eventmanager-hidden-image');
+            let left = e.offsetX;
+            let top = e.offsetY;
+            image.style.left = 1.5*left + 'px';
+            image.style.top = 1.5*top + 'px';
+        }
     });
-    document.addEventListener('mousemove', function(e) {
-        let image = document.getElementById('personalwebsitev1-hidden-image');
-        let left = e.offsetX;
-        let top = e.offsetY;
-        image.style.left = 1.5*left + 'px';
-        image.style.top = 1.5*top + 'px';
+    eventmanager_navbar.addEventListener('mouseleave', e => {
+        eventmanager_hover = false;
+    });
+
+    const linefollowingrobot_navbar = document.getElementById('linefollowingrobot-projects-nav-hover');
+    let linefollowingrobot_hover = false;
+    linefollowingrobot_navbar.addEventListener('mouseenter', e => {
+        linefollowingrobot_hover = true;
+    });
+    linefollowingrobot_navbar.addEventListener('mousemove', function(e) {
+        if(linefollowingrobot_hover === true) {
+            let image = document.getElementById('linefollowingrobot-hidden-image');
+            let left = e.offsetX;
+            let top = e.offsetY;
+            image.style.left = 1.5*left + 'px';
+            image.style.top = 1.5*top + 'px';
+        }
+    });
+    linefollowingrobot_navbar.addEventListener('mouseleave', e => {
+        linefollowingrobot_hover = false;
+    });
+    
+    const debooth_navbar = document.getElementById('debooth-projects-nav-hover');
+    let debooth_hover = false;
+    debooth_navbar.addEventListener('mouseenter', e => {
+        debooth_hover = true;
+    });
+    debooth_navbar.addEventListener('mousemove', function(e) {
+        if(debooth_hover === true) {
+            let image = document.getElementById('debooth-hidden-image');
+            let left = e.offsetX;
+            let top = e.offsetY;
+            image.style.left = 1.5*left + 'px';
+            image.style.top = 1.5*top + 'px';
+        }
+    });
+    debooth_navbar.addEventListener('mouseleave', e => {
+        debooth_hover = false;
+    });
+
+    const homesec_navbar = document.getElementById('homesec-projects-nav-hover');
+    let homesec_hover = false;
+    homesec_navbar.addEventListener('mouseenter', e => {
+        homesec_hover = true;
+    });
+    homesec_navbar.addEventListener('mousemove', function(e) {
+        if(homesec_hover === true) {
+            let image = document.getElementById('homesec-hidden-image');
+            let left = e.offsetX;
+            let top = e.offsetY;
+            image.style.left = 1.5*left + 'px';
+            image.style.top = 1.5*top + 'px';
+        }
+    });
+    homesec_navbar.addEventListener('mouseleave', e => {
+        homesec_hover = false;
+    });
+
+    const personalwebsitev1_navbar = document.getElementById('personalwebsitev1-projects-nav-hover');
+    let personalwebsitev1_hover = false;
+    personalwebsitev1_navbar.addEventListener('mouseenter', e => {
+        personalwebsitev1_hover = true;
+    });
+    personalwebsitev1_navbar.addEventListener('mousemove', function(e) {
+        if(personalwebsitev1_hover === true) {
+            let image = document.getElementById('personalwebsitev1-hidden-image');
+            let left = e.offsetX;
+            let top = e.offsetY;
+            image.style.left = 1.5*left + 'px';
+            image.style.top = 1.5*top + 'px';
+        }
+    });
+    personalwebsitev1_navbar.addEventListener('mouseleave', e => {
+        personalwebsitev1_hover = false;
     });
 }
 
@@ -619,37 +685,40 @@ if(header_title_home_page == null) {
     let scrollLeft;
     const block = document.getElementById('about-block1');
 
-    slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-    });
-    slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('active');
-    });
-    slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('active');
-    });
-    slider.addEventListener('mousemove', (e) => {
-    if(!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; //scroll-fast
-    slider.scrollLeft = scrollLeft - walk;
-    console.log(walk);
-
-
-
-
+    if(slider != null) {
+        slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+        });
+        slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+        });
+        slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(walk);
     
-    var rect = block.getBoundingClientRect();
-    left = rect.left;
-    y = rect.top;
-    w = rect.width;
-    h = rect.height;
-    console.log("Left: " + left + ", Top: " + y + ", Width: " + w + ", Height: " + h);
-    });
+    
+    
+    
+        
+        var rect = block.getBoundingClientRect();
+        left = rect.left;
+        y = rect.top;
+        w = rect.width;
+        h = rect.height;
+        console.log("Left: " + left + ", Top: " + y + ", Width: " + w + ", Height: " + h);
+        });
+    }
+    
 }
