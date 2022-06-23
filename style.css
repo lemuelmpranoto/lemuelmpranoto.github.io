@@ -418,6 +418,20 @@ ion-icon#icons-about-page:hover {
     transform-origin: center center;
     transform: translate(-50%, -50%);
 }
+.projects-title-background {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform-origin: center center;
+    transform: translate(-50%, -50%);
+}
+.collections-title-background {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform-origin: center center;
+    transform: translate(-50%, -50%);
+}
 .about-title-background {
     position: fixed;
     left: 50%;
@@ -430,6 +444,18 @@ ion-icon#icons-about-page:hover {
 }
 .home-title-lower {
     transform: translateX(10%);
+}
+.projects-title-upper {
+    transform: translateX(-10%);
+}
+.projects-title-lower {
+    transform: translateX(3%);
+}
+.collections-title-upper {
+    transform: translateX(-4%);
+}
+.collections-title-lower {
+    transform: translateX(4%);
 }
 .home-title-upper-socials {
     transform: translateX(-9%);
@@ -822,10 +848,13 @@ ion-icon#icons-about-page:hover {
 }
 .mobile-background-projects {
     position: relative;
-    height: 850vw;
+    height: 1000vw;
     width: 100vw;
     background-color: bisque;
     z-index: 5;
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.35vh) * 100);
+    color: #fff;
 }
 .mobile-background-projects .projects-background-title {
     position: fixed;
@@ -840,8 +869,9 @@ ion-icon#icons-about-page:hover {
 .mobile-projects-gallery {
     position: absolute;
     width: 65vw;
-    left: 7vw;
-    top: 25vh;
+    left: 50%;
+    top: 60vh;
+    transform: translateX(-50%);
 }
 .mobile-item {
     padding-bottom: 30vw;
@@ -985,10 +1015,13 @@ ion-icon#icons-about-page:hover {
 }
 .mobile-background-collections {
     position: relative;
-    height: 575vw; /* 65vw*5 + 30vw*5 + 100vw*/
+    height: 700vw; /* 65vw*5 + 30vw*5 + 100vw*/
     width: 100vw;
     background-color: rgb(137, 221, 196);
     z-index: 5;
+    font-family: 'TIMMONS NY';
+    font-size: calc(var(--vh, 0.3vh) * 100);
+    color: #fff;
 }
 .mobile-background-collections a {
     position: fixed;
@@ -1004,7 +1037,7 @@ ion-icon#icons-about-page:hover {
     position: absolute;
     width: 65vw;
     right: 7vw;
-    top: 25vh;
+    top: 60vh;
 }
 .mobile-item {
     padding-bottom: 30vw;
