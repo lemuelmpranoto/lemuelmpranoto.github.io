@@ -1036,7 +1036,8 @@ ion-icon#icons-about-page:hover {
 .mobile-collections-gallery {
     position: absolute;
     width: 65vw;
-    right: 7vw;
+    left: 50%;
+    transform: translateX(-50%);
     top: 60vh;
 }
 .mobile-item {
@@ -1047,13 +1048,14 @@ ion-icon#icons-about-page:hover {
     height: auto;
 }
 .mobile-item .image-title {
-    text-align: right;
+    text-align: center;
 }
 .mobile-item .image-title h1 {
     font-family: 'GTCinetypeRegular';
     font-size: 4vw;
     font-weight: bolder;
     margin: 0;
+    color: #000000;
 }
 
 footer .rocket {
